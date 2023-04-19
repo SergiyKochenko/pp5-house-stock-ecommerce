@@ -1,6 +1,6 @@
 asgiref==3.6.0
-boto3==1.26.115
-botocore==1.29.115
+boto3==1.26.116
+botocore==1.29.116
 dj-database-url==0.5.0
 Django==3.2
 django-allauth==0.41.0
