@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
-    'allauth.socialaccount.providers.github',
 ]
 
 MIDDLEWARE = [
@@ -100,10 +99,6 @@ TEMPLATES = [
     },
 ]
 
-# ---------------------------------
-
-
-# ---------------------------------------
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (

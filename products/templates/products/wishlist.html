@@ -3,18 +3,7 @@
 
 {% block content %}
 <style>
-.sensical-button {
-    font-size: 14px;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: white;
-    background-color: #000000;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border: solid 1px #0c2d6c;
-}
+
 .style {
     margin-top: 150px;
 }
@@ -39,34 +28,33 @@
                             <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" class="img-fluid rounded-3">
                             {% endif %}
                         </div>
+                        
                         <div class="col-md-3 col-lg-3 col-xl-3">
                             <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
                             <p class="text-muted fw-normal mb-2 text-uppercase">code: {{ item.product.sku }}</p>
                         </div>
+
                         <div class="col-12 mt-1">
-                            <a href="{% url 'product_detail' item.product.id %}" class="sensical-button text-center rounded-0 mt-2">
+                            <a href="{% url 'product_detail' item.product.id %}" class="btn btn-black rounded-0 text-uppercase mt-2">
                                 <span class="icon" ><i class="fa-solid fa-circle-arrow-left"></i></span>
                                 <span class="text-uppercase">Back to Product</span>
                             </a>
                         </div>
 
-                        
                         <div class="col-12 mt-1">
-                            <a href="{% url 'products' %}" class="sensical-button text-center rounded-0 mt-2">
+                            <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-2">
                                 <span class="icon" ><i class="fa-solid fa-circle-arrow-left"></i></span>
                                 <span class="text-uppercase">Find More Products</span>
                             </a>
                         </div>
 
-
-                        
-
                         <div class="col-12 mb-1">
-                            <a class="sensical-button" href="{% url 'remove_from_wishlist' item.id %}">
+                            <a class="btn btn-black rounded-0 text-uppercase mt-2" href="{% url 'remove_from_wishlist' item.id %}">
                                 <span class="icon "><i class="fa-solid fa-trash"></i></span>
                                 <span class="text-uppercase">Remove from Wishlist</span>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -116,11 +116,38 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
-            </div>            
+
+
+
+
+
+
+        <div id="delivery-banner" class="row secondary-bg text-center bg-black text-white">
+            <div class="col-12">
+                <div id="delivery-slider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item text-center secondary-bg active">
+                            <h4 class="banner-font"><i
+                                    class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> Free
+                                world-wide delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                        </div>
+                        {% if free_delivery_delta == 0 %}
+                        <div class="carousel-item text-center secondary-bg">
+                            <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
+                                Congratulations... You qualify for free delivery!!!</h4>
+                        </div>
+                        {% else %}
+                        <div class="carousel-item text-center secondary-bg">
+                            <h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
+                                Spend just <strong>${{ free_delivery_delta }} more to qualify for free
+                                    delivery!</strong></h4>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </header>
 
     {% if messages %}
