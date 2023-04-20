@@ -9,7 +9,7 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: white;
-    background-color: #0c2d6c;
+    background-color: #000000;
     border: none;
     cursor: pointer;
     outline: none;
@@ -22,15 +22,16 @@
 <div class="container py-5">
     <div class="row d-flex justify-content-center align-items-center h-100 style">
         <div class="col-10">
+            <hr>
             <div class="text-center mb-4">
-                <h3 class="fw-normal mb-0 text-black">Wishlist</h3>
+                <h1 class="fw-normal mb-0 text-black text-uppercase">Wishlist</h1>
             </div>
-
+            <hr>
             {% if wishlist %}
             {% for item in wishlist %}
             <div class="card rounded-3 mb-4">
                 <div class="card-body p-4">
-                    <div class="row d-flex justify-content-between align-items-center">
+                    <div class="row d-flex align-items-center">
                         <div class="col-md-2 col-lg-2 col-xl-2">
                             {% if item.product.image %}
                             <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-3">
@@ -40,7 +41,7 @@
                         </div>
                         <div class="col-md-3 col-lg-3 col-xl-3">
                             <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
-                            <p class="text-muted fw-normal mb-2">{{ item.product.sku }}</p>
+                            <p class="text-muted fw-normal mb-2 text-uppercase">code: {{ item.product.sku }}</p>
                         </div>
                         <div class="col-12 mt-1">
                             <a href="{% url 'product_detail' item.product.id %}" class="sensical-button text-center rounded-0 mt-2">
