@@ -7,6 +7,14 @@
 .style {
     margin-top: 150px;
 }
+.btns:hover {
+        background-color: #75e6ff !important;
+    }
+
+.btons {
+    background-color: #0c2d6c;
+    align-self: start;
+}
 </style>
 <div class="container py-5">
     <div class="row d-flex justify-content-center align-items-center h-100 style">
@@ -18,49 +26,40 @@
             <hr>
             {% if wishlist %}
             {% for item in wishlist %}
-            <div class="card rounded-3 mb-4">
-                <div class="card-body p-4">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-2 col-lg-2 col-xl-2">
-                            {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                            {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                            {% endif %}
-                        </div>
-                        
-                        <div class="col-md-3 col-lg-3 col-xl-3">
-                            <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
-                            <p class="text-muted fw-normal mb-2 text-uppercase">code: {{ item.product.sku }}</p>
-                        </div>
-
-                        <div class="col-12 mt-1">
-                            <a href="{% url 'product_detail' item.product.id %}" class="btn btn-black rounded-0 text-uppercase mt-2">
-                                <span class="icon" ><i class="fa-solid fa-circle-arrow-left"></i></span>
-                                <span class="text-uppercase">Back to Product</span>
-                            </a>
-                        </div>
-
-                        <div class="col-12 mt-1">
-                            <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-2">
-                                <span class="icon" ><i class="fa-solid fa-circle-arrow-left"></i></span>
-                                <span class="text-uppercase">Find More Products</span>
-                            </a>
-                        </div>
-
-                        <div class="col-12 mb-1">
-                            <a class="btn btn-black rounded-0 text-uppercase mt-2" href="{% url 'remove_from_wishlist' item.id %}">
-                                <span class="icon "><i class="fa-solid fa-trash"></i></span>
-                                <span class="text-uppercase">Remove from Wishlist</span>
-                            </a>
-                        </div>
-
+            <div class="card rounded-3 mb-4" style="background-color: #0c2d6c;">
+                <div class="card-body p-4 text-white">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      {% if item.product.image %}
+                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-3">
+                      {% else %}
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" class="img-fluid rounded-3">
+                      {% endif %}
                     </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
+                      <p class="text-muted fw-normal mb-2 text text-uppercase">code: {{ item.product.sku }}</p>
+                    </div>
+                    <div class="col-md-7 col-lg-7 col-xl-7 text-end" style="display: flex; flex-direction: column;">
+                        <a href="{% url 'product_detail' item.product.id %}" class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
+                            <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                            <span class="text-uppercase">Back to Product</span>
+                        </a>
+                        <a href="{% url 'products' %}" class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3">
+                            <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                            <span class="text-uppercase">Find More Products</span>
+                        </a>
+                        <a class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3" href="{% url 'remove_from_wishlist' item.id %}">
+                            <span class="icon"><i class="fa-solid fa-trash"></i></span>
+                            <span class="text-uppercase">Remove from Wishlist</span>
+                        </a>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             {% endfor %}
 
-
+            <hr class="section-rule">
 
             
             {% else %}
@@ -71,5 +70,7 @@
         </div>
     </div>
 </div>
+
+
 
 {% endblock %}
