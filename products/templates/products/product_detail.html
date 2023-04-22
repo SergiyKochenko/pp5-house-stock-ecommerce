@@ -30,6 +30,13 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    <!-- ============================ -->
+                    {% if product.in_stock %}
+                    <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In Stock</small>
+                    {% else %}
+                    <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of Stock</small>
+                    {% endif %}
+                    <!-- ============================== -->
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -107,15 +114,39 @@
                 </div>
                 {% endif %}
                 <hr>
-                            <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+
+<!-- =============================================================================== -->
+                <div class="col{% if s %}-12 mt-2{% endif %}">
+                    <div class="d-flex">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5 mr-2">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                
+                        {% csrf_token %}
+                
+                        {% if product.in_stock %}
+                        <div>
+                            <input class="btn btn-black rounded-0 text-uppercase mt-5"
+                             type="submit" value="Add To Bag">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                        {% else %}
+                        <div>
+                            <div class="btn btn-black rounded-0 text-uppercase mt-5">
+                                <i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Out Of Stock
                             </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+<!-- ========================================================================================== -->
+
+
+
+
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
                         </div>
