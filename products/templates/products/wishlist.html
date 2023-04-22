@@ -53,6 +53,33 @@
                         </small>
                         {% endif %}
                         </div>
+
+<!-- -------------------------------------------------------- -->
+{% if product.in_stock %}
+<div class="col-12 ml-1 mb-1">
+    <input class="fa-input techno-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
+</div>
+<input type="hidden" name="redirect_url" value="{{ request.path }}">
+{% endif %}
+<!-- =========================================================== -->
+
+      {% csrf_token %}
+
+      {% if product.in_stock %}
+      <div>
+          <input class="btn btn-black rounded-0 text-uppercase mt-5"
+           type="submit" value="Add To Bag">
+          <input type="hidden" name="redirect_url" value="{{ request.path }}">
+      </div>
+      {% else %}
+      <div>
+          <div class="btn btn-black rounded-0 text-uppercase mt-5">
+              <i class="fa-solid fa-triangle-exclamation"></i>&nbsp; Out Of Stock
+          </div>
+      </div>
+      {% endif %}
+  
+
 <!-- =========================================================== -->
                         <a href="{% url 'product_detail' item.product.id %}" class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
                             <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
@@ -66,16 +93,6 @@
                             <span class="icon"><i class="fa-solid fa-trash"></i></span>
                             <span class="text-uppercase">Remove from Wishlist</span>
                         </a>
-
-                        <!-- {% if product.in_stock %}
-                        <div class="col-12 ml-1 mb-1">
-                            <input class="fa-input techno-button text-center rounded-0 text-uppercase mt-2" type="submit" value="&#xf291; Add To Basket">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        {% endif %} -->
-
-
-
                     </div>
                   </div>
                 </div>

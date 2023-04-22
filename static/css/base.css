@@ -398,3 +398,16 @@ input[name='q']::placeholder {
     color: #f8f9fa!important;
     margin: 20px;
 }
+
+/* basket */
+.item-counter {
+    background: #be0202;
+    color: #fff;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    margin: 0;
+    font-size: 12px;
+    position: absolute;
+    transform: translateX(-50%);
+}
