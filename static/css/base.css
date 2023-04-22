@@ -392,3 +392,9 @@ input[name='q']::placeholder {
     width: 1.5rem;
     font-size: large;
 }
+
+/* footer */
+.texts-light {
+    color: #f8f9fa!important;
+    margin: 20px;
+}

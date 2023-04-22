@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %} - Home{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,7 +12,111 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
+
+
+<!-- Home Page Hero Video and Links -->
+<style>
+#home-hero {
+    margin-top: 180px;
+}
+
+.home-container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hero-text {
+    font-family: 'Puritan';
+    letter-spacing: 2px;
+    font-size: 8vw;
+    margin-top: 3rem;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.service-button {
+    width: 130px;
+    height: 44px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    letter-spacing: 4px;
+    background-image: linear-gradient( #081D46, #0c2d6c);
+    border-radius: 0;
+    border: 1px solid white;
+}
+
+.section-rule {
+    width: 60%;
+    border-color: white;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+video {
+    position: absolute;
+    display: block;
+    left: 0%;
+    width: 80%;
+    height: 350px;
+    margin-left: 10%;
+    object-fit: cover;
+}
+
+/* #video-container {
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+} */
+
+
+.service-button:hover {
+    color:#75e6ff;
+    border: 2px solid #75e6ff;
+}
+
+
+</style>
+<div id="home-hero" class="home-container">
+    
+    <video autoplay loop poster="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682163967/poster_z6vm8x_ap9dde.webp" muted="muted">
+        <source id="mp4" src="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682163798/site_gif_1_zbr9bp_tcrh9a.mp4" type="video/mp4">
+        Your browser does not support the video tag. Please upgrade your browser.
+    </video>
+
+    <div class="row">
+        <div class="col-12 my-auto">
+            <h1 id="hero-text" class="display-4 text-white text-center">
+                We Make Sense!
+            </h1>
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h2 class="text-right">
+                            <a href="{% url 'products' %}" class="btn btn-lg service-button text-uppercase py-3">Shop</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 my-auto">
+                    <div class="my-5">
+                        <h2 class="text-left" >
+                            <a href="{}" class="btn btn-lg service-button text-uppercase py-3">Hire</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- <div class="container h-100">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
                 <h1 class="display-4 logo-font text-black">
@@ -23,5 +129,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <hr class="section-rule">
+
+{% include 'includes/home_cards.html'%}
+
 {% endblock %}
