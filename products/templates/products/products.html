@@ -1,6 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
 
+
+
+
+
+<!-- my css -->
+
+<style>
+.product-card-names{
+        background-color: #0c2d6c;
+        min-height: 70px;
+    }
+
+.cadr-footer {
+    background-color: #0c2d6c;
+}
+</style>
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -9,8 +25,12 @@
     </div>
 {% endblock %}
 
+<!-- All Products Page -->
+
+{% block extra_title %} - Products {% endblock %}
+
 {% block content %}
-    <div class="overlay"></div>
+<div class="products-bg container"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
@@ -25,6 +45,8 @@
         </div>
         <div class="row">
             <div class="product-container col-10 offset-1">
+                <input type="checkbox" id="hide-no-stock">
+                <label class="mb-3" for="hide-no-stock">Available Products Only</label>
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
@@ -44,29 +66,71 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
-                            {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                    {% endif %}
+                    {% if products|length|stringformat:'s' == '1' %}
+                    {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
+                    {% endif %}
+
+                    {% if ',' in request.get_full_path %}
+                    {{ products|length }} Products in current category.
+                    {% else %}
+                    {% if products|length|stringformat:'s' != '1' %}
+                    All products {{ products|length }} {% if search_term %} found for "{{ search_term }}"{% endif %}
+                    {% endif %}
+                    {% if current_categories %}
+                    {% for category in current_categories %}
+                    in {{ category.friendly_name }}
+                    {% endfor %}
+                    {% endif %}
+                    {% endif %}
+
+                    {% if 'category' not in request.get_full_path %}
+                    &nbsp;({{ available_items|length }} in stock)
+                    {% endif %}
                         </p>
                     </div>
                 </div>
+
+                 <!-- Product Card -->
+
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if product.image %}
+                        <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 in-stock">
+                            <div style="border: solid 5px #6ef4ce;" class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    {% if product.image %}
+                                    <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
+                                    alt="{{ product.name }}" src="{{ product.image.url }}">
                                 </a>
                                 {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %} {% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    {% endif %}
                                 </a>
-                                {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+
+                                
+                                
+                               
+
+                                <div style="background-color: #6ef4ce; min-height: 70px;" class="product-card-names">
+                                    {% if product.in_stock %}
+                                    <div class=" col-12 text-left">
+                                        <p class="dark-text font title-col-in-stock text-center">{{ product.name }}</p>
+                                    </div>
+                                    {% endif %}
+                                    {% if product.in_stock == False %}
+                                    <div class=" col-12 text-left">
+                                        <p class="dark-text title-col-no-stock text-center">{{ product.name }}</p>
+                                    </div>
+                                    {% endif %}
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+
+
+                                
+
+
+                                <div style="background-color: #0c2d6c" class="card-footer text-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
@@ -89,6 +153,16 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+
+
+
+
+
+
+
+
+
+
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -162,4 +236,31 @@
             }
         })
     </script>
+
+    
+    <!-- Script for Availability Toggle Selector -->
+
+    <script>
+        function availabilityToggleState() {
+            const hideNoStock = document.querySelector('#hide-no-stock');
+            let toggleIs = localStorage.getItem("checkbox");
+            if (toggleIs == "true") {
+                hideNoStock.click();
+            }
+        
+            const stockFunction = document.getElementsByClassName("out-of-stock");
+            hideNoStock.addEventListener('change', function (e) {
+                if (hideNoStock.checked) {
+                    localStorage.setItem("checkbox", true);
+                    for (let i = 0; i < stockFunction.length; i += 1) {
+                        stockFunction[i].style.display = 'none'; {}
+                    }
+                } else {
+                    localStorage.setItem("checkbox", false);
+                    for (let i = 0; i < stockFunction.length; i += 1) {
+                        stockFunction[i].style.display = 'block';
+                    }
+                }
+            });
+        }
 {% endblock %}

@@ -14,6 +14,7 @@ def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
+    available_items = Product.objects.all().values('in_stock') # new line
     query = None
     categories = None
     sort = None
@@ -42,19 +43,21 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "Please type what you are looking for...")
                 return redirect(reverse('products'))
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    available_items = Product.objects.filter(in_stock=True) # new line
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'available_items': available_items, # new line
     }
 
     return render(request, 'products/products.html', context)

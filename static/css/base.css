@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background-color: #0c2d6c;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -404,10 +404,10 @@ input[name='q']::placeholder {
     background: #be0202;
     color: #fff;
     height: 17px;
-    width: 17px;
+    width: 25px;
     border-radius: 50%;
     margin: 0;
     font-size: 12px;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translateX(-37%);
 }
