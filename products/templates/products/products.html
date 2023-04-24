@@ -96,7 +96,7 @@
 
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-xl-3 col-lg-4 col-sm-12 mb-3 in-stock">
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div style="border: solid 5px #6ef4ce;" class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
                                 <a href="{% url 'product_detail' product.id %}">
                                     {% if product.image %}

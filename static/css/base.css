@@ -10,6 +10,36 @@ body {
     font-family: 'Lato';
 }
 
+.navb {
+   
+    background-color: #0c2d6c;
+}
+
+.bg-banner {
+    background: #E91E63 !important;
+}
+.navbar-toggler {
+    border: 1px solid white;
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+}
+
+.navbar {
+    padding: 0;
+    width: 100%;
+
+}
+
+.navbar-light .navbar-toggler {
+    color: rgb(255, 254, 254);
+    border-color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
 /* from Bulma */
 .icon {
     align-items: center;

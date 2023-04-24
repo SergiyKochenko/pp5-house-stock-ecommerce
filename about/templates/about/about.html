@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- About Page -->
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'about/css/about.css' %}">
+{% endblock %}
+
+{% block extra_title %} - About Us{% endblock %}
+
+{% block content %}
+<div class="replace-about-heading">
+    <h2 class="col-12 text-center mb-4">About Us</h2>
+</div>
+
+<!-- Video For Small Mobiles -->
+
+<hr class="message-rule replace-about-rule">
+<div class="mobile-video-box">
+    <div class="video-container">
+        <iframe class="responsive-iframe" src="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682298423/Nature_Planted_Aquarium_Tank__Moon_Night__Under_My_1st._Expirement_ccxwr6.mp4"
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+<div id="about-hero" class="about-container">
+    <div>
+        <h2 class="col-12 text-center mb-4 main-about-heading text-white">About Us</h2>
+    </div>
+
+    <!-- Video -->
+
+    <hr class="message-rule main-about-rule">
+    <div class="row">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width video-box">
+                <div  autoplay loop poster="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682163967/poster_z6vm8x_ap9dde.webp" muted="muted" class="video-container">
+                    <video class="responsive-iframe" autoplay loop poster="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682298423/Nature_Planted_Aquarium_Tank__Moon_Night__Under_My_1st._Expirement_ccxwr6.mp4"
+                        src="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682163798/site_gif_1_zbr9bp_tcrh9a.mp4" type="video/mp4"
+                        title="YouTube video player" muted="muted"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+                        <source id="mp4" src="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682163798/site_gif_1_zbr9bp_tcrh9a.mp4" type="video/mp4">
+                            Your browser does not support the video tag. Please upgrade your browser. 
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- About page text & media content -->
+
+        <div class="col-12 col-lg-6 main-about-blurb text-center">
+            <div class="about-text pt-1">
+                <img class="about-logo"
+                    src="https://res.cloudinary.com" 
+                    alt="About page hero image"><!--done-->
+                <hr class="about-logo-rule">
+                <p class="text-white">Techno Tech Multi-Sensory Solutions is a Sensory equipment provision service operating in the North
+                    East of Ireland.</p>
+                <p class="text-white">Techno Tech, can create a pop-up style sensory room in virtually any small to medium-sized space in a
+                    matter of minutes.</p>
+                <p class="text-white">Our Irish-owned, family-run, business has been in operation since 2018. As the company continues to
+                    grow, 2023 will see further expansion with the introduction of our sensory equipment webstore.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 my-4 order-4 order-lg-3 text-center">
+            <div class="about-text">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <h3 class="text-white">Webstore</h3>
+                <hr class="about-logo-rule">
+                <p class="mt-5 text-white">Our new e-commerce webstore will allow our existing customer base, as well as new
+                    service users, to purchase supplementary products
+                    which can be used to enhance the user's experience in any existing sensory space, or alongside our
+                    Mobile Sensory Environments service.</p>
+                <p class="mt-4 text-white">Keep reading below to find out about hiring our equipment </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 my-4 order-lg-4 text-center d-flex align-items-center">
+            <div class="media-width p-2">
+                <img class="about-img"
+                    src="https://res.cloudinary.com"
+                    alt="A screenshot of the home_store.ie webstore">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
+            <div class="media-width p-2">
+                <img class="about-img"
+                    src="https://res.cloudinary.com"
+                    alt="An image of home store equpiment"><!--done-->
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 my-4 text-center">
+            <div class="about-text">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+                <h3 class="text-white">Equipment Hire</h3>
+                <hr class="about-logo-rule text-white">
+                <p class="mt-5 text-white">The cornerstone of our business and the foundation for everything we do here at
+                    Techno Tech, Our Mobile Sensory Environments service
+                    provides our customers with access to industry-standard sensory equipment at a reasonable price. Our
+                    Compact, portable systems can create stunning, atmospheric, sensory environments in almost any small
+                    to medium-sized space.</p>
+                <p class="mt-4 text-white">But don't just take our word for it. Read the testimonials of some of our satisfied
+                    customers below. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Links -->
+
+<div class="col-12 about-socials d-flex align-items-center justify-content-center">
+    <a class="about-social-icon" href="https://www.facebook.com" target="_blank" aria-label="facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+    <a class="about-social-icon" href="https://twitter.com/" target="_blank" aria-label="twitter"><i
+            class="fa-brands fa-twitter"></i></a>
+    <img class="contacts-logo"
+        src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682102151/techno-tech_evbutq.png"
+        alt="Techno Tech logo"><!--done-->
+    <a class="about-social-icon" href="{% url 'contact_us' %}" target="_blank" aria-label="email"><i
+            class="fa-solid fa-envelope"></i></a>
+    <a class="about-social-icon" href="tel:+042-322-3646" target="_blank" aria-label="phone"><i
+            class="fa-solid fa-square-phone"></i></a>
+</div>
+
+<div class="text-center my-4">
+    <h2 class="col-12 text-center text-white">Testimonials</h2>
+</div>
+
+<hr class="message-rule">
+
+<!-- Testimonials Carousel -->
+
+<div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+    </ol>
+    <div id="testimonials-slider">
+        <div class="carousel-inner">
+            {% if all_testimonials_list %}
+            <div class="carousel-items carousel-item-text text-center active">
+                <img class="img-fluid carousel-item-img"
+                    src="https://res.cloudinary.com"
+                    alt="First Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.0.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.0.testimonial }}"</p>
+                </div>
+            </div>
+
+            <div class="carousel-items carousel-item-text text-center">
+                <img class="carousel-item-img"
+                    src="https://res.cloudinary.com"
+                    alt="Second Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.1.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.1.testimonial }}"</p>
+                </div>
+            </div>
+
+            <div class="carousel-items carousel-item-text text-center">
+                <img class="carousel-item-img"
+                    src="https://res.cloudinary.com"
+                    alt="Second Slide">
+                <div class="carousel-caption d-md-block">
+                    <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.2.name }}</h3>
+                    <p class="testimonial-text">"{{ all_testimonials_list.2.testimonial }}"</p>
+                </div>
+            </div>
+            {% endif %}
+            <a class="carousel-control-prev " href="#testimonialsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon techno-text " aria-hidden="true">
+                </span>
+                <span class="sr-only">
+                    Previous
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                </span>
+                <span class="sr-only">
+                    Next
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Links to all Testimonials -->
+
+<div class="col-12 test-link text-center">
+    <a class="techno-button text-white" href="{}">View All Testimonials</a>
+</div>
+
+{% endblock content %}
