@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'newsletter',
     'contactus',
     'about',
+    'testimonials',
 
     # Other
     'crispy_forms',
@@ -91,6 +92,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
+                'testimonials.contexts.get_testimonials',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

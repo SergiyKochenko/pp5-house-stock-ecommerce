@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-
-
-
 <!-- my css -->
 
 <style>
@@ -118,9 +114,6 @@
                                     {% endif %}
                                 </a>
 
-                                
-                                
-                               
                                     {% if product.in_stock %}
                                     <div style="background-color: #6ef4ce; min-height: 70px;" class="product-card-names">
                                         
@@ -137,11 +130,6 @@
                                         </div>
                                     </div>
                                     {% endif %}
-                                
-
-
-                                
-
 
                                 <div style="background-color: #0c2d6c" class="card-footer text-white pt-0 border-0 text-left">
                                     <div class="row">
@@ -170,12 +158,6 @@
 
 
 
-
-
-
-
-
-
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -188,24 +170,24 @@
                             </div>
                         </div>
                         {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
+                            <!-- <div class="col-12 d-sm-none mb-5">
                                 <hr>
-                            </div>
+                            </div> -->
                         {% endif %}                        
                         {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                            <!-- <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
                                 <hr>
-                            </div>
+                            </div> -->
                         {% endif %}
                         {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                            <!-- <div class="col-12 d-none d-lg-block d-xl-none mb-5">
                                 <hr>
-                            </div>
+                            </div> -->
                         {% endif %}
                         {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
+                            <!-- <div class="col-12 d-none d-xl-block mb-5">
                                 <hr>
-                            </div>
+                            </div> -->
                         {% endif %}
                     {% endfor %}
                 </div>
