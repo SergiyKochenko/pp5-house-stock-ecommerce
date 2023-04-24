@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+/* ============= */
+#hidden-stock-status {
+    display: none;
+}
+/* =============== */
 .navb {
    
     background-color: #0c2d6c;

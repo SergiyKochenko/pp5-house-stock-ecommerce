@@ -16,6 +16,10 @@
 .cadr-footer {
     background-color: #0c2d6c;
 }
+
+#hidden-stock-status {
+    display: none;
+}
 </style>
 {% block page_header %}
     <div class="container header-container">
@@ -34,7 +38,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+                <h2 class="logo-font text-white">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -46,7 +50,7 @@
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <input type="checkbox" id="hide-no-stock">
-                <label class="mb-3" for="hide-no-stock">Available Products Only</label>
+                <label class="mb-3 text-white" for="hide-no-stock">Available Products Only</label>
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
@@ -76,7 +80,7 @@
                     {{ products|length }} Products in current category.
                     {% else %}
                     {% if products|length|stringformat:'s' != '1' %}
-                    All products {{ products|length }} {% if search_term %} found for "{{ search_term }}"{% endif %}
+                    <span class="text-white">All products {{ products|length }} {% if search_term %} found for "{{ search_term }}"{% endif %}</span>
                     {% endif %}
                     {% if current_categories %}
                     {% for category in current_categories %}
@@ -85,9 +89,9 @@
                     {% endif %}
                     {% endif %}
 
-                    {% if 'category' not in request.get_full_path %}
+                    <span class="text-success">{% if 'category' not in request.get_full_path %}
                     &nbsp;({{ available_items|length }} in stock)
-                    {% endif %}
+                    {% endif %}</span>
                         </p>
                     </div>
                 </div>
@@ -97,7 +101,12 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            {% if product.in_stock %}
                             <div style="border: solid 5px #6ef4ce;" class="{% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
+                                {% endif %}
+                                {% if product.in_stock == False %}
+                            <div style="border: solid 5px #f46eb8;" class="out-of-stock {% if product.in_stock %} card home-card mb-4 {% else %} card home-card home-card-no-stock mb-4 {% endif %}">
+                                {% endif %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     {% if product.image %}
                                     <img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
@@ -112,19 +121,23 @@
                                 
                                 
                                
-
-                                <div style="background-color: #6ef4ce; min-height: 70px;" class="product-card-names">
                                     {% if product.in_stock %}
-                                    <div class=" col-12 text-left">
-                                        <p class="dark-text font title-col-in-stock text-center">{{ product.name }}</p>
+                                    <div style="background-color: #6ef4ce; min-height: 70px;" class="product-card-names">
+                                        
+                                        <div class=" col-12 text-left">
+                                            <p class="text-black font title-col-in-stock text-center">{{ product.name }}</p>
+                                        </div>
                                     </div>
                                     {% endif %}
                                     {% if product.in_stock == False %}
-                                    <div class=" col-12 text-left">
-                                        <p class="dark-text title-col-no-stock text-center">{{ product.name }}</p>
+                                    <div style="background-color: #f46eb8; min-height: 70px;" class="product-card-names">
+                                    
+                                        <div class=" col-12 text-left">
+                                            <p class="text-black font title-col-in-stock text-center">{{ product.name }}</p>
+                                        </div>
                                     </div>
                                     {% endif %}
-                                </div>
+                                
 
 
                                 
@@ -199,15 +212,31 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm rounded-0 border border-black">
+    <div class="btt-button shadow-sm rounded-0 border border-white">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
+
+    <!-- --------------------------------- -->
+<!-- Script for Availability Toggle Selector -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#hide-no-stock").change(function() {
+        if ($(this).is(":checked")) {
+            $(".out-of-stock").hide();
+        } else {
+            $(".out-of-stock").show();
+        }
+    });
+});
+</script>
+<!-- ============================================= -->
     <script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
@@ -236,31 +265,4 @@
             }
         })
     </script>
-
-    
-    <!-- Script for Availability Toggle Selector -->
-
-    <script>
-        function availabilityToggleState() {
-            const hideNoStock = document.querySelector('#hide-no-stock');
-            let toggleIs = localStorage.getItem("checkbox");
-            if (toggleIs == "true") {
-                hideNoStock.click();
-            }
-        
-            const stockFunction = document.getElementsByClassName("out-of-stock");
-            hideNoStock.addEventListener('change', function (e) {
-                if (hideNoStock.checked) {
-                    localStorage.setItem("checkbox", true);
-                    for (let i = 0; i < stockFunction.length; i += 1) {
-                        stockFunction[i].style.display = 'none'; {}
-                    }
-                } else {
-                    localStorage.setItem("checkbox", false);
-                    for (let i = 0; i < stockFunction.length; i += 1) {
-                        stockFunction[i].style.display = 'block';
-                    }
-                }
-            });
-        }
 {% endblock %}
