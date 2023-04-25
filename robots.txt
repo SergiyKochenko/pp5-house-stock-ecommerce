@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /accounts/
-Disallow: /checkout/
-Disallow: /profiles/
-Disallow: /admin/
-Disallow: /bag/
-Sitemap: https://pp5-house-stock-ecommerce.herokuapp.com/sitemap.xml
