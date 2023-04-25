@@ -44,7 +44,7 @@ class AddTestimonial(SuccessMessageMixin, generic.CreateView):
         image = self.request.FILES.get('image')
 
         if image:
-            result = cloudinary.uploader.upload(image)
+            result = media.uploader.upload(image)
             image_url = result.get('url')
         else:
             image_url = clientTestimonial.photo_url.field.default
