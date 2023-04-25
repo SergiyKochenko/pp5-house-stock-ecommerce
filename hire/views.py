@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def hire(request):
+    """ A view to return hire page """
+
+    return render(request, 'hire/hire.html')
