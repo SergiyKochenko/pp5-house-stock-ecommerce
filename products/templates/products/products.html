@@ -211,9 +211,9 @@
 $(document).ready(function() {
     $("#hide-no-stock").change(function() {
         if ($(this).is(":checked")) {
-            $(".out-of-stock").hide();
+            $(".out-of-stock").parent().hide();
         } else {
-            $(".out-of-stock").show();
+            $(".out-of-stock").parent().show();
         }
     });
 });

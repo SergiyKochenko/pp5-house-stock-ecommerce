@@ -5,6 +5,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from .models import clientTestimonial
 from .forms import testimonialForm
+import cloudinary.uploader
 
 
 class AllTestimonials(TemplateView):
@@ -44,7 +45,7 @@ class AddTestimonial(SuccessMessageMixin, generic.CreateView):
         image = self.request.FILES.get('image')
 
         if image:
-            result = media.uploader.upload(image)
+            result = cloudinary.uploader.upload(image)
             image_url = result.get('url')
         else:
             image_url = clientTestimonial.photo_url.field.default
