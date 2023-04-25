@@ -1,13 +1,13 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
-                <span class="text-white">Home</span>
+        <li class="nav-item d-block">
+            <a class="font-weight-bold nav-link text-white ml-3 mr-3" href="{% url 'home' %}" id="home-link">
+                <span>Home</span>
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text-white">All Products</span>
+            <a class="font-weight-bold nav-link text-white ml-3 dropdown-toggle mr-2" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>All Products</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -18,8 +18,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text-white">Clothing</span>
+            <a class="font-weight-bold nav-link text-white ml-3 dropdown-toggle mr-2" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Clothing</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp; Essentials</a>
@@ -30,8 +30,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text-white">Homeware</span>
+            <a class="font-weight-bold text-white ml-3 dropdown-toggle nav-link mr-2" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Homeware</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
@@ -41,8 +41,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text-white">Special Offers</span>
+            <a class="font-weight-bold text-white ml-3 dropdown-toggle nav-link mr-2" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Special Offers</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
@@ -52,7 +52,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link mr-3 ml-3 dropdown-toggle" href="#" id="hire-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link font-weight-bold ml-3 dropdown-toggle text-white mr-2" href="#" id="hire-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <strong>Hire</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hire-link">
@@ -60,20 +60,20 @@
                 <a href="{% url 'packages' %}" class="dropdown-item">Packages</a>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact_us' %}"
-                id="contact-link">
-               <span class="text-white">Contact us</span>
-            </a>
-        </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text-white">About</span>
+            <a class="text-white dropdown-toggle ml-3 font-weight-bold nav-link mr-2" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong">About</strong>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="offers-link">
                 <a class="dropdown-item" href="{% url 'about' %}">About Us</a>
                 <a class="dropdown-item" href="{% url 'testimonials' %}">Testimonials</a>
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="text-white font-weight-bold ml-3 nav-link mr-2" href="{% url 'contact_us' %}"
+                id="contact-link">
+               <strong>Contact us</strong>
+            </a>
         </li>
     </ul>
 </div>
