@@ -74,9 +74,9 @@
                       <li>{{ sentence }}</li>
                     {% endfor %}
                 </ul>
-                <h4>HOME STORE ITEMS PROVIDED</h4>
+                <h4>STORE ITEMS PROVIDED</h4>
                 <ul class="items">
-                    {% for item in package.sensory_items_type|split:"|" %}
+                    {% for item in package.home_items_type|split:"|" %}
                       <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
@@ -106,21 +106,21 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
-            {% if package.image_url %}
-            <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
+            {% if package.image %}
+            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid" style="max-width: 500px; max-height: 300px; border: 10px solid white;">
             {% else %}
-            <img class="packages-img" src="{{ package.image }}" alt="An image of a hire package">
+                <p>No image available</p>
             {% endif %}
         </div>
         
         {% else %}
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-                {% if package.image_url %}
-                <img class="packages-img" src="{{ package.image_url }}" alt="An image of a hire package">
-                {% else %}
-                <img class="packages-img" src="{{ package.image }}" alt="An image of a hire package">
-                {% endif %}
+            {% if package.image %}
+            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid" style="max-width: 500px; max-height: 300px; border: 10px solid white;">
+            {% else %}
+                <p>No image available</p>
+            {% endif %}
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
@@ -136,7 +136,7 @@
                     {% endfor %}
                 </ul>
 
-                <h4>HOME ITEMS PROVIDED</h4>
+                <h4>ITEMS PROVIDED</h4>
                 <ul class="items">
                     {% for item in package.home_items_type|split:"|" %}
                       <li>{{ item }}</li>
