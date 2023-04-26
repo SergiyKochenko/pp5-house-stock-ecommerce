@@ -53,7 +53,11 @@ def adjust_bag(request, item_id):
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     bag = request.session.get('bag', {})
-
+# ====================================================================
+    # if quantity < 1 or quantity > 99:
+    #     raise ValueError("Quantity must be between 1 and 99")
+    # # perform update logic here
+# ==================================================================
     if size:
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity

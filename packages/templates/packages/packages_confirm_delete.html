@@ -15,8 +15,46 @@
 {% if "packages" in request.META.HTTP_REFERER %}
 
 <!-- Package delete page warning logo and text content -->
+<style>
 
-<div class="warning-container">
+
+.warning-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.techno-button {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #0c2d6c;
+}
+
+.techno-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #0c2d6c;
+}
+.warning-logo {
+    width: 10%;
+}
+
+</style>
+
+<div class="warning-container text-white">
     <div>&nbsp;
         <div class="row">
             <div class="text-center">
@@ -48,7 +86,7 @@
 
 <!-- Unauthorised access warning logo and text content -->
 
-<div class="warning-container">
+<div class="warning-container text-white">
     <div class="text-center">
         <img class="warning-logo" src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png" alt="Warning Logo">
     </div>
