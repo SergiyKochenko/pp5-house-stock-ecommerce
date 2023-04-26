@@ -1,5 +1,23 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="containers my-5"></div>
+<style>
+  .lower-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #75e6ff;
+    padding: 2rem;
+}
+.footer-info-box {
+    background-color: white;
+    color: #0c2d6c;
+    width: 260px;
+    padding: 0.5rem;
+    border: 2px solid #0c2d6c;
+}
+.footer-info-box i {
+    padding: 4px;
+}
+</style>
+<!-- <div class="containers my-5"> -->
     <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
       <!-- Grid container -->
       <div class="container p-4">
@@ -115,7 +133,19 @@
                                 href="https://res.cloudinary.com/djck2eqxo/image/upload/v1676718400/sensical/sensical-terms-and-conditions_axz5zk.pdf">TERMS
                                 & CONDITIONS</a>
       </div>
-      <!-- Copyright -->
+       <!-- Developer links and Copyright Info -->
+      <div class="lower-footer py-3">
+        <div class="footer-info-box">
+            <p class="m-0 text-center">&#169; Sergiy Kochenko<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script></p>
+            <p class="m-0 text-center">
+                <a target="_blank" title="Link to Sergiy Kochenko' Github"
+                    href="https://github.com/SergiyKochenko/pp5-house-stock-ecommerce"><i class="fab fa-github ms-1"></i></a>
+                <a target="_blank" title="Link to Sergiy Kochenko' linkedin profile"
+                    href="https://www.linkedin.com/in/sergiy-kochenko-a93a30135/"><i
+                        class="fab fa-linkedin ms-1"></i></a>
+            </p>
+        </div>
+    </div>
     </footer>
-  </div>
+  <!-- </div> -->
   <!-- End of .container -->
