@@ -105,7 +105,7 @@
                     {% if not in_wishlist %}
                     <p>Add to my wishlist: <a href="{% url 'add_to_wishlist' product.id user.id %}"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></a></p>
                     {% else %}
-                    <p>Remove from my wishlist: <a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></a></p>
+                    <p>Remove from my wishlist: <a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="p-2 fa-solid fa-heart-circle-minus fa-xl"></i></a></p>
                     {% endif %}
                 </div>
                 {% else %}
