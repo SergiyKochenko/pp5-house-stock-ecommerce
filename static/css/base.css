@@ -18,6 +18,13 @@ body {
     border-color: white;
 }
 /* ============= */
+.auth-container {
+    margin-top: 170px;
+    min-height: 100vh;
+    width: 60%;
+}
+
+
 #hidden-stock-status {
     display: none;
 }
@@ -145,7 +152,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #0c2d6c; 
 	z-index: -1;
 }
 
@@ -446,6 +453,13 @@ input[name='q']::placeholder {
     @media (min-width: 576px){
 .containers, .container-sm {
     max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .auth-container {
+        width: 80%;
     }
 }
 

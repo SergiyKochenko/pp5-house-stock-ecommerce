@@ -32,8 +32,8 @@
                         {% csrf_token %}
                         <br>
                         <p>You are about to delete this Testimonial!</p>
-                        <a href="{{request.META.HTTP_REFERER}}" class="techno-button">Go Back</a>
-                        <input type="submit" value="Delete" class="techno-button">
+                        <a href="{{request.META.HTTP_REFERER}}" class="btn techno-button">Go Back</a>
+                        <input type="submit" value="Delete" class="btn techno-button">
                         
                     </form>
                 </div>
@@ -62,7 +62,7 @@
             <br>
             
         
-        <p>Please login or <a href="{% url 'home' %}" class="techno-button">Click Here</a> to visit the Homa Store Home page</p>     
+        <p>Please login or <a href="{% url 'home' %}" class="btn techno-button">Click Here</a> to visit the Homa Store Home page</p>     
     </div>
 </div>
 

@@ -12,7 +12,7 @@
 
 {% block content %}
 {% if user.is_superuser %}
-<div class="packages-container">
+<div class="packages-container text-white">
 
     <div class="text-center">
         <h2 class="col-12 text-center mb-4">Custom Packages</h2>
@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-12 mt-4 text-center">
             <i class="fa-solid fa-box-open"></i>
-            <a class="techno-button" href="{% url 'packages' %}">Back to packages page</a>
+            <a class="btn techno-button" href="{% url 'packages' %}">Back to packages page</a>
         </div>
     </div>
 
@@ -72,7 +72,7 @@
                 Only site administrators can view Package Requests!
             </p>
             <br>
-            <p>Please login or <a href="{% url 'home' %}" class="techno-button">Click Here</a> to visit the
+            <p>Please login or <a href="{% url 'home' %}" class="btn techno-button">Click Here</a> to visit the
                 Hose Store Home page</p>
         </div>
     </div>

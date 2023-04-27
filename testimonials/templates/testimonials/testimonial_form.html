@@ -20,8 +20,8 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
-                        <a class="techno-button" href="{% url 'testimonials' %}">Cancel</a>
-                        <input class="techno-button" type="submit" value="Submit">
+                        <a class="btn techno-button" href="{% url 'testimonials' %}">Cancel</a>
+                        <input class="btn techno-button" type="submit" value="Submit">
                     </div>
                 </form>
             </div>            
