@@ -131,6 +131,25 @@
                                     </div>
                                     {% endif %}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+
                                 <div style="background-color: #0c2d6c" class="card-footer text-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
@@ -154,6 +173,37 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+                                            {% if user.is_authenticated %}
+                                            <div class="col-12 mb-4">
+                                                {% if not in_wishlist %}
+                                                <p>Add to my wishlist: <a href="{% url 'add_to_wishlist' product.id user.id %}"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></a></p>
+                                                {% else %}
+                                                <p>Remove from my wishlist: <a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="p-2 fa-solid fa-heart-circle-minus fa-xl"></i></a></p>
+                                                {% endif %}
+                                            </div>
+                                            {% else %}
+                                            <div class="col-12 mb-4">
+                                                <p><a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. <i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>        
+                                            </div>
+                                            {% endif %}
+
+
+
+
+
+
 
 
 
