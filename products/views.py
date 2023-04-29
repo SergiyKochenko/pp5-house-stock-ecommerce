@@ -4,17 +4,17 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.models import User
-from .models import Product, Category, Wishlist
-from .forms import ProductForm
-
-# Create your views here.
+from django.conf import settings
+from django.core.mail import send_mail
+from .models import Product, Category, Wishlist, ProductReview
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
-    available_items = Product.objects.all().values('in_stock') # new line
+    available_items = Product.objects.all().values('in_stock')
     query = None
     categories = None
     sort = None
@@ -34,7 +34,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -50,14 +50,14 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    available_items = Product.objects.filter(in_stock=True) # new line
+    available_items = Product.objects.filter(in_stock=True)
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'available_items': available_items, # new line
+        'available_items': available_items,
     }
 
     return render(request, 'products/products.html', context)
@@ -67,6 +67,7 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    form = ReviewForm()
     user = request.user
     in_wishlist = False
     wishlist_item = None
@@ -75,8 +76,27 @@ def product_detail(request, product_id):
             product=product, user=user).first()
         in_wishlist = Wishlist.objects.filter(
             product=product, user=user).exists()
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.product = product
+            review = form.save()
+            messages.success(request, 'Successfully added review!')
+            store_email = settings.DEFAULT_FROM_EMAIL
+            subject = f'You got a new review for {review.product}!'
+            body = f'New review from: {review.user}. Login to admin dashboard \
+                to review it. Product: {review.product} \
+                    https://pp5-house-stock-ecommerce.herokuapp.com/.com/admin/'
+            send_mail(subject, body, store_email, [store_email])
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add review.\
+                 Please check that the form is valid.')
 
     context = {
+        'form': form,
         'product': product,
         'in_wishlist': in_wishlist,
         'wishlist_item': wishlist_item,
