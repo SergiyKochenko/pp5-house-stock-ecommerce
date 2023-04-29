@@ -158,28 +158,49 @@
 <!-- ----------------------------------Product Reviews--------------------------------------- -->
                      <h5 class="mt-5">Product Reviews</h5>
 
+<style>
+    .star-rating input[type="radio"] {
+    display: none;
+}
 
+/* .star-rating label {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+} */
+
+/* .star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffca08;
+} */
+
+
+</style>
                      {% if request.user.is_authenticated %}
                      <form method="POST" id="review_form">
                          {% csrf_token %}
                          <h5 class="mt-5">Give Review</h5>
-                         <label for="stars">Stars <i class="fa fa-star"></i></label>
-                         <select class="form-select" name="stars" id="stars" selected="5">
-                             <option value="1">1</option>
-                             <option value="2">2</option>
-                             <option value="3">3</option>
-                             <option value="4">4</i></option>
-                             <option value="5" selected>5</i></option>
-                         </select>
+                         <div class="star-rating">
+                             <input id="star-1" type="radio" name="stars" value="1">
+                             <label for="star-1" title="1 star"><i class="fa fa-star"></i></label>
+                             <input id="star-2" type="radio" name="stars" value="2">
+                             <label for="star-2" title="2 stars"><i class="fa fa-star"></i></label>
+                             <input id="star-3" type="radio" name="stars" value="3" checked>
+                             <label for="star-3" title="3 stars"><i class="fa fa-star"></i></label>
+                             <input id="star-4" type="radio" name="stars" value="4">
+                             <label for="star-4" title="4 stars"><i class="fa fa-star"></i></label>
+                             <input id="star-5" type="radio" name="stars" value="5">
+                             <label for="star-5" title="5 stars"><i class="fa fa-star"></i></label>
+                         </div>
                          <label for="content">Review</label>
                          <textarea class="form-control" name="content" id="content" cols="30" rows="5"></textarea>
                          <button class="btn btn-primary mt-3" type="submit">Submit Review</button>
- 
                      </form>
 
                     <div class="col-12">
                         {% for review in product.reviews.all %}
-                        <div class="col-12 card bg-light mt-3">
+                        <div class="col-12 card bg-dark mt-3">
                             <div class="card-header">
                                 <strong>Review From: </strong> {{ review.user }} | 
                                 <strong>Date: </strong> {{ review.date|date:'Y-m-d' }} | 
@@ -210,6 +231,53 @@
             </div>
         </div>
     </div>
+
+    <script>
+const starInputs = document.querySelectorAll('.star-rating input[type="radio"]');
+const starLabels = document.querySelectorAll('.star-rating label');
+let selectedStar = -1;
+
+starLabels.forEach((label, index) => {
+  label.addEventListener('mouseenter', () => {
+    if (selectedStar === -1) {
+      for (let i = 0; i <= index; i++) {
+        starLabels[i].style.color = '#ffca08';
+      }
+    }
+  });
+  
+  label.addEventListener('mouseleave', () => {
+    if (selectedStar === -1) {
+      for (let i = 0; i <= index; i++) {
+        if (!starInputs[i].checked) {
+          starLabels[i].style.color = '';
+        }
+      }
+    }
+  });
+  
+  label.addEventListener('click', () => {
+    selectedStar = index;
+    for (let i = 0; i <= index; i++) {
+      starLabels[i].style.color = '#ffca08';
+    }
+  });
+});
+
+starInputs.forEach((input) => {
+  input.addEventListener('click', () => {
+    selectedStar = parseInt(input.value) - 1;
+    for (let i = 0; i < starLabels.length; i++) {
+      if (i <= selectedStar) {
+        starLabels[i].style.color = '#ffca08';
+      } else {
+        starLabels[i].style.color = '';
+      }
+    }
+  });
+});
+
+    </script>
 {% endblock %}
 
 {% block postloadjs %}
