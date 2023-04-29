@@ -9,7 +9,7 @@
         min-height: 70px;
     }
 
-.cadr-footer {
+.card-footer {
     background-color: #0c2d6c;
 }
 
@@ -37,7 +37,7 @@
                 <h2 class="logo-font text-white">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge  badge-white text-white rounded-0 border border-white">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -64,9 +64,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left">
+                        <p class="text-success mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        <span class="small"><a href="{% url 'products' %}" class="techno-button border-white">Products Home</a> &nbsp;</span>
                     {% endif %}
                     {% if products|length|stringformat:'s' == '1' %}
                     {{ products|length }} Product{% if search_term %} found for "{{ search_term }}"{% endif %}
@@ -80,17 +80,16 @@
                     {% endif %}
                     {% if current_categories %}
                     {% for category in current_categories %}
-                    in {{ category.friendly_name }}
+                    <span class="text-success">&nbsp;in {{ category.friendly_name }}</span>
                     {% endfor %}
                     {% endif %}
                     {% endif %}
-
                     <span class="text-success">{% if 'category' not in request.get_full_path %}
                     &nbsp;({{ available_items|length }} in stock)
                     {% endif %}</span>
                         </p>
                     </div>
-                </div>
+                    </div>
 
                  <!-- Product Card -->
 
@@ -163,15 +162,15 @@
                                             <!-- ============================== -->
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <a class="text-success" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-success"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
-                                                <small class="text-muted">No Rating</small>
+                                                <small class="text-success">No Rating</small>
                                             {% endif %}
 
 

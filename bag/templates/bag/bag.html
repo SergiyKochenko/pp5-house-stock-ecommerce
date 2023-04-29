@@ -12,7 +12,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <div class="container text-white mb-2">
         <div class="row">
             <div class="col">
                 <hr>
@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">A summary of your bag contents is below</p>
+                                <p class="text-success mb-5">A summary of your bag contents is below</p>
                             </div>
                         </div>
                         {% for item in bag_items %}
@@ -62,7 +62,7 @@
                     </div>
                     <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
+                            <thead class="text-white">
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
@@ -73,7 +73,7 @@
                             </thead>
 
                             {% for item in bag_items %}
-                                <tr>
+                                <tr class="text-white">
                                     <td class="p-3 w-25">
                                         {% include "bag/product-image.html" %}
                                     </td>
@@ -91,7 +91,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
+                            <tr class="text-white">
                                 <td colspan="5" class="pt-5 text-right">
                                     {% include "bag/bag-total.html" %}
                                 </td>
