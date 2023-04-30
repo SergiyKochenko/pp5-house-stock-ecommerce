@@ -131,35 +131,17 @@
                                     {% endif %}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    
-
                                 <div style="background-color: #0c2d6c" class="card-footer text-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                            <!-- ============================ -->
+
                                             {% if product.in_stock %}
                                             <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In Stock</small>
                                             {% else %}
                                             <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of Stock</small>
                                             {% endif %}
-                                            <!-- ============================== -->
+
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-success" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -172,40 +154,6 @@
                                             {% else %}
                                                 <small class="text-success">No Rating</small>
                                             {% endif %}
-
-
-
-
-
-
-
-
-
-
-
-
-                                            {% if user.is_authenticated %}
-                                            <div class="col-12 mb-4">
-                                                {% if not in_wishlist %}
-                                                <p>Add to my wishlist: <a href="{% url 'add_to_wishlist' product.id user.id %}"><i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></a></p>
-                                                {% else %}
-                                                <p>Remove from my wishlist: <a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i class="p-2 fa-solid fa-heart-circle-minus fa-xl"></i></a></p>
-                                                {% endif %}
-                                            </div>
-                                            {% else %}
-                                            <div class="col-12 mb-4">
-                                                <p><a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. <i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>        
-                                            </div>
-                                            {% endif %}
-
-
-
-
-
-
-
-
-
 
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
@@ -249,11 +197,9 @@
         </a>	
     </div>
 {% endblock %}
-
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
 
-    <!-- --------------------------------- -->
 <!-- Script for Availability Toggle Selector -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -267,14 +213,14 @@ $(document).ready(function() {
     });
 });
 </script>
-<!-- ============================================= -->
-    <script type="text/javascript">
+
+<script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
-	</script>
+</script>
     
-    <script type="text/javascript">
+<script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
@@ -295,5 +241,5 @@ $(document).ready(function() {
                 window.location.replace(currentUrl);
             }
         })
-    </script>
+</script>
 {% endblock %}

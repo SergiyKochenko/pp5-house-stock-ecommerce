@@ -1,1 +1,1 @@
-House Stock Shop Confirmation for Order Number {{ order.order_number }}
+Home Store & More Shop Confirmation for Order Number {{ order.order_number }}

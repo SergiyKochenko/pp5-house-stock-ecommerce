@@ -2,98 +2,114 @@
 {% load static %}
 {% block extra_title %} - Wishlist{% endblock %}
 {% block content %}
+
 <!-- Wishlist Page -->
 <style>
-   .style {
-   margin-top: 150px;
-   }
-   .btns:hover {
-   background-color: #75e6ff !important;
-   }
-   .btons {
-   background-color: #0c2d6c;
-   align-self: start;
-   }
+    .style {
+        margin-top: 150px;
+    }
+
+    .btns:hover {
+        background-color: #75e6ff !important;
+    }
+
+    .btons {
+        background-color: #0c2d6c;
+        align-self: start;
+    }
+
+    footer {
+        max-width: 100% !important;
+    }
 </style>
 <div class="container text-white py-5">
-<div class="row d-flex justify-content-center align-items-center h-100 style">
-   <div class="col-10">
-      <hr>
-      <div class="text-center mb-4">
-         <h1 class="fw-normal mb-0 text-uppercase">My Wishlist</h1>
-      </div>
-      <hr>
-      {% if wishlist %}
-      {% for item in wishlist %}
-      <form class="form" action="{% url 'add_to_bag' item.product.id %}" method="POST">
-         {% csrf_token %}
-         <div class="form-row">
-            <div class="col-12 d-none">
-               <p class="mt-2"><strong>Quantity:</strong></p>
-               <div class="form-group w-50">
-                  <div class="input-group-selector">
-                     <select class="form-control custom-select"
-                        name="quantity">
-                        <option>1</option>
-                     </select>
-                  </div>
-               </div>
+    <div class="row d-flex justify-content-center align-items-center h-100 style">
+        <div class="col-10">
+            <hr>
+            <div class="text-center mb-4">
+                <h1 class="fw-normal mb-0 text-uppercase">My Wishlist</h1>
             </div>
-            <div class="card rounded-3 mb-4 border-white" style="background-color: #0c2d6c;">
-               <div class="card-body p-4 text-white">
-                  <div class="row d-flex align-items-center">
-                     <div class="col-md-2 col-lg-2 col-xl-2">
-                        {% if item.product.image %}
-                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                        {% else %}
-                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" class="img-fluid rounded-3">
-                        {% endif %}
-                     </div>
-                     <div class="col-md-3 col-lg-3 col-xl-3">
-                        <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
-                        <p class="text-success fw-normal mb-2 text text-uppercase">code: {{ item.product.sku }}</p>
-                        <p class="wishlist-heading">${{ item.product.price }}</p>
-                        {% if item.product.in_stock %}
-                        <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In Stock</small>
-                        {% else %}
-                        <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of Stock</small>
-                        {% endif %}
-                     </div>
-                     <div class="col-md-7 col-lg-7 col-xl-7 text-end" style="display: flex; flex-direction: column;">
+            <hr>
+            {% if wishlist %}
+            {% for item in wishlist %}
+            <form class="form" action="{% url 'add_to_bag' item.product.id %}" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="col-12 d-none">
+                        <p class="mt-2"><strong>Quantity:</strong></p>
+                        <div class="form-group w-50">
+                            <div class="input-group-selector">
+                                <select class="form-control custom-select" name="quantity">
+                                    <option>1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-3 mb-4 border-white" style="background-color: #0c2d6c;">
+                        <div class="card-body p-4 text-white">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    {% if item.product.image %}
+                                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
+                                        class="img-fluid rounded-3">
+                                    {% else %}
+                                    <img src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}"
+                                        class="img-fluid rounded-3">
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">{{ item.product.name }}</p>
+                                    <p class="text-success fw-normal mb-2 text text-uppercase">
+                                        code: {{ item.product.sku}}</p>
+                                    <p class="wishlist-heading">${{ item.product.price }}</p>
+                                    {% if item.product.in_stock %}
+                                    <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In
+                                        Stock</small>
+                                    {% else %}
+                                    <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of
+                                        Stock</small>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-xl-7 text-end"
+                                    style="display: flex; flex-direction: column;">
 
-                        <!-- ======================================================== -->
-                       {% if item.product.in_stock %}
-                        
-                        <input class="fa-input btons fas fa-shopping-basket  rounded-0 techno-button" type="submit" value="&#xf291; Add To Basket">
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    <!-- ======================================================== -->
+                                    {% if item.product.in_stock %}
 
-                        {% endif %}
-                        <!-- ======================================================================== -->
-                        <a href="{% url 'product_detail' item.product.id %}" class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
-                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                        <span class="btn text-uppercase text-white">Back to Product</span>
-                        </a>
-                        <a href="{% url 'products' %}" class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3">
-                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                        <span class="btn text-uppercase text-white">Find More Products</span>
-                        </a>
-                        <a class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3" href="{% url 'remove_from_wishlist' item.id %}">
-                        <span class="icon"><i class="fa-solid fa-trash"></i></span>
-                        <span class=" btn text-uppercase text-white">Remove from Wishlist</span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
+                                    <input class="fa-input btons fas fa-shopping-basket  rounded-0 techno-button"
+                                        type="submit" value="&#xf291; Add To Basket">
+                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+                                    {% endif %}
+                                    <!-- ======================================================================== -->
+                                    <a href="{% url 'product_detail' item.product.id %}"
+                                        class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
+                                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                                        <span class="btn text-uppercase text-white">Back to Product</span>
+                                    </a>
+                                    <a href="{% url 'products' %}"
+                                        class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3">
+                                        <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                                        <span class="btn text-uppercase text-white">Find More Products</span>
+                                    </a>
+                                    <a class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3"
+                                        href="{% url 'remove_from_wishlist' item.id %}">
+                                        <span class="icon"><i class="fa-solid fa-trash"></i></span>
+                                        <span class=" btn text-uppercase text-white">Remove from Wishlist</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            {% endfor %}
+            <hr class="section-rule">
+            {% else %}
+            <div class="text-center mb-4">
+                <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
             </div>
-      </form>
-      {% endfor %}
-      <hr class="section-rule">
-      {% else %}
-      <div class="text-center mb-4">
-      <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
-      </div>
-      {% endif %}
-      </div>
-   </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}
