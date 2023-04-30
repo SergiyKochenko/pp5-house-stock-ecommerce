@@ -11,9 +11,10 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     border-color: white;
 }
+
 .testimonial-text {
     width: 90%;
     border: solid 1px white;
