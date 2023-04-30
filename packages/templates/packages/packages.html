@@ -5,7 +5,7 @@
 <!-- Packages Page -->
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'packages/css/packages.css' %}">
+<link rel="stylesheet" href="{% static 'packages/css/packages.css' %}">
 {% endblock %}
 
 {% block extra_title %} - Packages{% endblock %}
@@ -13,35 +13,39 @@
 {% block content %}
 
 <style>
-.message-rule {
-    width: 80%;
-    border-color: white;
-    margin-bottom: 30px;
-}
+    .message-rule {
+        width: 80%;
+        border-color: white;
+        margin-bottom: 30px;
+    }
 
 
-.techno-button {
-    font-size: 14px;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: white;
-    background-color: #0c2d6c;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border: solid 1px #0c2d6c;
-}
+    .techno-button {
+        font-size: 14px;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: #0c2d6c;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border: solid 1px #0c2d6c;
+    }
 
-.techno-button:hover {
-    background-color: #75e6ff;
-    text-decoration: none;
-    color: #0c2d6c;
-    border: solid 1px #0c2d6c;
-}
+    .techno-button:hover {
+        background-color: #75e6ff;
+        text-decoration: none;
+        color: #0c2d6c;
+        border: solid 1px #0c2d6c;
+    }
+
+    .techno-button-border {
+        border: 1px solid white;
+    }
 </style>
 <div class="packages-container text-white">
-        
+
     <div class="text-center">
         <h2 class="col-12 text-center mb-4">All packages</h2>
     </div>
@@ -50,10 +54,13 @@
 
     {% if user.is_superuser %}
     <div class="col-12 text-center my-2">
-        <a class="btn techno-button" href="{% url 'add_package' %}"><i class="fa-solid fa-box-open"></i> Add Package</a>
+        <a class="btn techno-button techno-button-border" href="{% url 'add_package' %}"><i
+                class="fa-solid fa-box-open"></i> Add Package</a>
     </div>
     <div class="col-12 text-center my-2">
-        <a class="btn techno-button" href="{% url 'custom' %}"><i class="fa-solid fa-clipboard-list"></i>View Package Requests</a>
+        <a class="btn techno-button techno-button-border" href="{% url 'custom' %}"><i
+                class="fa-solid fa-clipboard-list"></i>View Package
+            Requests</a>
     </div>
     {% endif %}
     <hr class="message-rule">
@@ -70,58 +77,67 @@
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
                 <h4>EQUIPMENT PROVIDED</h4>
-                <ul class="equip" >
+                <ul class="equip">
                     {% for sentence in package.equipment|split:"|" %}
-                      <li>{{ sentence }}</li>
+                    <li>{{ sentence }}</li>
                     {% endfor %}
                 </ul>
                 <h4>STORE ITEMS PROVIDED</h4>
                 <ul class="items">
                     {% for item in package.home_items_type|split:"|" %}
-                      <li>{{ item }}</li>
+                    <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
                 <div class="col-12 text-center">
-                <p class="mb-4">Session Duration: {{ package.duration }}</p>
-                <h4 class="mb-4">Price: ${{ package.price }}</h4>
-                <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}% off your next session with this package</p>
+                    <p class="mb-4">Session Duration: {{ package.duration }}</p>
+                    <h4 class="mb-4">Price: ${{ package.price }}</h4>
+                    <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}%
+                        off your next session with this package</p>
                 </div>
-                
+
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
-                        <a class="btn techno-button" href="{% url 'update_package' package.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Package</a>
+                        <a class="btn techno-button techno-button-border"
+                            href="{% url 'update_package' package.id %}"><i class="fa-solid fa-pen-to-square"></i>
+                            Update Package</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="btn techno-button" href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete Package</a>
+                        <a class="btn techno-button techno-button-border"
+                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete
+                            Package</a>
                     </div>
                 </div>
                 {% else %}
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button my-2" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
+                    <a class="btn techno-button techno-button-border my-2" href="https://www.facebook.com"
+                        target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                 </div>
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button request-button my-2" href="{% url 'request' %}"><i class="fa-solid fa-box-open"></i> Request a Custom Package</a>
+                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}"><i
+                            class="fa-solid fa-box-open"></i> Request a Custom Package</a>
                 </div>
                 {% endif %}
             </div>
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             {% if package.image %}
-            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid" style="max-width: 500px; max-height: 300px; border: 10px solid white;">
+            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid"
+                style="max-width: 500px; max-height: 300px; border: 10px solid white;">
             {% else %}
-                <p>No image available</p>
+            <p>No image available</p>
             {% endif %}
         </div>
-        
+
         {% else %}
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width">
-            {% if package.image %}
-            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid" style="max-width: 500px; max-height: 300px; border: 10px solid white;">
-            {% else %}
+                {% if package.image %}
+                <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid"
+                    style="max-width: 500px; max-height: 300px; border: 10px solid white;">
+                {% else %}
                 <p>No image available</p>
-            {% endif %}
+                {% endif %}
             </div>
         </div>
         <div class="col-12 col-lg-6 my-4 text-center">
@@ -130,57 +146,64 @@
                 <h3>{{ package.package_name }}</h3>
                 <hr class="message-rule">
                 <h4>EQUIPMENT PROVIDED</h4>
-                
+
                 <ul class="equip">
                     {% for sentence in package.equipment|split:"|" %}
-                      <li>{{ sentence }}</li>
+                    <li>{{ sentence }}</li>
                     {% endfor %}
                 </ul>
 
                 <h4>ITEMS PROVIDED</h4>
                 <ul class="items">
                     {% for item in package.home_items_type|split:"|" %}
-                      <li>{{ item }}</li>
+                    <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
                 <div class="col-12 text-center">
                     <p class="mb-4">Session Duration: {{ package.duration }}</p>
                     <h4 class="mb-4">Price: ${{ package.price }}</h4>
-                    <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}% off your next session with this package</p>
-                 </div>
+                    <p class="discount"><i class="fa-solid fa-tag"></i> {{ package.discount_voucher|floatformat:"0" }}%
+                        off your next session with this package</p>
+                </div>
                 {% if user.is_superuser %}
                 <div class="row">
                     <div class="col-12 my-2">
-                        <a class="btn techno-button" href="{% url 'update_package' package.id %}"><i class="fa-solid fa-pen-to-square"></i> Update Package</a>
+                        <a class="btn techno-button techno-button-border"
+                            href="{% url 'update_package' package.id %}"><i class="fa-solid fa-pen-to-square"></i>
+                            Update Package</a>
                     </div>
                     <div class="col-12 my-2">
-                        <a class="btn techno-button" href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete Package</a>
+                        <a class="btn techno-button techno-button-border"
+                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete
+                            Package</a>
                     </div>
                 </div>
                 {% else %}
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button my-2" href="https://www.facebook.com/sensicalMSE" target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
+                    <a class="btn techno-button techno-button-border my-2" href="https://www.facebook.com/sensicalMSE"
+                        target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                 </div>
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button request-button my-2" href="{% url 'request' %}"><i class="fa-solid fa-box-open"></i> Request a Custom Package</a>
+                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}"><i
+                            class="fa-solid fa-box-open"></i> Request a Custom Package</a>
                 </div>
                 {% endif %}
             </div>
         </div>
         {% endif %}
     </div>
-        {% endfor %}
-        {% else %}
+    {% endfor %}
+    {% else %}
 
-        <!-- If no packages -->
+    <!-- If no packages -->
 
-        <h4 class="text-center">There are currently no packages to display</h4>
-        {% endif %}
-        <div class="row">
-            <div class="col-12 mt-4 text-center">
-                <a class="btn techno-button" href="{% url 'about' %}">Back to about page</a> 
-            </div>
+    <h4 class="text-center">There are currently no packages to display</h4>
+    {% endif %}
+    <div class="row">
+        <div class="col-12 mt-4 text-center">
+            <a class="btn techno-button techno-button-border" href="{% url 'about' %}">Back to about page</a>
         </div>
+    </div>
 </div>
 
 {% endblock content %}

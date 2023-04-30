@@ -5,7 +5,7 @@
 
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
+<link rel="stylesheet" href="{% static 'testimonials/css/testimonials.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -16,53 +16,57 @@
 
 <!-- Package delete page warning logo and text content -->
 <style>
-
-
-.warning-container {
-    margin-top: 160px;
-    width: 80%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .warning-container {
+        margin-top: 160px;
+        width: 80%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 
 
-.techno-button {
-    font-size: 14px;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    color: white;
-    background-color: #0c2d6c;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border: solid 1px #0c2d6c;
-}
+    .techno-button {
+        font-size: 14px;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: white;
+        background-color: #0c2d6c;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border: solid 1px #0c2d6c;
+    }
 
-.techno-button:hover {
-    background-color: #75e6ff;
-    text-decoration: none;
-    color: #0c2d6c;
-    border: solid 1px #0c2d6c;
-}
-.warning-logo {
-    width: 10%;
-}
+    .techno-button:hover {
+        background-color: #75e6ff;
+        text-decoration: none;
+        color: #0c2d6c;
+        border: solid 1px #0c2d6c;
+    }
 
+    .warning-logo {
+        width: 10%;
+    }
+
+    .techno-button-border {
+        border: 1px solid white;
+    }
 </style>
 
 <div class="warning-container text-white">
     <div>&nbsp;
         <div class="row">
             <div class="text-center">
-                <img class="warning-logo" src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png" alt="Warning Logo">
+                <img class="warning-logo"
+                    src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png"
+                    alt="Warning Logo">
             </div>
 
             <!-- Package delete form -->
-            
+
             <div class="col-12">
                 <div class="text-center">
                     <h3>***WARNING***</h3>
@@ -70,9 +74,10 @@
                         {% csrf_token %}
                         <br>
                         <p>You are about to delete this Package!</p>
-                        <a href="{{request.META.HTTP_REFERER}}" class="btn techno-button">Go Back</a>
-                        <input type="submit" value="Delete" class="btn techno-button">
-                        
+                        <a href="{{request.META.HTTP_REFERER}}" class="btn techno-button-border techno-button">Go
+                            Back</a>
+                        <input type="submit" value="Delete" class="btn techno-button-border techno-button">
+
                     </form>
                 </div>
             </div>
@@ -88,22 +93,26 @@
 
 <div class="warning-container text-white">
     <div class="text-center">
-        <img class="warning-logo" src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png" alt="Warning Logo">
+        <img class="warning-logo"
+            src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png"
+            alt="Warning Logo">
     </div>
 
     <div class="text-center">
         <h3>***WARNING***</h3>
-        <p class="mb-2">Warning! 
-            You are unauthorised to view this page! 
+        <p class="mb-2">Warning!
+            You are unauthorised to view this page!
             You have navigated to this page from an unauthorised url
         </p>
-            <br>
-            
-        
-        <p>Please login or <a href="{% url 'home' %}" class="btn techno-button">Click Here</a> to visit the Home Store Home page</p>     
+        <br>
+
+
+        <p>Please login or <a href="{% url 'home' %}" class="btn techno-button-border techno-button">Click Here</a> to
+            visit the Home Store
+            Home page</p>
     </div>
 </div>
 
-{% endif %} 
+{% endif %}
 
-{% endblock %} 
+{% endblock %}

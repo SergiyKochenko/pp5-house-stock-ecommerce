@@ -9,55 +9,59 @@
 {% block content %}
 
 <style>
-  .auth-container {
-      margin-top: 170px;
-      min-height: 100vh;
-      width: 60%;
-  }
-     
-  @media screen and (max-width: 600px) {
-      .auth-container {
-          margin-top: 150px;
-      }
-  }
-  
-  @media screen and (max-width: 430px) {
-      .auth-container {
-          width: 80%;
-      }
+    .auth-container {
+        margin-top: 170px;
+        min-height: 100vh;
+        width: 60%;
     }
-  
- 
-  
-  </style>
+
+    @media screen and (max-width: 600px) {
+        .auth-container {
+            margin-top: 150px;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        .auth-container {
+            width: 80%;
+        }
+    }
+
+    .techno-button-border {
+        border: 1px solid white;
+    }
+</style>
 
 <div class="col-12 d-flex justify-content-center text-white">
-  <div class="auth-container text-center">
-    <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-to-bracket"></i></h1>
-    
+    <div class="auth-container text-center">
+        <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-to-bracket"></i></h1>
 
 
-    <h2>{% trans "Sign In" %}</h2>
 
-    <div class="login-or">{% trans 'or' %}</div>
+        <h2>{% trans "Sign In" %}</h2>
 
-    <p>{% blocktrans %}If you have not created an account yet, then please
-      <a class="text-success font-italic" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+        <div class="login-or">{% trans 'or' %}</div>
 
-    <form class="login text-center" method="POST" action="{% url 'account_login' %}">
-      {% csrf_token %}
-      {{ form|crispy }}
-      {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-      {% endif %}
-      <a class=" btn techno-button" href="{% url 'home' %}">Cancel</a>
-      <button class="primaryAction btn techno-button" type="submit"><i class="fa-solid fa-right-to-bracket"></i>
-        {% trans "Sign In" %}</button>
-    </form>
-    <p class="mt-2">
-      <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-    </p>
-  </div>
+        <p>{% blocktrans %}If you have not created an account yet, then please
+            <a class="text-success font-italic" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+        </p>
+
+        <form class="login text-center" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ form|crispy }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <a class=" btn techno-button techno-button-border" href="{% url 'home' %}">Cancel</a>
+            <button class="primaryAction btn techno-button techno-button-border" type="submit"><i
+                    class="fa-solid fa-right-to-bracket"></i>
+                {% trans "Sign In" %}</button>
+        </form>
+        <p class="mt-2">
+            <a class="button secondaryAction" href="{% url 'account_reset_password' %}">
+                {% trans "Forgot Password?"%}</a>
+        </p>
+    </div>
 </div>
 
 {% endblock %}
