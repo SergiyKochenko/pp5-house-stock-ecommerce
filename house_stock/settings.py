@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
- 
+    #  ============
     "allauth.socialaccount.providers.github",
+    # =============
     'home',
     'products',
     'bag',
@@ -66,7 +67,6 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
-    # ======
     'cloudinary_storage',
     'cloudinary',
 ]
@@ -111,6 +111,7 @@ TEMPLATES = [
     },
 ]
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
@@ -120,7 +121,7 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
