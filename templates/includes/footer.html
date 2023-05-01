@@ -22,9 +22,30 @@
     .news {
         display: inline-table;
     }
+
+    .footer-disclaimer {
+        font-weight: bold;
+        background-image: linear-gradient(#081D46, #0c2d6c);
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 991px) {
+        .footer-disclaimer {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 </style>
 <!-- <div class="containers my-5"> -->
 <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+
+    <!-- Disclaimer -->
+
+    <div class="footer-disclaimer">
+        <p>This web site was created for assessment purposes only!</p>
+        <p>Any bookings or purchases made will not be fullfilled.</p>
+    </div>
     <!-- Grid container -->
     <div class="container p-4">
         <!--Grid row-->
@@ -82,7 +103,7 @@
                     </li>
                     <li class="mb-3">
                         <span class="fa-li"><i class="fas fa-envelope"></i></span><span
-                            class="ms-2">info@example.com</span>
+                            class="ms-2">suport@gmail.com</span>
                     </li>
                     <li class="mb-3">
                         <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
