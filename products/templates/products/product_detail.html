@@ -103,11 +103,15 @@
                         {% if user.is_authenticated %}
                         <div class="col-12 mb-4">
                             {% if not in_wishlist %}
-                            <p><a href="{% url 'add_to_wishlist' product.id user.id %}"><i
-                                        class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></a>Add to my wishlist</p>
+                            <p class="text-warning"><a href="{% url 'add_to_wishlist' product.id user.id %}"><i
+                                        class="p-2 fa-solid fa-heart-circle-plus fa-xl fa-beat-fade"
+                                        style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></i></a>Add
+                                to my wishlist</p>
                             {% else %}
-                            <p><a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i
-                                        class="p-2 fa-solid fa-heart-circle-minus fa-xl"></i></a>Remove from my wishlist
+                            <p class="text-success"><a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i
+                                        class="text-success p-2 fa-solid fa-heart-circle-minus fa-xl fa-beat-fade"
+                                        style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></i></a>Remove
+                                from my wishlist
                             </p>
                             {% endif %}
                         </div>
