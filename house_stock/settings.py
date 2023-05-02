@@ -109,7 +109,6 @@ TEMPLATES = [
     },
 ]
 
-
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
@@ -119,7 +118,6 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 

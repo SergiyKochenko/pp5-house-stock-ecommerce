@@ -41,28 +41,24 @@
         border-color: #333;
     }
 </style>
-
 <div class="col-12 d-flex justify-content-center text-white">
-    <div class="margin-top">
-        <h1 class="text-center">{% trans "Sign In" %} <span class="sr-only">List Icon</span><i class="fa-solid fa-right-to-bracket"></i></h1>
-
+    <div class="margin-top auth-container text-center">
+        <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-to-bracket"></i>
+        </h1>
+        <h2>{% trans "Sign Out" %}</h2>
         {% get_providers as socialaccount_providers %}
-
         {% if socialaccount_providers %}
         {% blocktrans with site.name as site_name %}
         {% endblocktrans %}
-
         <div class="socialaccount_ballot">
-        <ul class="socialaccount_providers"></ul></div>
-
+            <ul class="socialaccount_providers"></ul>
+        </div>
         {% include "socialaccount/snippets/login_extra.html" %}
-
         {% else %}
         <p>{% blocktrans %}If you have not created an account yet, then please
             <a class="text-light font-italic" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
         </p>
         {% endif %}
-
         <form class="login text-center" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
             {{ form|crispy }}
@@ -73,26 +69,16 @@
             <button class="primaryAction btn techno-button techno-button-border" type="submit"><i
                     class="fa-solid fa-right-to-bracket"></i>{% trans "Sign In" %}</button>
             <div class="buttons-div">
-                <div class="login-or">{% trans 'or' %}</div>
                 <p class="buttons-p">
-
-                    <button class=" btn-github btn techno-button techno-button-border fa fa-github">
-                        {% include "socialaccount/snippets/provider_list.html" with process="login" %}</button>
-
+                    <button class="btn btn-primary"><span class="fa fa-github"></span>&nbsp;Login with GitHub
+                    {% include "socialaccount/snippets/provider_list.html" with process="login" %}</button>
                 </p>
             </div>
             <p class="mt-2">
                 <a class="button secondaryAction" href="{% url 'account_reset_password' %}">
-                    {% trans "Forgot Password?" %}</a>
+                {% trans "Forgot Password?" %}</a>
             </p>
         </form>
-
-
     </div>
 </div>
-
-
-
-
-
 {% endblock %}
