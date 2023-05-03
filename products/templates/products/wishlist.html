@@ -6,7 +6,7 @@
 <!-- Wishlist Page -->
 <style>
     .style {
-        margin-top: 150px;
+        margin-top: 180px;
     }
 
     .btns:hover {
@@ -17,17 +17,45 @@
         background-color: #0c2d6c;
         align-self: start;
     }
+
+    .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    max-width: 62rem;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 </style>
-<div class="text-white py-5">
-    <div class="row d-flex justify-content-center align-items-center h-100 style">
-        <div class="">
-            <hr>
-            <div class="text-center mb-4">
+
+            
+            <div class="text-center text-white mb-4 style">
                 <h1 class="fw-normal mb-0 text-uppercase">My Wishlist</h1>
             </div>
             <hr>
             {% if wishlist %}
             {% for item in wishlist %}
+
+
+<div class="text-white py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="">
             <form class="form" action="{% url 'add_to_bag' item.product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
@@ -98,6 +126,11 @@
                         </div>
                     </div>
             </form>
+        </div>
+    </div>
+</div>
+
+
             {% endfor %}
             <hr class="section-rule">
             {% else %}
@@ -105,7 +138,7 @@
                 <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
             </div>
             {% endif %}
-        </div>
+        <!-- </div>
     </div>
-</div>
+</div> -->
 {% endblock %}
