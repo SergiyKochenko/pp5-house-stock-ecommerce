@@ -50,6 +50,43 @@
     background-color: white;
 }
 
+.warning-logo {
+    width: 10%;
+}
+
+.warning-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.techno-button {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #0c2d6c;
+}
+
+.techno-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #0c2d6c;
+}
+
+.techno-button-border {
+    border: 1px solid white;
+}
+
 @media screen and (max-width: 991px) {
     .testimonial-text {
         width: 100%;
