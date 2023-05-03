@@ -1,0 +1,122 @@
+.sensical-button {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #0c2d6c;
+}
+
+.sensical-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #0c2d6c;
+}
+
+
+
+.related-links {
+    height: 100%;
+    background-color: #081D46;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-form-submit {
+    background-color: #081D46;
+}
+
+.related-links a {
+    color: white !important;
+}
+
+
+.link-row {
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iwa-logo {
+    width: 100%;
+    height: auto;
+}
+
+.hse-logo {
+    width: 40%;
+    height: auto;
+}
+
+.autism-logo {
+    width: 90%;
+    height: auto;
+    background-color: white;
+}
+
+.adhd-logo {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#mc_embed_signup {
+    background: #fff;
+    color: #0c2d6c;
+    padding: .5rem;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+    height: fit-content;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#mc_embed_signup input {
+    border-radius: 0;
+}
+
+#mc_embed_signup h2 {
+    color: #081D46;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .iwa-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .hse-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .autism-logo {
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .adhd-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}

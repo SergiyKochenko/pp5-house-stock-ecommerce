@@ -1,22 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- my css -->
+<!-- Core CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+{% endblock %}
 
-<style>
-.product-card-names{
-        background-color: #0c2d6c;
-        min-height: 70px;
-    }
-
-.card-footer {
-    background-color: #0c2d6c;
-}
-
-#hidden-stock-status {
-    display: none;
-}
-</style>
 {% block page_header %}
     <div class="container header-container">
         <div class="row">

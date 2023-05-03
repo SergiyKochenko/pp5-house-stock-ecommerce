@@ -6,36 +6,11 @@
 {% block extra_title %} - Add Package{% endblock %}
 
 {% block content %}
-<style>
-    .non-display {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-        display: none;
-    }
 
-    .section-rule {
-        width: 60%;
-        border-color: white;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-    }
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/packages_request_success.css' %}">
+{% endblock %}
 
-    .section-header {
-        width: 100%;
-        border-color: white;
-        margin-top: 0;
-        margin-bottom: 4rem;
-    }
-
-    .margin-top {
-        margin-top: 8.5rem !important;
-    }
-
-    .techno-button-border {
-        border: 1px solid white;
-    }
-</style>
 <div class="container auth-container text-white">
     <div class="row">
         <div class="col-12 mt-4 margin-top">

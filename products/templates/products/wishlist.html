@@ -3,48 +3,14 @@
 {% block extra_title %} - Wishlist{% endblock %}
 {% block content %}
 
+<!-- Core CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/wishlist.css' %}">
+{% endblock %}
+
+
 <!-- Wishlist Page -->
-<style>
-    .style {
-        margin-top: 180px;
-    }
 
-    .btns:hover {
-        background-color: #75e6ff !important;
-    }
-
-    .btons {
-        background-color: #0c2d6c;
-        align-self: start;
-    }
-
-    .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
-    max-width: 62rem;
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}
-</style>
-
-            
             <div class="text-center text-white mb-4 style">
                 <h1 class="fw-normal mb-0 text-uppercase">My Wishlist</h1>
             </div>
@@ -97,7 +63,6 @@
                                 <div class="col-md-7 col-lg-7 col-xl-7 text-end"
                                     style="display: flex; flex-direction: column;">
 
-                                    <!-- ======================================================== -->
                                     {% if item.product.in_stock %}
 
                                     <input class="fa-input btons fas fa-shopping-basket  rounded-0 techno-button"
@@ -105,7 +70,7 @@
                                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
 
                                     {% endif %}
-                                    <!-- ======================================================================== -->
+   
                                     <a href="{% url 'product_detail' item.product.id %}"
                                         class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
                                         <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
@@ -129,16 +94,11 @@
         </div>
     </div>
 </div>
-
-
-            {% endfor %}
-            <hr class="section-rule">
-            {% else %}
-            <div class="text-center mb-4">
-                <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
-            </div>
-            {% endif %}
-        <!-- </div>
-    </div>
-</div> -->
+{% endfor %}
+<hr class="section-rule">
+{% else %}
+<div class="text-center mb-4">
+    <p>Your wishlist is empty. Maybe add some <a href="{% url 'products' %}">products</a>?</p>
+</div>
+{% endif %}
 {% endblock %}
