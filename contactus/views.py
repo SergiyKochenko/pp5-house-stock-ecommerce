@@ -5,7 +5,6 @@ from .forms import ContactForm
 
 
 def contactUs(request):
-
     """
     a view to display the contactform
     and handle form submission
@@ -13,21 +12,17 @@ def contactUs(request):
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
-        if form.is_valid:
+        if form.is_valid():
             form.save()
             messages.success(request, 'Your message has been sent!')
             return HttpResponseRedirect('/contactus?submitted=True')
-
         else:
-            form = ContactForm()
             messages.warning(request, 'Message not sent. Please try again.')
-
     else:
         form = ContactForm()
         if 'submitted' in request.GET:
             form = ContactForm()
 
-    form = ContactForm()
     template = 'contactus/contact_us.html'
     context = {
         'form': form,

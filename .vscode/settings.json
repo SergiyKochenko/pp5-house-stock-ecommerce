@@ -24,5 +24,6 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
 "editor.defaultFormatter": "HookyQR.beautify",
-"java.debug.settings.showStaticVariables": true
+"java.debug.settings.showStaticVariables": true,
+"python.formatting.provider": "black"
 }
