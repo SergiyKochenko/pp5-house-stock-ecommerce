@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 <!-- Profile Page  -->
 
 {% block extra_css %}
@@ -11,7 +10,6 @@
 {% block extra_title %} - User Profile{% endblock %}
 
 {% block content %}
-
 
 <div class="auth-container container divv2">
   
@@ -29,8 +27,8 @@
     <div class="panel-group" id="profile-accordian">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <p class="panel-title text-white p-3 text-uppercase text-center pp" data-target="#panel-1" data-toggle="collapse">Saved Delivery
-                    Details <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span></p>
+                <p class="panel-title text-white p-3 text-uppercase text-center pp" data-target="#panel-1"
+                 data-toggle="collapse">Saved Delivery Details <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span></p>
             </div>
             <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-1">
                 <div class="panel-body">
@@ -52,9 +50,10 @@
 
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <p class="pp2 panel-title text-white p-3 text-uppercase text-center" data-target="#panel-2" data-toggle="collapse">Order History
+                <p class="pp2 panel-title text-white p-3 text-uppercase text-center"
+                 data-target="#panel-2" data-toggle="collapse">Order History
                     <span><i class="pl-3 fa-solid fa-circle-arrow-down"></i></span>
-                    <p>
+                </p>
             </div>
             <div class="panel-collapse collapse" data-parent="#profile-accordian" id="panel-2">
                 <div class="panel-body">
@@ -96,8 +95,8 @@
     <!-- Products Link -->
     <div class="basket-checkout">
         <a href="{% url 'products' %}">
-            <div class="divv basket-back-button basket-button text-white text-uppercase text-center"><i class="icon fa-solid fa-circle-arrow-left"></i>back
-                to  shopping</div>
+            <div class="divv basket-back-button basket-button text-white text-uppercase text-center">
+                <i class="icon fa-solid fa-circle-arrow-left"></i>back to  shopping</div>
         </a>
     </div>
 </div>

@@ -23,7 +23,6 @@
 }
 
 /* Messages */
-
 .message-container {
     margin-top: 280px;
 }
@@ -34,13 +33,9 @@
     margin-bottom: 30px;
 }
 
-
-
 .responsive-iframe {
     border: 0 !important;
 }
-
-
 
 #video-container {
     top: 0%;
@@ -153,7 +148,6 @@
     position: relative;
     padding: 0;
 }
-
 
 .carousel-caption {
     bottom: 100px;

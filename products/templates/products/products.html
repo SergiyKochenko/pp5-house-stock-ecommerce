@@ -152,6 +152,25 @@
                                             {% endif %}
                                         </div>
                                     </div>
+            <!-- --------------------------------------------------------- -->
+                                    {% if user.is_authenticated %}
+                                    <div class="col-12 mb-4">
+                                        {% if not in_wishlist %}
+                                        {% include "products/add_to_wishlist.html" %}
+                                        {% else %}
+                                        {% include "products/remove_from_wishlist.html" %}
+                                        {% endif %}
+                                    </div>
+
+                                    {% else %}
+                                    <div class="col-12 mb-4">
+                                        <p><a href="{% url 'account_login' %}">Login</a> or <a
+                                                href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. 
+                                                <i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>
+                                    </div>
+                                    {% endif %}
+                                    <hr>
+            <!-- --------------------------------------------------------- -->
                                 </div>
                             </div>
                         </div>
@@ -176,6 +195,16 @@
                             </div> -->
                         {% endif %}
                     {% endfor %}
+                    <script>
+                        async function wishlist(e) {
+                            e.preventDefault();
+                            let el = e.currentTarget;
+                            let url = el.getAttribute("href");
+                            let response = await fetch(url);
+                            let html = await response.text();
+                            el.parentElement.outerHTML = html;
+                        }
+                    </script>
                 </div>
             </div>
         </div>

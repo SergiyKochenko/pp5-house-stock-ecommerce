@@ -33,13 +33,11 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                <!-- ============================ -->
                 {% if product.in_stock %}
                 <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In Stock</small>
                 {% else %}
                 <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of Stock</small>
                 {% endif %}
-                <!-- ============================== -->
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
                     <a class="text-success" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -100,30 +98,29 @@
                                 </div>
                             </div>
                         </div>
+
+<!-- --------------------------------------------------------- -->
+                        <!-- --------------------------------------------------------- -->
                         {% if user.is_authenticated %}
                         <div class="col-12 mb-4">
                             {% if not in_wishlist %}
-                            <p class="text-warning"><a href="{% url 'add_to_wishlist' product.id user.id %}"><i
-                                        class="p-2 fa-solid fa-heart-circle-plus fa-xl fa-beat-fade"
-                                        style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></i></a>Add
-                                to my wishlist</p>
+                            {% include "products/add_to_wishlist.html" %}
                             {% else %}
-                            <p class="text-success"><a href="{% url 'remove_from_wishlist' wishlist_item.id %}"><i
-                                        class="text-success p-2 fa-solid fa-heart-circle-minus fa-xl fa-beat-fade"
-                                        style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></i></a>Remove
-                                from my wishlist
-                            </p>
+                            {% include "products/remove_from_wishlist.html" %}
                             {% endif %}
                         </div>
+
                         {% else %}
                         <div class="col-12 mb-4">
                             <p><a href="{% url 'account_login' %}">Login</a> or <a
-                                    href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. <i
-                                    class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>
+                                    href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. 
+                                    <i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>
                         </div>
                         {% endif %}
+                       
+<!-- --------------------------------------------------------- -->
                         <hr>
-                        <!-- =============================================================================== -->
+<!-- --------------------------------------------------------- -->
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <div class="d-flex">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5 mr-2">
@@ -148,11 +145,11 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <!-- ========================================================================================== -->
+
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
-                <!-- ----------------------------------Product Reviews--------------------------------------- -->
+
                 <h5 class="mt-5">Product Reviews</h5>
                 <style>
                     .star-rating input[type="radio"] {
@@ -210,6 +207,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        async function wishlist(e) {
+            e.preventDefault();
+            let el = e.currentTarget;
+            let url = el.getAttribute("href");
+            let response = await fetch(url);
+            let html = await response.text();
+            el.parentElement.outerHTML = html;
+        }
+    </script>
+    
     <script>
         const starInputs = document.querySelectorAll('.star-rating input[type="radio"]');
         const starLabels = document.querySelectorAll('.star-rating label');

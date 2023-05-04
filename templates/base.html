@@ -25,7 +25,8 @@
 
     <!-- Core CSS -->
     {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -38,9 +39,12 @@
 
     {% block corejs %}
         <script src="https://kit.fontawesome.com/876265c343.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -79,7 +83,8 @@
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <a class="text-black">Hi {{ user.username }}</a>
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -88,20 +93,25 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item"><span class="fa-solid fa-dolly"></span> Product Management</a>
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">
+                                        <span class="fa-solid fa-dolly"></span> Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item"><span class="fas fa-user fa-lg"></span> My Profile</a>
                                 <a class="dropdown-item" href="{% url 'wishlist' %}"><span class="fa-solid fa-heart icon fa-beat-fade"
                                     style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></span> Wishlist</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item"><span class="fa-sharp fa-solid fa-right-from-bracket"></span> Logout</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">
+                                    <span class="fa-sharp fa-solid fa-right-from-bracket"></span> Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item"><span class="fa-sharp fa-regular fa-user"></span> Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item"><span class="fa-solid fa-right-to-bracket"></span> Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">
+                                    <span class="fa-sharp fa-regular fa-user"></span> Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">
+                                    <span class="fa-solid fa-right-to-bracket"></span> Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" 
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div>
                                     <i class="fas fa-shopping-basket icon"></i>
@@ -124,7 +134,8 @@
         </div>
         <div class="row bg-white">
             <nav  class="navbar navb navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" 
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -132,18 +143,14 @@
             </nav>
         </div>
 
-<!-- <style>.bg-banner {
-    background: yellow !important;
-}</style> -->
-
         <div id="delivery-banner" class="row secondary-bg text-center bg-banner text-black non-display">
             <div class="col-12">
                 <div id="delivery-slider" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item text-center secondary-bg active">
                             <h4 class="banner-font"><i
-                                    class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> Free
-                                world-wide delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                                    class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> 
+                                    Free world-wide delivery on orders over ${{ free_delivery_threshold }}!</h4>
                         </div>
                         {% if free_delivery_delta == 0 %}
                         <div class="carousel-item text-center secondary-bg">
@@ -193,7 +200,6 @@
     <!-- Footer-->
     {% include 'includes/footer.html'%}
 
-  
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');

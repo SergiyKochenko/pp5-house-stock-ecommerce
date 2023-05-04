@@ -7,8 +7,6 @@
     margin-left: auto;
 }
 
-
-
 .packages-text {
     width: 100%;
     border: solid 1px white;
@@ -37,7 +35,8 @@
     background-color: white;
 }
 
-.equip, .items {
+.equip,
+.items {
     padding: 0.5rem;
     margin-top: 1rem;
     text-align: left;
@@ -45,7 +44,7 @@
     margin-left: 15%;
 }
 
-.package{
+.package {
     text-align: left;
 }
 
@@ -64,7 +63,6 @@
     border-color: white;
     margin-bottom: 30px;
 }
-
 
 .techno-button {
     font-size: 14px;
@@ -100,11 +98,13 @@
 
 @media screen and (max-width: 600px) {
     .packages-container {
-        width: 96%; 
+        width: 96%;
     }
+
     .packages-text {
         padding: 1rem;
     }
+
     .request-button {
         font-size: 2.6vw;
     }

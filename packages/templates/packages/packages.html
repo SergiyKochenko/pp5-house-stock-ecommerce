@@ -22,13 +22,12 @@
 
     {% if user.is_superuser %}
     <div class="col-12 text-center my-2">
-        <a class="btn techno-button techno-button-border" href="{% url 'add_package' %}"><i
-                class="fa-solid fa-box-open"></i> Add Package</a>
+        <a class="btn techno-button techno-button-border" href="{% url 'add_package' %}">
+            <i class="fa-solid fa-box-open"></i> Add Package</a>
     </div>
     <div class="col-12 text-center my-2">
-        <a class="btn techno-button techno-button-border" href="{% url 'custom' %}"><i
-                class="fa-solid fa-clipboard-list"></i>View Package
-            Requests</a>
+        <a class="btn techno-button techno-button-border" href="{% url 'custom' %}">
+            <i class="fa-solid fa-clipboard-list"></i>View Package Requests</a>
     </div>
     {% endif %}
     <hr class="message-rule">
@@ -72,8 +71,8 @@
                     </div>
                     <div class="col-12 my-2">
                         <a class="btn techno-button techno-button-border"
-                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete
-                            Package</a>
+                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i>
+                             Delete Package</a>
                     </div>
                 </div>
                 {% else %}
@@ -82,8 +81,8 @@
                         target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                 </div>
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}"><i
-                            class="fa-solid fa-box-open"></i> Request a Custom Package</a>
+                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}">
+                        <i class="fa-solid fa-box-open"></i> Request a Custom Package</a>
                 </div>
                 {% endif %}
             </div>
@@ -142,8 +141,8 @@
                     </div>
                     <div class="col-12 my-2">
                         <a class="btn techno-button techno-button-border"
-                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i> Delete
-                            Package</a>
+                            href="{% url 'delete_package' package.id %}"><i class="fa-solid fa-trash"></i>
+                             Delete Package</a>
                     </div>
                 </div>
                 {% else %}
@@ -152,8 +151,8 @@
                         target="_blank"><i class="fa-brands fa-facebook"></i> Make Enquiry</a>
                 </div>
                 <div class="col-12 text-center my-3">
-                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}"><i
-                            class="fa-solid fa-box-open"></i> Request a Custom Package</a>
+                    <a class="btn techno-button techno-button-border request-button my-2" href="{% url 'request' %}">
+                        <i class="fa-solid fa-box-open"></i> Request a Custom Package</a>
                 </div>
                 {% endif %}
             </div>

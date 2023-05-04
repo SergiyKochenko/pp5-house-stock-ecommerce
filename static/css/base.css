@@ -14,16 +14,15 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     border-color: white;
 }
-/* ============= */
+
 .auth-container {
     margin-top: 170px;
     min-height: 100vh;
     width: 60%;
 }
-
 
 #hidden-stock-status {
     display: none;
@@ -52,15 +51,15 @@ body {
 .techno-button-border {
     border: 1px solid white;
 }
-/* =============== */
+
 .navb {
-   
     background-color: #0c2d6c;
 }
 
 .bg-banner {
     background: yellow !important;
 }
+
 .navbar-toggler {
     border: 1px solid white;
     width: 50px;
@@ -75,7 +74,6 @@ body {
 .navbar {
     padding: 0;
     width: 100%;
-
 }
 
 .navbar-light .navbar-toggler {
@@ -83,6 +81,7 @@ body {
     border-color: rgb(255, 255, 255);
     border: 1px solid white;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -113,7 +112,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -147,16 +147,16 @@ body {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #0c2d6c; 
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #0c2d6c;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -179,8 +179,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
-
+/* bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;
@@ -198,10 +197,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -251,26 +250,28 @@ input[name='q']::placeholder {
     background-color: #75e6ff;
     height: 2px;
 }
+
 .bottom-rule {
     width: 40%;
     border-color: white;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-/* -------------------------------- Media Queries */
 
+/* Media Queries */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -288,8 +289,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -304,24 +305,23 @@ input[name='q']::placeholder {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -405,18 +405,17 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
-
-/* ========================== */
 
 /* wishlist */
 .fa-heart-circle-plus {
     color: grey;
 }
-  
+
 .fa-heart-circle-plus:hover {
     color: red;
 }
@@ -424,7 +423,7 @@ input[name='q']::placeholder {
 .in-wishlist {
     color: red;
 }
-  
+
 .in-wishlist:hover {
     color: grey;
 }
@@ -438,31 +437,34 @@ input[name='q']::placeholder {
     margin-left: auto;
 }
 
-    @media (min-width: 1200px){
-.containers {
-    max-width: 100%;
+@media (min-width: 1200px) {
+    .containers {
+        max-width: 100%;
     }
 }
 
-    @media (min-width: 768px){
-.containers, .container-md, .container-sm {
-    max-width: 100%;
+@media (min-width: 768px) {
+
+    .containers,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
     }
 }
 
-    @media (min-width: 576px){
-.containers, .container-sm {
-    max-width: 100%;
+@media (min-width: 576px) {
+
+    .containers,
+    .container-sm {
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 430px) {
-
     .auth-container {
         width: 80%;
     }
 }
-
 
 .icon {
     align-items: center;
@@ -475,7 +477,7 @@ input[name='q']::placeholder {
 
 /* footer */
 .texts-light {
-    color: #f8f9fa!important;
+    color: #f8f9fa !important;
     margin: 20px;
 }
 

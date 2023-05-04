@@ -188,7 +188,10 @@ def add_to_wishlist(request, product_id, user_id):
     else:
         messages.info(request, 'Product is already in your wishlist.')
 
-    return redirect(reverse('product_detail', args=[product_id]))
+    context = {
+        'wishlist_item': wishlist_item,
+    }
+    return render(request, 'products/remove_from_wishlist.html', context)
 
 
 @login_required
@@ -215,11 +218,7 @@ def remove_from_wishlist(request, wishlist_id):
 
     wishlist_item.delete()
     messages.success(request, 'Removed from wishlist!!')
-    referer = request.META.get('HTTP_REFERER')
-    if referer:
-        if 'wishlist' in referer:
-            return redirect('wishlist')
-        else:
-            return redirect(referer)
-    else:
-        return redirect('wishlist')
+    context = {
+        'product': wishlist_item.product,
+    }
+    return render(request, 'products/add_to_wishlist.html', context)

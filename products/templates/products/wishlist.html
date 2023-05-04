@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="{% static 'css/wishlist.css' %}">
 {% endblock %}
 
-
 <!-- Wishlist Page -->
 
             <div class="text-center text-white mb-4 style">
@@ -17,7 +16,6 @@
             <hr>
             {% if wishlist %}
             {% for item in wishlist %}
-
 
 <div class="text-white py-5">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -53,11 +51,11 @@
                                         code: {{ item.product.sku}}</p>
                                     <p class="wishlist-heading">${{ item.product.price }}</p>
                                     {% if item.product.in_stock %}
-                                    <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> In
-                                        Stock</small>
+                                    <small tabindex=0><i class="fa-solid fa-circle-check text-success mb-4"></i> 
+                                        In Stock</small>
                                     {% else %}
-                                    <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> Out of
-                                        Stock</small>
+                                    <small tabindex=0><i class="fa-solid fa-circle-xmark text-danger mb-4"></i> 
+                                        Out of Stock</small>
                                     {% endif %}
                                 </div>
                                 <div class="col-md-7 col-lg-7 col-xl-7 text-end"
@@ -82,7 +80,7 @@
                                         <span class="btn text-uppercase text-white">Find More Products</span>
                                     </a>
                                     <a class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3"
-                                        href="{% url 'remove_from_wishlist' item.id %}">
+                                        href="{% url 'remove_from_wishlist' item.id %}" onclick="wishlistRemove(event)">
                                         <span class="icon"><i class="fa-solid fa-trash"></i></span>
                                         <span class=" btn text-uppercase text-white">Remove from Wishlist</span>
                                     </a>
@@ -95,6 +93,15 @@
     </div>
 </div>
 {% endfor %}
+<script>
+    async function wishlistRemove(e) {
+        e.preventDefault();
+        let el = e.currentTarget;
+        let url = el.getAttribute("href");
+        let response = await fetch(url);
+        location.reload();
+    }
+</script>
 <hr class="section-rule">
 {% else %}
 <div class="text-center mb-4">
