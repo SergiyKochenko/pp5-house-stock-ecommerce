@@ -184,10 +184,6 @@ def add_to_wishlist(request, product_id, user_id):
         product=product, user=user)
     if created:
         wishlist_item.save()
-        messages.success(request, 'Product added to wishlist!')
-    else:
-        messages.info(request, 'Product is already in your wishlist.')
-
     context = {
         'wishlist_item': wishlist_item,
     }
@@ -217,7 +213,6 @@ def remove_from_wishlist(request, wishlist_id):
     wishlist_item = Wishlist.objects.get(id=wishlist_id)
 
     wishlist_item.delete()
-    messages.success(request, 'Removed from wishlist!!')
     context = {
         'product': wishlist_item.product,
     }
