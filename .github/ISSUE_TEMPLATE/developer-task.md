@@ -3,7 +3,7 @@ name: Developer Task
 about: This is my defeulr developer task template
 title: 'DEVELOPER TASK: <TITLE>'
 labels: ''
-assignees: SergiyKochenko
+assignees: Sergiy Kochenko
 
 ---
 
