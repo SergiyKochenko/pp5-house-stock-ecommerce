@@ -1,8 +1,8 @@
 ---
 name: Developer Task
 about: Chore related to installation or maintenance of project packages and dependencies.
-title: ''
-labels: ''
+title: Chore related to installation or maintenance of project packages and dependencies.
+labels: Developer Task
 assignees: SergiyKochenko
 
 ---
