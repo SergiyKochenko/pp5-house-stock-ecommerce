@@ -1,12 +1,12 @@
 ---
 name: Developer Task
-about: This is my defeulr developer task template
-title: 'DEVELOPER TASK: <TITLE>'
+about: Chore related to installation or maintenance of project packages and dependencies.
+title: ''
 labels: ''
-assignees: Sergiy Kochenko
+assignees: SergiyKochenko
 
 ---
 
 Install/Maintain ________ in order to __________ so that _________
 
-Task: [ ]
+Task: []
