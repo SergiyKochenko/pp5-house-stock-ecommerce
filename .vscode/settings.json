@@ -23,7 +23,7 @@
    "files.autoSave": "onFocusChange",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-"editor.defaultFormatter": "HookyQR.beautify",
+"editor.defaultFormatter": "off",
 "java.debug.settings.showStaticVariables": true,
 "python.formatting.provider": "black"
 }

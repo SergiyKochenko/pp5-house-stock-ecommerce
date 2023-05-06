@@ -36,7 +36,7 @@ Please use the link below to view the deployed project. If you wish to make a mo
 
 Any payments made using an actual payment card will fail and the card will not be charged. No orders made will be fulfilled.
 
-Live project: [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/)
+Live project: [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) app.
 
 The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecommerce)
 
@@ -49,78 +49,156 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 
 ## Table of contents
 
-- [**UX (User Experience)**](#ux-user-experience)
-  - [**User Stories**](#user-stories)
-- [**Design Structure**](#design-structure)
-  - [**Functional Structure**](#functional-structure)
-  - [**Wireframes**](#wireframes)
-- [**Features**](#features)
-  - [**Responsive Design**](#responsive-design)
-  - [**Database Schema**](#database-schema)
-- [**Technologies Used**](#technologies-used)
-  - [**Languages**](#languages)
-  - [**Frameworks**](#frameworks)
-  - [**Tools**](#tools)
-- [**Testing**](#testing)
-  - [**Unit testing**](#automated-testing-unit-test)
-  - [**Manual testing**](#manual-testing)
-  - [**Validations**](#validations)
-- [**Deployment**](#deployment)
-- [**Credits**](#credits)
-  - [**Code**](#code)
-  - [**Content**](#content)
-  - [**Media**](#media)
-  - [**Contributing**](#contributing)
-  - [**Inspiration**](#inspiration)
-  - [**Acknowledgment**](#acknowledgment)
-
-
-The deployed [Aquarium House](https://app-portfolio-project-four.herokuapp.com/) app.
-
-
+- [Portfolio Project 5 - Home Store \& More eCommerce Webstore](#portfolio-project-5---home-store--more-ecommerce-webstore)
+- [Overview](#overview)
+- [Amiresponsive - "Home Store \& More".](#amiresponsive---home-store--more)
+  - [Table of contents](#table-of-contents)
+  - [Project goals](#project-goals)
+  - [UX (User Experience)](#ux-user-experience)
+    - [User Experience](#user-experience)
+    - [User stories](#user-stories)
+      - [Site Administrator goals](#site-administrator-goals)
+  - [Design Structure](#design-structure)
+    - [Color Scheme](#color-scheme)
+    - [Functional Structure](#functional-structure)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Navbar](#navbar)
+    - [Home page](#home-page)
+    - [Detail post page](#detail-post-page)
+    - [Sign up page](#sign-up-page)
+    - [Login page](#login-page)
+    - [Pricing page](#pricing-page)
+    - [Book Now page for the logged user](#book-now-page-for-the-logged-user)
+    - [My Bookings page](#my-bookings-page)
+    - [Change booking page](#change-booking-page)
+    - [Delete page](#delete-page)
+    - [Logout page](#logout-page)
+    - [Responsive design](#responsive-design)
+    - [Database Schema](#database-schema)
+  - [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+  - [Installed Packages](#installed-packages)
+    - [Frameworks](#frameworks)
+    - [Database](#database)
+    - [Tools](#tools)
+  - [Testing](#testing)
+    - [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+    - [Bug reports bug reports](#bug-reports-bug-reports)
+      - [Unresolved Bugs](#unresolved-bugs)
+  - [Automated testing (Unit test)](#automated-testing-unit-test)
+  - [Manual Testing](#manual-testing)
+      - [Device Testing](#device-testing)
+      - [Browsers Tested](#browsers-tested)
+    - [Testing CRUD functionality](#testing-crud-functionality)
+  - [Validations](#validations)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [Python Validation (PEP8)](#python-validation-pep8)
+    - [Lighthouse report](#lighthouse-report)
+  - [Deployment](#deployment)
+    - [Forking the GitHub Repository](#forking-the-github-repository)
+    - [Making a Local Clone](#making-a-local-clone)
+  - [Credits](#credits)
+    - [Code](#code)
+    - [Content](#content)
+    - [Media](#media)
+    - [Contributing](#contributing)
+    - [Inspiration](#inspiration)
+    - [Acknowledgment](#acknowledgment)
 
 ## Project goals
 
-This is the fourth project under the Code Institute Diploma in Software Development (E-commerce Applications) program. This website is a fictional aquariumistics called Aquarium House. It is designed to be responsive and accessible on a variety of devices for the ease of use of the site by potential users.
+The primary goals of the Home Store & More e-commerce webstore project are:
+
+1. <strong>Portfolio Showcase:</strong> Demonstrate the developer's skills and capabilities in full-stack web development, specifically in the context of e-commerce, as part of The Code Institute's Full Stack Software Development (eCommerce) Diploma program.
+   
+2. <strong>User Experience:</strong> Create a visually appealing, responsive, and user-friendly web application that offers an intuitive browsing and shopping experience for a diverse and growing target audience.
+
+3. <strong>Product Catalog:</strong> Design a comprehensive product catalog with a wide range of home products and solutions, organized into categories for easy browsing and navigation.
+4. <strong>Search and Filter:</strong> Implement search functionality and filtering options, allowing users to quickly locate specific products and tailor their browsing experience according to their preferences.
+   
+5. <strong>User Accounts and Authentication:</strong> Integrate user account creation and authentication features, enabling users to create profiles, save their preferences, and view their order history.
+   
+6. <strong>Shopping Cart and Checkout:</strong> Develop a seamless shopping cart system and a simulated checkout process that demonstrates the understanding and implementation of a secure and user-friendly e-commerce transaction flow.
+   
+7. <strong>Performance and Optimization:</strong> Optimize the website for performance and fast load times, ensuring a smooth and enjoyable user experience.
+   
+8. <strong>Scalability and Extensibility:</strong> Build a solid foundation that allows for future expansion and refinement, making it possible to add new features, products, and functionalities as the platform grows.
 
 ## UX (User Experience)
 
+### User Experience
+
+UX, or User Experience, refers to the overall experience a user has while interacting with a product, service, or website. It encompasses various aspects of design, functionality, and usability to create a seamless and enjoyable experience for users. Here are some key elements to consider when creating a positive UX for the Home Store & More e-commerce webstore:
+
+1. <strong>Intuitive Navigation:</strong> Design a clear and consistent navigation structure that allows users to easily move between different sections of the website. This can be achieved by using a well-organized menu with easy-to-understand labels and logical categorization of products and content.
+   
+2. <strong>Responsive Design:</strong> Ensure that the website looks and functions well on various devices and screen sizes, including desktops, laptops, tablets, and smartphones. This can be achieved by using responsive design techniques, such as fluid grids, flexible images, and media queries.
+   
+3. <strong>Clear and Consistent Visual Hierarchy:</strong> Establish a visual hierarchy that guides users through the content and makes it easy for them to understand the layout and organization of the website. Use consistent typography, color schemes, and design elements throughout the site to create a cohesive look and feel.
+
+4. <strong>Effective Search and Filtering:</strong> Implement a search feature that allows users to quickly find specific products and content. Additionally, provide filtering options so users can refine their search results and browse products based on their preferences and requirements.
+   
+5. <strong>Informative Product Pages:</strong> Design detailed and informative product pages that provide users with all the necessary information to make informed purchase decisions. Include high-quality images, clear product descriptions, specifications, pricing, and customer reviews.
+   
+6. <strong>User-friendly Forms:</strong> Create simple and user-friendly forms for user registration, login, and checkout processes. Use clear labels, intuitive input fields, and helpful error messages to guide users through the process and minimize friction.
+   
+7. <strong>Load Time Optimization:</strong> Optimize the website's performance to ensure fast load times and a smooth user experience. This can be achieved by compressing images, minifying CSS and JavaScript files, and utilizing caching techniques.
+   
+8. <strong>Accessibility:</strong> Design the website with accessibility in mind, ensuring that users with disabilities can access and interact with the content. This can be achieved by using semantic HTML, proper color contrast, keyboard navigation support, and screen reader-friendly content.
+   
+By considering these aspects and focusing on creating a positive user experience, the Home Store & More e-commerce webstore will be more likely to engage users, encourage repeat visits, and ultimately drive conversions and sales
+
 ### User stories
 
-#### First time visitor goals
-
-As a first time visitor, I want:
-- to easily understand the main purpose of the site.
-- to be able to easily navigate throughout the site.
-- to be able to register a user account to access all content without restrictions.
-- to be able to log out of my user account.
-
-#### Returning and frequent user goals
-
-As a returning user, I want:
-- to sign in to my user account.
-- to make a service booking.
-- to view my booking details.
-- to edit my booking details or delete them.
-- to create users post, edit and delete them.
-- to sign out of my account to keep my account safe.
-- to be able to reserve a day and time for a service, view booking details and make changes to created bookings and delete my bookings.
+See the GitHub Projects section was used as a [Kanban board](https://github.com/users/SergiyKochenko/projects/14) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
+[User stories](https://github.com/users/SergiyKochenko/projects/14) were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
 
 #### Site Administrator goals
 
-As a Site Administrator I would like to be able to create, view, edit and delete booking data and create, edite, delete posts.
+Site Administrator Goals for the Home Store & More e-commerce webstore:
 
-### Agile tools
+1. <strong>Efficient Product Management:</strong> Implement an easy-to-use and efficient product management system, allowing the site administrator to add, edit, and remove products, as well as manage product categories and inventory.
+   
+2. <strong>Order Management:</strong> Develop a comprehensive order management system that enables the site administrator to monitor and manage customer orders, track shipping statuses, and handle returns or refunds when necessary.
+3. <strong>User Management:</strong> Implement a user management system that allows the site administrator to manage registered users, monitor user activity, and address any reported issues or concerns.
+   
+4. <strong>Secure Payment Processing:</strong> Ensure the secure handling and processing of payment information, even though the website currently does not accept real transactions, to demonstrate a commitment to security and data protection.
 
-The GitHub Projects section was used as a [Kanban board](https://github.com/users/SergiyKochenko/projects/6) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
-[User stories](https://github.com/users/SergiyKochenko/projects/6) were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
+5. <strong>Site Analytics and Reporting:</strong> Integrate site analytics and reporting features that provide the site administrator with valuable insights into user behavior, popular products, sales trends, and other key performance indicators (KPIs).
+   
+6. <strong>Marketing and Promotion:</strong> Facilitate the creation and management of marketing campaigns and promotions, such as discounts, special offers, and email marketing, to drive traffic and increase sales.
+   
+7. <strong>Content Management:</strong> Implement an easy-to-use content management system (CMS) that allows the site administrator to update and maintain the website's content, including banners, blog posts, and static pages.
+
+8. <strong>Customer Support:</strong> Develop a system for managing customer inquiries, complaints, and feedback, enabling the site administrator to provide timely and effective support to users.
+   
+9. <strong>System Maintenance and Updates:</strong> Ensure regular system maintenance and updates to keep the website running smoothly, address any potential security vulnerabilities, and implement new features and improvements as needed.
+
+10. <strong>Scalability and Performance:</strong> Monitor and optimize the website's performance and infrastructure to ensure fast load times and a smooth user experience, as well as plan for scalability to accommodate future growth.
+
+By focusing on these goals, the site administrator can effectively manage and maintain the Home Store & More e-commerce webstore, ensuring a positive experience for both users and the website's stakeholders.
+
 
 [Back to the top](#table-of-contents)
 
 ## Design Structure
 
-The site was based on the Blog template from the CodeInstitute site. The look of the site, color scheme, font, logo and image for the home page were made by myself from the template.
-The main page layout can be seen below.
+Design Structure for the Home Store & More e-commerce webstore:
+
+1. Header: The header section should include the website's logo, a search bar, user account options (login, register, account settings), and a shopping cart icon with the number of items in the cart. Additionally, a responsive navigation menu should be present, featuring the main product categories and any other essential pages, such as "About Us" or "Contact."
+2. Homepage: The homepage should feature a large, attention-grabbing banner or carousel showcasing popular or new products, special offers, or seasonal promotions. Below the banner, display a selection of featured products and categories, along with any relevant promotional material. Consider including a section for customer reviews or testimonials to build trust with potential buyers.
+3. Product Listing Page: Design a clean and organized layout for the product listing page, displaying products in a grid format with clear images, product names, prices, and a brief description. Include pagination for easy browsing, as well as filtering and sorting options to help users find what they're looking for quickly.
+4. Product Detail Page: The product detail page should include high-quality images of the product, a clear title, price, and availability information. Provide a detailed description, specifications, and any additional product information. Include an "Add to Cart" button, and display related products or upsell items to encourage additional purchases.
+5. Shopping Cart Page: Create a clear and organized layout for the shopping cart page, displaying the selected products with images, names, prices, and quantities. Allow users to update the quantity or remove items from their cart, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button, as well as options to continue shopping or save the cart for later.
+6. Checkout Page: Design a simple and user-friendly checkout process, with clear input fields for shipping and billing information, as well as a summary of the order details. Offer options for guest checkout or user registration, and provide a clear indication of the payment process and security measures in place.
+7. User Account Dashboard: Create an organized dashboard for registered users, displaying options to view and edit account information, manage shipping addresses, view order history, and access any other relevant features.
+8. Footer: The footer section should include links to important pages, such as "Terms & Conditions," "Privacy Policy," and "Return Policy." Also, provide contact information, social media icons, and a newsletter signup form for users who want to stay updated on promotions and news.
+
+By following this design structure, the Home Store & More e-commerce webstore will provide a visually appealing, user-friendly, and seamless browsing and shopping experience for users, ultimately driving conversions and sales.
+
 
 Site Navigation:
 
