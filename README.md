@@ -483,17 +483,17 @@ The wireframes can be seen below:
 
 6. **User Account Dashboard:** Create a dashboard for registered users with options to view and edit account information, manage shipping addresses, view order history, and access other relevant features.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![User Account Dashboard](/static/assets/wireframes/home-modile.png)
+ ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-desktop.png)
 </details>
 <br>
 
 7. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![404, 403, and 500 Error Pages](/static/assets/wireframes/home-modile.png)
+ ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404.png)
 </details>
 <br>
 
