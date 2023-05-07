@@ -40,6 +40,8 @@ Live project: [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.co
 
 The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecommerce)
 
+[Back to the Table of Contents](#table-of-contents)
+
 # Amiresponsive - "Home Store & More".
 
 ![](static/assets/images/amiresponsive.png)
@@ -47,8 +49,6 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 ## Table of contents
 
 - [Overview](#overview)
-- [Amiresponsive - "Home Store \& More".](#amiresponsive---home-store--more)
-  - [Table of contents](#table-of-contents)
   - [Project goals](#project-goals)
   - [UX (User Experience)](#ux-user-experience)
   - [User Experience](#user-experience)
@@ -57,6 +57,9 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 - [Design Structure](#design-structure)
   - [Color Scheme](#color-scheme)
   - [Functional Structure](#functional-structure)
+  - - [404 page](#404-page)
+  - - [403 page](#403-page)
+  - - [500 page](#500-page)
   - [Wireframes](#wireframes)
 - [Features](#features)
   - [Navbar](#navbar)
@@ -287,6 +290,28 @@ Aquerium House website design templates:
 
 ### Color Scheme
 
+A well-chosen color scheme for the Home Store & More e-commerce webstore will create a visually appealing and cohesive user experience. Here is a proposed color scheme for the website:
+
+1. Primary Color - Dark Blue: #1D3557
+- Use this color for important elements, such as the header, footer, and main navigation menu. Dark blue conveys trust, professionalism, and stability, making it a popular choice for e-commerce websites.
+
+2. Secondary Color - Light Blue: #A8DADC
+
+- Apply this color for accents, such as buttons, links, and other interactive elements. Light blue provides a pleasant contrast to the dark blue and is associated with calmness and reliability.
+
+3. Tertiary Color - Orange: #E76F51
+
+- Use this color sparingly for attention-grabbing elements, such as call-to-action buttons, sale tags, or promotion banners. Orange is an energetic and eye-catching color that can encourage users to take action.
+
+4. Background Color - Light Gray: #F1FAEE
+
+- Utilize this color for the main background of the website, as it provides a clean and neutral backdrop that allows other colors and content to stand out.
+
+5. Text Color - Dark Gray: #333333
+
+- Use this color for the majority of the text content on the website. Dark gray is an excellent choice for readability and contrasts well with the light gray background.
+
+By implementing this color scheme, the Home Store & More e-commerce webstore will create a visually appealing and user-friendly experience for its visitors. These colors will work together to establish a professional and trustworthy appearance, which is essential for an e-commerce website.
 <details>
 <summary>Color palette generator </summary>
 
@@ -341,7 +366,7 @@ Registration and login are also available from the navigation bar.
 
 **Footer** The footer contains logo, navbar, contact information, social media icons, copyright.
 
-**404 page**
+### 404 page
 
 The 404 page is an essential part of any website, as it serves as the error page displayed when a user attempts to visit a non-existent URL or encounters a broken link. A well-designed 404 page can help retain users and guide them back to the main site, rather than losing them due to frustration or confusion.
 
@@ -360,145 +385,175 @@ The 404 page is an essential part of any website, as it serves as the error page
    
 By incorporating these design elements and features, the 404 page for the Home Store & More e-commerce webstore will not only inform users of the error but also help guide them back to the main site, improving user experience and reducing bounce rates.
 
-**403 page**
+### 403 page
 
-- A 403 Forbidden Error occurs when a web server forbids you from accessing the page you’re trying to open in your browser. Most of the time, there’s not much you can do. But sometimes, the problem might be on your end. Here are some things you can try.
+The 403 page is an important component of a website, as it serves as the error page displayed when a user attempts to access a restricted or forbidden resource. A well-designed 403 page can inform users about the issue and guide them to appropriate actions, rather than leaving them confused or frustrated.
 
-- The 403 Forbidden Error happens when the web page (or another resource) that you’re trying to open in your web browser is a resource that you’re not allowed to access. It’s called a 403 error because that’s the HTTP status code that the webserver uses to describe that kind of error.
+1. **Clear Error Message:** Display a prominent and clear error message indicating that the user does not have permission to access the requested resource (e.g., "Access Denied" or "403 Error: Forbidden").
 
-- You usually get this error for one of two reasons. The first is that the owners of the webserver have properly set up access permissions and that you’re really not allowed access to the resource. The second reason is that the owners of the webserver have improperly set up permissions and you’re getting denied access when you really shouldn’t be.
+2. **Consistent Design:** Maintain consistency in design, typography, and color scheme with the rest of the website to ensure a cohesive user experience and reinforce branding.
 
-- A 403 Forbidden Error occurs when you do not have permission to access a web page or something else on a web server. It's usually a problem with the website itself. However, you can try refreshing the page, clearing your cache and cookies, and disconnecting from any VPN you might be using.
+3. **Explanation:** Provide a brief explanation of why the user might be seeing the 403 error, such as not being logged in, not having the necessary permissions, or trying to access a restricted area.
 
-**500 page**
+4. **Actionable Steps:** Offer actionable steps that users can take to resolve the issue, such as logging in, registering for an account, or contacting support for assistance.
 
-- 500 (internal server error)
-Either your server is down, or your code is so f*cked that it crashed the entire app. I’d recommend you call your developer immediately, relaunch the app, or restart the server.
+5. **Navigation Options:** Provide clear and easy-to-find navigation options, such as a search bar, links to popular categories or pages, and a button or link to return to the homepage. This will help guide users back to the main site and encourage them to continue browsing.
+
+6. **Engaging Visuals:** Consider using engaging visuals or illustrations related to the 403 error to convey the message in a more approachable manner and create a positive impression.
+
+7. **Responsive Design:** Ensure that the 403 page is responsive and looks good on various devices and screen sizes.
+
+By incorporating these design elements and features, the 403 page for the Home Store & More e-commerce webstore will effectively inform users about the access issue and guide them to appropriate actions, improving user experience and maintaining a professional appearance.
+
+### 500 page
+
+The 500 page is a crucial component of a website, as it serves as the error page displayed when a server-side error occurs. A well-designed 500 page can inform users about the issue and reassure them that the problem is being addressed, rather than leaving them frustrated or confused.
+
+1. **Clear Error Message:** Display a prominent and clear error message indicating that there has been a server-side error (e.g., "Oops! Something went wrong" or "500 Error: Internal Server Error").
+
+2. **Consistent Design:** Maintain consistency in design, typography, and color scheme with the rest of the website to ensure a cohesive user experience and reinforce branding.
+
+3. **Explanation:** Provide a brief explanation of the issue, informing users that the server encountered an error while processing their request.
+
+4. **Reassurance:** Reassure users that the issue is temporary and that the website's team is aware of the problem and working to resolve it as soon as possible.
+
+5. **Navigation Options:** Provide clear and easy-to-find navigation options, such as a search bar, links to popular categories or pages, and a button or link to return to the homepage. This will help guide users back to the main site and encourage them to continue browsing.
+
+6. **Engaging Visuals:** Consider using engaging visuals or illustrations related to the 500 error to convey the message in a more approachable manner and create a positive impression.
+
+7. **Contact Information:** Provide contact information or a link to the support page, encouraging users to report the issue if it persists or if they need further assistance.
+
+8. **Responsive Design:** Ensure that the 500 page is responsive and looks good on various devices and screen sizes.
+
+By incorporating these design elements and features, the 500 page for the Home Store & More e-commerce webstore will effectively inform users about the server-side issue, reassure them that the problem is being addressed, and guide them to appropriate actions or alternative options, improving user experience and maintaining a professional appearance.
 
 [Back to the top](#table-of-contents)
 
 ### Wireframes
 
-The wireframes were slightly modified during the actual creation of the project, e.g. with pages installed removed form for user convenience and better UX.
+Wireframes are an essential part of the design process, as they help visualize the layout and structure of a website before development begins. They are typically low-fidelity, focusing on the placement and organization of elements, rather than visual design or colors.
+
+Here is a structure for created wireframes for the Home Store & More webstore.
+The wireframes were slightly modified during the actual creation of the project, 
+e.g. with pages installed removed form for user convenience and better UX.
+
 The wireframes can be seen below:
+
+**For Desktop view**
+
+1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
+<details>
+<summary>See Image</summary>
+
+ ![Homepage](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+2. **Product Listing Page:** Design a clean layout with a grid of products, including images, titles, prices, and brief descriptions. Add pagination, filtering, and sorting options for easy browsing.
+<details>
+<summary>See Image</summary>
+
+ ![Product Listing Page](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+3. **Product Detail Page:** Display high-quality product images, title, price, and availability information. Include a detailed description, specifications, and an "Add to Cart" button. Optionally, showcase related products or upsell items.
+<details>
+<summary>See Image</summary>
+
+ ![Product Detail Page](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+4. **Shopping Cart Page:** Present a clear layout of the selected products with images, titles, prices, and quantities. Allow users to update quantities or remove items, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button and options to continue shopping or save the cart for later.
+<details>
+<summary>See Image</summary>
+
+ ![Shopping Cart Page](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+5. **Checkout Page:** Design a simple and user-friendly checkout process with input fields for shipping and billing information and a summary of the order details. Offer guest checkout or user registration and provide clear indications of the payment process and security measures.
+<details>
+<summary>See Image</summary>
+
+ ![Checkout Page](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+6. **User Account Dashboard:** Create a dashboard for registered users with options to view and edit account information, manage shipping addresses, view order history, and access other relevant features.
+<details>
+<summary>See Image</summary>
+
+ ![User Account Dashboard](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
+
+7. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
+<details>
+<summary>See Image</summary>
+
+ ![404, 403, and 500 Error Pages](/static/assets/wireframes/home-modile.png)
+</details>
+<br>
 
 **For Mobile view and small screens**
 
+1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
 <details>
-<summary>Home page</summary>
+<summary>See Image</summary>
 
-![Home page](/static/assets/wireframes/home-modile.png)
-
+ ![Homepage](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+2. **Product Listing Page:** Design a clean layout with a grid of products, including images, titles, prices, and brief descriptions. Add pagination, filtering, and sorting options for easy browsing.
 <details>
-<summary>Sign up page</summary>
+<summary>See Image</summary>
 
-![Sign up page](/static/assets/wireframes/sign-up-mobile.png)
-
+ ![Product Listing Page](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+3. **Product Detail Page:** Display high-quality product images, title, price, and availability information. Include a detailed description, specifications, and an "Add to Cart" button. Optionally, showcase related products or upsell items.
 <details>
-<summary>Login page</summary>
+<summary>See Image</summary>
 
-![Login page](/static/assets/wireframes/login-mobile.png)
-
+ ![Product Detail Page](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+4. **Shopping Cart Page:** Present a clear layout of the selected products with images, titles, prices, and quantities. Allow users to update quantities or remove items, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button and options to continue shopping or save the cart for later.
 <details>
-<summary>Pricing page</summary>
+<summary>See Image</summary>
 
-![Pricing page](/static/assets/wireframes/pricing-mobile.png)
-
+ ![Shopping Cart Page](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+5. **Checkout Page:** Design a simple and user-friendly checkout process with input fields for shipping and billing information and a summary of the order details. Offer guest checkout or user registration and provide clear indications of the payment process and security measures.
 <details>
-<summary>Contact page</summary>
+<summary>See Image</summary>
 
-![Contact page](/static/assets/wireframes/contact-mobile.png)
-
+ ![Checkout Page](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+6. **User Account Dashboard:** Create a dashboard for registered users with options to view and edit account information, manage shipping addresses, view order history, and access other relevant features.
 <details>
-<summary>Book Now page</summary>
+<summary>See Image</summary>
 
-![Book Now page](/static/assets/wireframes/booknow-mobile.png)
-
+ ![User Account Dashboard](/static/assets/wireframes/home-modile.png)
 </details>
+<br>
 
+7. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
 <details>
-<summary>My Bookings page</summary>
+<summary>See Image</summary>
 
-![My Bookings page](/static/assets/wireframes/my-bookings-mobile.png)
-
+ ![404, 403, and 500 Error Pages](/static/assets/wireframes/home-modile.png)
 </details>
-
-<details>
-<summary>About page</summary>
-
-![About page](/static/assets/wireframes/about-mobile.png)
-
-</details>
-
-<br />
-
-**For Desktop view**
-<details>
-<summary>Home page</summary>
-
-![Home page](static/assets/wireframes/home-desktop.png)
-
-</details>
-
-<details>
-<summary>Sign up page</summary>
-
-![Sign up page](/static/assets/wireframes/sign-up-page.png)
-
-</details>
-
-<details>
-<summary>Login page</summary>
-
-![Login page](/static/assets/wireframes/login-page.png)
-
-</details>
-
-<details>
-<summary>Pricing page</summary>
-
-![Pricing page](/static/assets/wireframes/pricing-desktop.png)
-
-</details>
-
-<details>
-<summary>Contact page</summary>
-
-![Contact page](/static/assets/wireframes/contact-desktop.png)
-
-</details>
-
-<details>
-<summary>Book Now page</summary>
-
-![Book Now page](/static/assets/wireframes/book-now-desktop.png)
-
-</details>
-
-<details>
-<summary>My Bookings page</summary>
-
-![My Bookings page](/static/assets/wireframes/my-bookings-desktop.png)
-
-</details>
-
-<details>
-<summary>About page</summary>
-
-![About page](/static/assets/wireframes/about-desktop.png)
-
-</details>
-<br />
+<br>
 
 [Back to the top](#table-of-contents)
 
