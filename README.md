@@ -443,9 +443,9 @@ The wireframes can be seen below:
 
 1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Homepage](/static/assets/wireframes/home-modile.png)
+ ![Homepage](static/assets/images/wireframes/home-desktop.png)
 </details>
 <br>
 
