@@ -451,17 +451,17 @@ The wireframes can be seen below:
 
 2. **Product Listing Page:** Design a clean layout with a grid of products, including images, titles, prices, and brief descriptions. Add pagination, filtering, and sorting options for easy browsing.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Product Listing Page](/static/assets/wireframes/home-modile.png)
+ ![Product Listing Page](static/assets/images/wireframes/product-listing-page-desktop.png)
 </details>
 <br>
 
 3. **Product Detail Page:** Display high-quality product images, title, price, and availability information. Include a detailed description, specifications, and an "Add to Cart" button. Optionally, showcase related products or upsell items.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Product Detail Page](/static/assets/wireframes/home-modile.png)
+ ![Product Detail Page](static/assets/images/wireframes/product-detail-page-desktop.png)
 </details>
 <br>
 
