@@ -44,12 +44,8 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 
 ![](static/assets/images/amiresponsive.png)
 
-
-
-
 ## Table of contents
 
-- [Portfolio Project 5 - Home Store \& More eCommerce Webstore](#portfolio-project-5---home-store--more-ecommerce-webstore)
 - [Overview](#overview)
 - [Amiresponsive - "Home Store \& More".](#amiresponsive---home-store--more)
   - [Table of contents](#table-of-contents)
@@ -57,7 +53,7 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - [UX (User Experience)](#ux-user-experience)
     - [User Experience](#user-experience)
     - [User stories](#user-stories)
-      - [Site Administrator goals](#site-administrator-goals)
+    - [Site Administrator goals](#site-administrator-goals)
   - [Design Structure](#design-structure)
     - [Color Scheme](#color-scheme)
     - [Functional Structure](#functional-structure)
@@ -84,13 +80,13 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
     - [Tools](#tools)
   - [Testing](#testing)
     - [Bugs](#bugs)
-      - [Fixed Bugs](#fixed-bugs)
+    - [Fixed Bugs](#fixed-bugs)
     - [Bug reports bug reports](#bug-reports-bug-reports)
-      - [Unresolved Bugs](#unresolved-bugs)
+    - [Unresolved Bugs](#unresolved-bugs)
   - [Automated testing (Unit test)](#automated-testing-unit-test)
   - [Manual Testing](#manual-testing)
-      - [Device Testing](#device-testing)
-      - [Browsers Tested](#browsers-tested)
+    - [Device Testing](#device-testing)
+    - [Browsers Tested](#browsers-tested)
     - [Testing CRUD functionality](#testing-crud-functionality)
   - [Validations](#validations)
     - [HTML Validation](#html-validation)
@@ -347,13 +343,22 @@ Registration and login are also available from the navigation bar.
 
 **404 page**
 
-- A 404 error indicates that the webpage you're trying to reach can't be found.
+The 404 page is an essential part of any website, as it serves as the error page displayed when a user attempts to visit a non-existent URL or encounters a broken link. A well-designed 404 page can help retain users and guide them back to the main site, rather than losing them due to frustration or confusion.
 
-- You might see a 404 error because of a problem with the website, because the page was moved or deleted, or because you typed the URL wrong.
-
-- 404 errors are less common today than they used to be, as websites now strive to automatically redirect visitors away from deleted pages.
-
-- There are several ways you can try to resolve 404 errors on your own site or other sites.
+- For the Home Store & More e-commerce webstore, the 404 page should include the following design elements and features:
+  1. <strong>Clear Error Message:</strong> Display a prominent and clear error message indicating that the requested page could not be found (e.g., "Oops! Page Not Found" or "404 Error: Page Not Found").
+   
+  2. <strong>Consistent Design:</strong> Maintain consistency in design, typography, and color scheme with the rest of the website to ensure a cohesive user experience and reinforce branding.
+   
+  3. <strong>Helpful Suggestions:</strong> Offer helpful suggestions or tips for users to find what they are looking for, such as checking the entered URL for typos, using the search function, or browsing through the main product categories.
+  
+  4. <strong>Navigation Options:</strong> Provide clear and easy-to-find navigation options, such as a search bar, links to popular categories or pages, and a button or link to return to the homepage. This will help guide users back to the main site and encourage them to continue browsing.
+  
+  5. <strong>Engaging Visuals:</strong> Consider using engaging visuals or illustrations related to the 404 error to inject a sense of humor or lightheartedness into the page, helping to alleviate user frustration and create a positive impression.
+  
+  6. <strong>Responsive Design:</strong> Ensure that the 404 page is responsive and looks good on various devices and screen sizes.
+   
+By incorporating these design elements and features, the 404 page for the Home Store & More e-commerce webstore will not only inform users of the error but also help guide them back to the main site, improving user experience and reducing bounce rates.
 
 **403 page**
 
