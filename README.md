@@ -467,17 +467,17 @@ The wireframes can be seen below:
 
 4. **Shopping Cart Page:** Present a clear layout of the selected products with images, titles, prices, and quantities. Allow users to update quantities or remove items, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button and options to continue shopping or save the cart for later.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Shopping Cart Page](/static/assets/wireframes/home-modile.png)
+ ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-desktop.png)
 </details>
 <br>
 
 5. **Checkout Page:** Design a simple and user-friendly checkout process with input fields for shipping and billing information and a summary of the order details. Offer guest checkout or user registration and provide clear indications of the payment process and security measures.
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Checkout Page](/static/assets/wireframes/home-modile.png)
+ ![Checkout Page](static/assets/images/wireframes/checkout-page-desktop.png)
 </details>
 <br>
 
