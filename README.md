@@ -489,7 +489,60 @@ The wireframes can be seen below:
 </details>
 <br>
 
-7. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
+7. **Hire Page:** Design a page dedicated to offering professional services, such as interior design, furniture assembly, or home improvement consultations. Include the following sections:
+<details>
+<summary>See wireframe screenshot "Hire" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
+</details>
+<br>
+
+a. **Service Categories:** Display a grid or list of the different services offered, along with a brief description and an eye-catching image or icon for each category.
+
+b. **How It Works:** Describe the process for hiring professionals through the website, such as submitting a request, receiving quotes, selecting a service provider, and making payments. Use clear and concise steps with accompanying visuals.
+
+c. **Testimonials and Reviews:** Showcase positive feedback from previous customers who have used the website's hiring services. This can help build trust and credibility with potential clients.
+
+8. **Packages Page:** Design a page dedicated to showcasing pre-selected or custom package deals, such as furniture sets, home decor bundles, or appliance combinations. Include the following sections:
+
+<details>
+<summary>See wireframe screenshot "Packages" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/packages-page-desktop.png)
+</details>
+<br>
+
+a. **Featured Packages:** Display a grid or list of the featured packages, including images, titles, descriptions, and prices. Highlight any discounts or special offers associated with these packages.
+
+b. **Custom Packages:** Offer users the option to create their own custom packages by selecting products from different categories. Provide an interactive interface where users can add, remove, or modify items in their custom package and see the updated price.
+
+c. **Why Choose Our Packages:** Emphasize the benefits of purchasing packages, such as discounted prices, cohesive design, or hassle-free shopping experience. Use clear messaging and visuals to communicate these advantages.
+
+d. **Customer Testimonials:** Showcase positive feedback from customers who have purchased packages from the website. This can help build trust and encourage potential clients to explore package options.
+
+
+
+
+9. **About Page:** Design a page that shares the story, mission, and values of the Home Store & More e-commerce webstore. Include the following sections:
+<details>
+<summary>See wireframe screenshot "About" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/about-page-desktop.png)
+</details>
+<br>
+a. **Our Story:** Provide a brief history of the company, its founders, and its journey to becoming an e-commerce webstore. Use engaging storytelling to connect with users on a personal level.
+
+b. **Mission and Values:** Clearly articulate the company's mission and core values, emphasizing its commitment to customer satisfaction, product quality, and social responsibility.
+
+c. **Team:** Showcase the key members of the company, including their photos, names, titles, and a brief bio. This can help humanize the brand and create a sense of trust with users.
+
+d. **Why Shop With Us:** Highlight the unique selling points of the Home Store & More webstore, such as a wide product selection, competitive prices, or exceptional customer service. Use visuals and clear messaging to communicate these advantages.
+
+e. **Press and Awards:** Mention any press coverage, industry recognition, or awards the company has received. This can help build credibility and authority in the market.
+
+f. **Community Involvement:** Showcase any charitable initiatives or community projects the company has been involved in, demonstrating its commitment to social responsibility.
+
+8. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
 <details>
 <summary>See wireframe screenshot:</summary>
 
@@ -554,6 +607,8 @@ The wireframes can be seen below:
  ![404, 403, and 500 Error Pages](/static/assets/wireframes/home-modile.png)
 </details>
 <br>
+
+You can use wireframing tools like Balsamiq to create wireframes for the Home Store & More webstore. I have created the wireframes, I did include them in my README file, by uploading the images to a file assets and linking to them.
 
 [Back to the top](#table-of-contents)
 
