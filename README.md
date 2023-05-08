@@ -603,7 +603,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-desktop.png)
+ ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-mobile.png)
 </details>
 <br>
 
@@ -611,7 +611,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot "Hire" page:</summary>
 
- ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
+ ![User Account Dashboard](static/assets/images/wireframes/hire-page-mobile.png)
 </details>
 <br>
 
