@@ -50,7 +50,6 @@ class TestimonialFormTest(TestCase):
     #     self.assertFalse(form.is_valid(), 'Form is valid with invalid image.')
     #     self.assertIn('image', form.errors, 'Form does not have image errors.')
 
-
     def test_save_form(self):
         form = testimonialForm(data=self.form_data)
         self.assertTrue(form.is_valid())
