@@ -61,6 +61,8 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - - [403 page](#403-page)
   - - [500 page](#500-page)
   - [Wireframes](#wireframes)
+  - - [For Desktop view](#for-desktop-view)
+  - - [For Mobile view and small screens](#for-mobile-view-and-small-screens)
 - [Features](#features)
   - [Navbar](#navbar)
   - [Home page](#home-page)
@@ -111,20 +113,20 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 
 The primary goals of the Home Store & More e-commerce webstore project are:
 
-1. <strong>Portfolio Showcase:</strong> Demonstrate the developer's skills and capabilities in full-stack web development, specifically in the context of e-commerce, as part of The Code Institute's Full Stack Software Development (eCommerce) Diploma program.
+1. **Portfolio Showcase:** Demonstrate the developer's skills and capabilities in full-stack web development, specifically in the context of e-commerce, as part of The Code Institute's Full Stack Software Development (eCommerce) Diploma program.
    
-2. <strong>User Experience:</strong> Create a visually appealing, responsive, and user-friendly web application that offers an intuitive browsing and shopping experience for a diverse and growing target audience.
+2. **User Experience:** Create a visually appealing, responsive, and user-friendly web application that offers an intuitive browsing and shopping experience for a diverse and growing target audience.
 
-3. <strong>Product Catalog:</strong> Design a comprehensive product catalog with a wide range of home products and solutions, organized into categories for easy browsing and navigation.
-4. <strong>Search and Filter:</strong> Implement search functionality and filtering options, allowing users to quickly locate specific products and tailor their browsing experience according to their preferences.
+3. **Product Catalog:** Design a comprehensive product catalog with a wide range of home products and solutions, organized into categories for easy browsing and navigation.
+4. **Search and Filter:** Implement search functionality and filtering options, allowing users to quickly locate specific products and tailor their browsing experience according to their preferences.
    
-5. <strong>User Accounts and Authentication:</strong> Integrate user account creation and authentication features, enabling users to create profiles, save their preferences, and view their order history.
+5. **User Accounts and Authentication:** Integrate user account creation and authentication features, enabling users to create profiles, save their preferences, and view their order history.
    
-6. <strong>Shopping Cart and Checkout:</strong> Develop a seamless shopping cart system and a simulated checkout process that demonstrates the understanding and implementation of a secure and user-friendly e-commerce transaction flow.
+6. **Shopping Cart and Checkout:** Develop a seamless shopping cart system and a simulated checkout process that demonstrates the understanding and implementation of a secure and user-friendly e-commerce transaction flow.
    
-7. <strong>Performance and Optimization:</strong> Optimize the website for performance and fast load times, ensuring a smooth and enjoyable user experience.
+7. **Performance and Optimization:** Optimize the website for performance and fast load times, ensuring a smooth and enjoyable user experience.
    
-8. <strong>Scalability and Extensibility:</strong> Build a solid foundation that allows for future expansion and refinement, making it possible to add new features, products, and functionalities as the platform grows.
+8. **Scalability and Extensibility:** Build a solid foundation that allows for future expansion and refinement, making it possible to add new features, products, and functionalities as the platform grows.
 
 ## UX (User Experience)
 
@@ -132,21 +134,21 @@ The primary goals of the Home Store & More e-commerce webstore project are:
 
 UX, or User Experience, refers to the overall experience a user has while interacting with a product, service, or website. It encompasses various aspects of design, functionality, and usability to create a seamless and enjoyable experience for users. Here are some key elements to consider when creating a positive UX for the Home Store & More e-commerce webstore:
 
-1. <strong>Intuitive Navigation:</strong> Design a clear and consistent navigation structure that allows users to easily move between different sections of the website. This can be achieved by using a well-organized menu with easy-to-understand labels and logical categorization of products and content.
+1. **Intuitive Navigation:** Design a clear and consistent navigation structure that allows users to easily move between different sections of the website. This can be achieved by using a well-organized menu with easy-to-understand labels and logical categorization of products and content.
    
-2. <strong>Responsive Design:</strong> Ensure that the website looks and functions well on various devices and screen sizes, including desktops, laptops, tablets, and smartphones. This can be achieved by using responsive design techniques, such as fluid grids, flexible images, and media queries.
+2. **Responsive Design:** Ensure that the website looks and functions well on various devices and screen sizes, including desktops, laptops, tablets, and smartphones. This can be achieved by using responsive design techniques, such as fluid grids, flexible images, and media queries.
    
-3. <strong>Clear and Consistent Visual Hierarchy:</strong> Establish a visual hierarchy that guides users through the content and makes it easy for them to understand the layout and organization of the website. Use consistent typography, color schemes, and design elements throughout the site to create a cohesive look and feel.
+3. **Clear and Consistent Visual Hierarchy:** Establish a visual hierarchy that guides users through the content and makes it easy for them to understand the layout and organization of the website. Use consistent typography, color schemes, and design elements throughout the site to create a cohesive look and feel.
 
-4. <strong>Effective Search and Filtering:</strong> Implement a search feature that allows users to quickly find specific products and content. Additionally, provide filtering options so users can refine their search results and browse products based on their preferences and requirements.
+4. **Effective Search and Filtering:** Implement a search feature that allows users to quickly find specific products and content. Additionally, provide filtering options so users can refine their search results and browse products based on their preferences and requirements.
    
-5. <strong>Informative Product Pages:</strong> Design detailed and informative product pages that provide users with all the necessary information to make informed purchase decisions. Include high-quality images, clear product descriptions, specifications, pricing, and customer reviews.
+5. **Informative Product Pages:** Design detailed and informative product pages that provide users with all the necessary information to make informed purchase decisions. Include high-quality images, clear product descriptions, specifications, pricing, and customer reviews.
    
-6. <strong>User-friendly Forms:</strong> Create simple and user-friendly forms for user registration, login, and checkout processes. Use clear labels, intuitive input fields, and helpful error messages to guide users through the process and minimize friction.
+6. **User-friendly Forms:** Create simple and user-friendly forms for user registration, login, and checkout processes. Use clear labels, intuitive input fields, and helpful error messages to guide users through the process and minimize friction.
    
-7. <strong>Load Time Optimization:</strong> Optimize the website's performance to ensure fast load times and a smooth user experience. This can be achieved by compressing images, minifying CSS and JavaScript files, and utilizing caching techniques.
+7. **Load Time Optimization:** Optimize the website's performance to ensure fast load times and a smooth user experience. This can be achieved by compressing images, minifying CSS and JavaScript files, and utilizing caching techniques.
    
-8. <strong>Accessibility:</strong> Design the website with accessibility in mind, ensuring that users with disabilities can access and interact with the content. This can be achieved by using semantic HTML, proper color contrast, keyboard navigation support, and screen reader-friendly content.
+8. **Accessibility:** Design the website with accessibility in mind, ensuring that users with disabilities can access and interact with the content. This can be achieved by using semantic HTML, proper color contrast, keyboard navigation support, and screen reader-friendly content.
    
 By considering these aspects and focusing on creating a positive user experience, the Home Store & More e-commerce webstore will be more likely to engage users, encourage repeat visits, and ultimately drive conversions and sales
 
@@ -159,24 +161,24 @@ See the GitHub Projects section was used as a [Kanban board](https://github.com/
 
 Site Administrator Goals for the Home Store & More e-commerce webstore:
 
-1. <strong>Efficient Product Management:</strong> Implement an easy-to-use and efficient product management system, allowing the site administrator to add, edit, and remove products, as well as manage product categories and inventory.
+1. **Efficient Product Management:** Implement an easy-to-use and efficient product management system, allowing the site administrator to add, edit, and remove products, as well as manage product categories and inventory.
    
-2. <strong>Order Management:</strong> Develop a comprehensive order management system that enables the site administrator to monitor and manage customer orders, track shipping statuses, and handle returns or refunds when necessary.
-3. <strong>User Management:</strong> Implement a user management system that allows the site administrator to manage registered users, monitor user activity, and address any reported issues or concerns.
+2. **Order Management:** Develop a comprehensive order management system that enables the site administrator to monitor and manage customer orders, track shipping statuses, and handle returns or refunds when necessary.
+3. **User Management:** Implement a user management system that allows the site administrator to manage registered users, monitor user activity, and address any reported issues or concerns.
    
-4. <strong>Secure Payment Processing:</strong> Ensure the secure handling and processing of payment information, even though the website currently does not accept real transactions, to demonstrate a commitment to security and data protection.
+4. **Secure Payment Processing:** Ensure the secure handling and processing of payment information, even though the website currently does not accept real transactions, to demonstrate a commitment to security and data protection.
 
-5. <strong>Site Analytics and Reporting:</strong> Integrate site analytics and reporting features that provide the site administrator with valuable insights into user behavior, popular products, sales trends, and other key performance indicators (KPIs).
+5. **Site Analytics and Reporting:** Integrate site analytics and reporting features that provide the site administrator with valuable insights into user behavior, popular products, sales trends, and other key performance indicators (KPIs).
    
-6. <strong>Marketing and Promotion:</strong> Facilitate the creation and management of marketing campaigns and promotions, such as discounts, special offers, and email marketing, to drive traffic and increase sales.
+6. **Marketing and Promotion:** Facilitate the creation and management of marketing campaigns and promotions, such as discounts, special offers, and email marketing, to drive traffic and increase sales.
    
-7. <strong>Content Management:</strong> Implement an easy-to-use content management system (CMS) that allows the site administrator to update and maintain the website's content, including banners, blog posts, and static pages.
+7. **Content Management:** Implement an easy-to-use content management system (CMS) that allows the site administrator to update and maintain the website's content, including banners, blog posts, and static pages.
 
-8. <strong>Customer Support:</strong> Develop a system for managing customer inquiries, complaints, and feedback, enabling the site administrator to provide timely and effective support to users.
+8. **Customer Support:** Develop a system for managing customer inquiries, complaints, and feedback, enabling the site administrator to provide timely and effective support to users.
    
-9. <strong>System Maintenance and Updates:</strong> Ensure regular system maintenance and updates to keep the website running smoothly, address any potential security vulnerabilities, and implement new features and improvements as needed.
+9. **System Maintenance and Updates:** Ensure regular system maintenance and updates to keep the website running smoothly, address any potential security vulnerabilities, and implement new features and improvements as needed.
 
-10. <strong>Scalability and Performance:</strong> Monitor and optimize the website's performance and infrastructure to ensure fast load times and a smooth user experience, as well as plan for scalability to accommodate future growth.
+10. **Scalability and Performance:** Monitor and optimize the website's performance and infrastructure to ensure fast load times and a smooth user experience, as well as plan for scalability to accommodate future growth.
 
 By focusing on these goals, the site administrator can effectively manage and maintain the Home Store & More e-commerce webstore, ensuring a positive experience for both users and the website's stakeholders.
 
@@ -288,6 +290,8 @@ Aquerium House website design templates:
 
 <br/>
 
+[Back to the top](#table-of-contents)
+
 ### Color Scheme
 
 A well-chosen color scheme for the Home Store & More e-commerce webstore will create a visually appealing and cohesive user experience. Here is a proposed color scheme for the website:
@@ -371,17 +375,17 @@ Registration and login are also available from the navigation bar.
 The 404 page is an essential part of any website, as it serves as the error page displayed when a user attempts to visit a non-existent URL or encounters a broken link. A well-designed 404 page can help retain users and guide them back to the main site, rather than losing them due to frustration or confusion.
 
 - For the Home Store & More e-commerce webstore, the 404 page should include the following design elements and features:
-  1. <strong>Clear Error Message:</strong> Display a prominent and clear error message indicating that the requested page could not be found (e.g., "Oops! Page Not Found" or "404 Error: Page Not Found").
+  1. **Clear Error Message:** Display a prominent and clear error message indicating that the requested page could not be found (e.g., "Oops! Page Not Found" or "404 Error: Page Not Found").
    
-  2. <strong>Consistent Design:</strong> Maintain consistency in design, typography, and color scheme with the rest of the website to ensure a cohesive user experience and reinforce branding.
+  2. **Consistent Design:** Maintain consistency in design, typography, and color scheme with the rest of the website to ensure a cohesive user experience and reinforce branding.
    
-  3. <strong>Helpful Suggestions:</strong> Offer helpful suggestions or tips for users to find what they are looking for, such as checking the entered URL for typos, using the search function, or browsing through the main product categories.
+  3. **Helpful Suggestions:** Offer helpful suggestions or tips for users to find what they are looking for, such as checking the entered URL for typos, using the search function, or browsing through the main product categories.
   
-  4. <strong>Navigation Options:</strong> Provide clear and easy-to-find navigation options, such as a search bar, links to popular categories or pages, and a button or link to return to the homepage. This will help guide users back to the main site and encourage them to continue browsing.
+  4. **Navigation Options:** Provide clear and easy-to-find navigation options, such as a search bar, links to popular categories or pages, and a button or link to return to the homepage. This will help guide users back to the main site and encourage them to continue browsing.
   
-  5. <strong>Engaging Visuals:</strong> Consider using engaging visuals or illustrations related to the 404 error to inject a sense of humor or lightheartedness into the page, helping to alleviate user frustration and create a positive impression.
+  5. **Engaging Visuals:** Consider using engaging visuals or illustrations related to the 404 error to inject a sense of humor or lightheartedness into the page, helping to alleviate user frustration and create a positive impression.
   
-  6. <strong>Responsive Design:</strong> Ensure that the 404 page is responsive and looks good on various devices and screen sizes.
+  6. **Responsive Design:** Ensure that the 404 page is responsive and looks good on various devices and screen sizes.
    
 By incorporating these design elements and features, the 404 page for the Home Store & More e-commerce webstore will not only inform users of the error but also help guide them back to the main site, improving user experience and reducing bounce rates.
 
@@ -429,7 +433,7 @@ By incorporating these design elements and features, the 500 page for the Home S
 
 [Back to the top](#table-of-contents)
 
-### Wireframes
+## Wireframes
 
 Wireframes are an essential part of the design process, as they help visualize the layout and structure of a website before development begins. They are typically low-fidelity, focusing on the placement and organization of elements, rather than visual design or colors.
 
@@ -439,7 +443,7 @@ e.g. with pages installed removed form for user convenience and better UX.
 
 The wireframes can be seen below:
 
-**For Desktop view**
+### For Desktop view
 
 1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
 <details>
@@ -550,65 +554,98 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 </details>
 <br>
 
-**For Mobile view and small screens**
+[Back to the top](#table-of-contents)
 
-1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
+### For Mobile view and small screens
+
+
+1. **Homepage:**
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Homepage](/static/assets/wireframes/home-modile.png)
+ ![Homepage](static/assets/images/wireframes/home-desktop.png)
 </details>
 <br>
 
-2. **Product Listing Page:** Design a clean layout with a grid of products, including images, titles, prices, and brief descriptions. Add pagination, filtering, and sorting options for easy browsing.
+2. **Product Listing Page:** 
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Product Listing Page](/static/assets/wireframes/home-modile.png)
+ ![Product Listing Page](static/assets/images/wireframes/product-listing-page-desktop.png)
 </details>
 <br>
 
-3. **Product Detail Page:** Display high-quality product images, title, price, and availability information. Include a detailed description, specifications, and an "Add to Cart" button. Optionally, showcase related products or upsell items.
+3. **Product Detail Page:**
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Product Detail Page](/static/assets/wireframes/home-modile.png)
+ ![Product Detail Page](static/assets/images/wireframes/product-detail-page-desktop.png)
 </details>
 <br>
 
-4. **Shopping Cart Page:** Present a clear layout of the selected products with images, titles, prices, and quantities. Allow users to update quantities or remove items, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button and options to continue shopping or save the cart for later.
+4. **Shopping Cart Page:** 
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Shopping Cart Page](/static/assets/wireframes/home-modile.png)
+ ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-desktop.png)
 </details>
 <br>
 
-5. **Checkout Page:** Design a simple and user-friendly checkout process with input fields for shipping and billing information and a summary of the order details. Offer guest checkout or user registration and provide clear indications of the payment process and security measures.
+5. **Checkout Page:** 
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![Checkout Page](/static/assets/wireframes/home-modile.png)
+ ![Checkout Page](static/assets/images/wireframes/checkout-page-desktop.png)
 </details>
 <br>
 
-6. **User Account Dashboard:** Create a dashboard for registered users with options to view and edit account information, manage shipping addresses, view order history, and access other relevant features.
+6. **User Account Dashboard:** 
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot:</summary>
 
- ![User Account Dashboard](/static/assets/wireframes/home-modile.png)
+ ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-desktop.png)
 </details>
 <br>
 
-7. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
+7. **Hire Page:** 
 <details>
-<summary>See Image</summary>
+<summary>See wireframe screenshot "Hire" page:</summary>
 
- ![404, 403, and 500 Error Pages](/static/assets/wireframes/home-modile.png)
+ ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
 </details>
 <br>
 
-You can use wireframing tools like Balsamiq to create wireframes for the Home Store & More webstore. I have created the wireframes, I did include them in my README file, by uploading the images to a file assets and linking to them.
+8. **Testimonials** 
+<details>
+<summary>See wireframe screenshot "Hire" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
+</details>
+<br>
+
+9. **Packages Page:**
+<details>
+<summary>See wireframe screenshot "Hire" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
+</details>
+<br>
+
+10. **About Page:** 
+<details>
+<summary>See wireframe screenshot "About" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/about-page-desktop.png)
+</details>
+<br>
+
+11. **404, 403, and 500 Error Pages:** 
+<details>
+<summary>See wireframe screenshot:</summary>
+
+ ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404.png)
+</details>
+<br>
 
 [Back to the top](#table-of-contents)
 
