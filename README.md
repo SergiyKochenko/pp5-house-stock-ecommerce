@@ -563,7 +563,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![Homepage](static/assets/images/wireframes/home-desktop.png)
+ ![Homepage](static/assets/images/wireframes/home-mobile.png)
 </details>
 <br>
 
@@ -571,7 +571,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![Product Listing Page](static/assets/images/wireframes/product-listing-page-desktop.png)
+ ![Product Listing Page](static/assets/images/wireframes/product-listing-page-mobile.png)
 </details>
 <br>
 
@@ -579,7 +579,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![Product Detail Page](static/assets/images/wireframes/product-detail-page-desktop.png)
+ ![Product Detail Page](static/assets/images/wireframes/product-detail-page-mobile.png)
 </details>
 <br>
 
@@ -587,7 +587,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-desktop.png)
+ ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-mobile.png)
 </details>
 <br>
 
@@ -595,7 +595,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![Checkout Page](static/assets/images/wireframes/checkout-page-desktop.png)
+ ![Checkout Page](static/assets/images/wireframes/checkout-page-mobile.png)
 </details>
 <br>
 
