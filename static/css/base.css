@@ -493,3 +493,311 @@ input[name='q']::placeholder {
     position: absolute;
     transform: translateX(-37%);
 }
+
+/* ========================== */
+
+
+@media (max-width: 1300px) {
+    video {
+        height: 330px;
+    }
+    }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+    }
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+
+    #nav-logo {
+        display: none;
+    }
+
+    #home-hero {
+        margin-top: 154px;
+    }
+
+    video {
+        height: 300px;
+    }
+
+    .nav-footer {
+        display: none;
+    }
+
+    .navbar-nav {
+        border-bottom: 2px solid #75e6ff;
+    }
+
+    .dropdown-menu.show {
+        margin-bottom: 1rem;
+    }
+
+    .lower-nav-border {
+        border-bottom: 2px solid #0c2d6c !important;
+    }
+
+    .home-card {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .home-card-img{
+        height: 80%;
+        object-fit: scale-down;
+    }
+    .basket-image-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+
+    .basket-img {
+        min-width: 280px;
+        object-fit: cover;
+    }
+    .basket-image-container {
+        padding-left: 0;
+    }
+
+    .wishlist-item-container {
+        width: 70%;
+    }
+
+    .wishlist-image-container{
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    .wishlist-img {
+        min-width: 280px;
+        object-fit: cover;
+    }
+    .wishlist-align {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .basket-item-details {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .email-conf {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .footer-inv-logo {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 25%;
+    }
+    .footer-contact-text {
+        padding: 2rem;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+
+    .footer-info-text {
+        padding-right: 0;
+    }
+    .footer-socials {
+        padding: 0;
+        padding-top: 0;
+        padding-left: 1rem;
+       
+    }
+    .footer-disclaimer {
+        width: 100%;
+        margin-left: 0;
+    }
+    }
+
+@media screen and (max-width: 767px) {
+    video {
+        height: 260px;
+    }
+    
+    #home-hero {
+        margin-top: 150px;
+    }
+    .basket-item-container {
+        width: 80%;
+    }
+    .count-align {
+        justify-content: start;
+    }
+    .product-detail-img-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .detail-container {
+        padding-left: 0em;
+        text-align: center;
+    }
+    .detail-form-selector {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .detail-no-stock {
+        text-align: center;
+    }
+    .basket-col {
+        margin-right: 0;
+    }
+    .iwa-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .hse-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .autism-logo {
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .adhd-logo {
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    }
+    
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+    #home-hero {
+        margin-top: 140px;
+    }
+    .auth-container {
+        margin-top: 150px;
+    }
+    .wishlist-container {
+        margin-top: 150px;
+    }
+    }
+
+@media screen and (max-width: 500px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    .logo-container {
+        max-width: 170px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        border: none;
+        width: 45px;
+        height: 40px;
+        margin-left: 0px;
+    }
+    .home-card {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .wishlist-item-container {
+        width: 90%;
+    }
+    .basket-item-container {
+        width: 90%;
+    }
+    .footer-inv-logo {
+        width: 40%;
+    }
+    footer i {
+        font-size: x-large;
+    }
+    }
+
+@media screen and (max-width: 430px) {
+    .logo-container {
+        max-width: 150px;
+        height: auto;
+    }
+    .nav-link{
+        padding: 3px;
+    }
+    .service-button{
+        font-size: small;
+        width: 80px;
+    }
+    .home-container {
+        width: 90%;
+    }
+    .products-bg {
+    margin-top: 180px;
+    background-size: cover;
+    }
+    .product-detail-bg {
+        margin-top: 150px;
+        background-size: cover;
+    }
+    .basket-img {
+        min-width: 206px;
+    }
+    .techno-messages {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        z-index: 9991;
+    }
+    .techno-toast {
+        min-width: 10px;
+        max-width: 280px;
+    }
+    .auth-container {
+        width: 80%;
+    }
+    .wishlist-img {
+        min-width: 240px;
+    }
+    .footer-inv-logo {
+        width: 50%;
+    }
+    }
+
+@media screen and (max-width: 363px) {
+    .banner-font {
+        margin-top: 0.2rem;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .banner-icon {
+        font-size: small;
+    }
+    }
+
+@media screen and (max-width: 350px) {
+    #mobile-nav-logo {
+        display: none;
+    }
+    .banner-font {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #mobile-nav-xs {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .wishlist-img {
+        min-width: 210px;
+        object-fit: cover;
+    }
+    }

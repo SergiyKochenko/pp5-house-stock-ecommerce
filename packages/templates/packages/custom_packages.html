@@ -11,6 +11,33 @@
 {% block extra_title %} - Custom Packages{% endblock %}
 
 {% block content %}
+
+<style>
+    .packages-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.packages-text {
+    width: 100%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+@media screen and (max-width: 600px) {
+    .packages-container {
+        width: 96%; 
+    }
+    .packages-text {
+        padding: 1rem;
+    }
+}
+</style>
+
 {% if user.is_superuser %}
 <div class="packages-container text-white">
 

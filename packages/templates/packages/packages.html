@@ -12,6 +12,55 @@
 
 {% block content %}
 
+<style>
+
+.packages-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.packages-text {
+    width: 100%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+
+.media-width {
+    width: 100%;
+}
+
+.equip, .items {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    width: 82%;
+    margin-left: 15%;
+}
+
+.discount {
+    background-color: #75e6ff;
+    color: #0c2d6c;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .packages-container {
+        width: 96%; 
+    }
+    .packages-text {
+        padding: 1rem;
+    }
+    .request-button {
+        font-size: 2.6vw;
+    }
+}
+</style>
+
 <div class="packages-container text-white">
 
     <div class="text-center">
@@ -89,8 +138,7 @@
         </div>
         <div class="col-12 col-lg-6 order-1 order-md-1 order-lg-2 my-4 text-center d-flex align-items-center">
             {% if package.image %}
-            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid"
-                style="max-width: 500px; max-height: 300px; border: 10px solid white;">
+            <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid">
             {% else %}
             <p>No image available</p>
             {% endif %}
@@ -100,8 +148,7 @@
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
             <div class="media-width">
                 {% if package.image %}
-                <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid"
-                    style="max-width: 500px; max-height: 300px; border: 10px solid white;">
+                <img src="{{ package.image.url }}" alt="An image of a hire package" class="img-fluid">
                 {% else %}
                 <p>No image available</p>
                 {% endif %}
