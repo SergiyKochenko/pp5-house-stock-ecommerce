@@ -12,22 +12,240 @@
 
 {% block content %}
 
+<style>
+   .media-width {
+    width: 100%;
+}
+
+.about-container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about-hero {
+    margin-top: 160px;
+    background-size: cover;
+    margin-bottom: 6rem;
+}
+
+.replace-about-heading {
+    display: none;
+}
+
+.replace-about-rule {
+    display: none;
+}
+
+.about-logo {
+    width: 82%;
+}
+
+.about-logo-rule {
+    width: 60%;
+    border-color: white;
+    margin-bottom: 30px;
+}
+
+.about-socials {
+    background-color: #75e6ff;
+    padding: 0.5rem;
+    margin-bottom: 6rem;
+}
+
+.about-social-icon {
+    font-size: xxx-large;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.contacts-logo {
+    border-radius: 50%;
+    width: 84px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.media-width {
+    width: 100%;
+    background-color: white;
+}
+
+.video-box {
+    padding: 0.5rem;
+}
+
+.mobile-video-box {
+    padding: 0.5rem;
+    display: none;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-img {
+    width: 100%;
+}
+/* ---------------- */
+.carousel-items {
+    height: 32rem;
+    position: relative;
+    padding: 0;
+}
+.carousel-caption {
+    bottom: 100px;
+    background-color: rgba(001,001,001,0.1);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.testimonial-heading {
+    font-weight: revert;
+    font-family: 'Assistant';
+    font-style: oblique;
+    font-size: 3vw;
+    filter: drop-shadow(2px 2px 1px black);
+}
+
+.testimonial-text {
+    font-size: 2vw;
+    min-height: 150px;
+    letter-spacing: 0.5px;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(1px 2px 1px black);
+}
+.carousel-indicators {
+    bottom: 16px;
+}
+
+.test-link {
+    margin-top: 4rem;
+}
+
+/* .video-box-adapt {
+  display: block; 
+  -webkit-user-select: none; 
+  inline-size: -webkit-fill-available;
+} */
+
+@media screen and (max-width: 767px) {
+
+.testimonial-heading {
+    font-size: 6vw;
+}
+.about-socials {
+    background-color: #75e6ff;
+    padding: 0;
+    margin-bottom: 6rem;
+}
+.about-social-icon {
+    font-size: xx-large;
+    padding: 1rem;
+}
+.contacts-logo {
+    margin: 1rem;
+    border-radius: 50%;
+    width: 14%;
+}
+.testimonial-text {
+    font-size: 4vw;
+}
+.p {
+    margin-top: 0;
+    margin-bottom: -9rem;
+}
+}
+
+@media screen and (max-width: 430px) {
+.main-about-blurb {
+    margin-top: 60%;
+}
+.replace-about-heading {
+    display: block;
+    margin-top: 160px;
+}
+.replace-about-rule {
+    display: block;
+}
+.video-box {
+    padding: 0.5rem;
+    display: none;
+}
+.mobile-video-box {
+    padding: 0rem;
+    display: block;
+    width: 100%;
+}
+
+.video-box-adapt {
+  display: block; 
+  -webkit-user-select: none; 
+  inline-size: -webkit-fill-available;
+}
+
+.main-about-heading {
+    display: none;
+}
+.main-about-rule {
+    display: none;
+}
+.main-about-blurb {
+    margin-top: 0;
+}
+#about-hero {
+    margin-top: 0;
+}
+.p {
+    margin-top: 0;
+    margin-bottom: -9rem;
+}
+}
+
+@media screen and (max-width: 350px) {
+.contacts-logo {
+    display: none;
+}
+.p {
+    margin-top: 0;
+    margin-bottom: -9rem;
+}
+}
+</style>
+
 <div class="replace-about-heading">
-    <h2 class="col-12 text-center mb-4">About Us</h2>
+    <h2 class="col-12 text-white text-center mb-4">About Us</h2>
 </div>
 
 <!-- Video For Small Mobiles -->
 
 <hr class="message-rule replace-about-rule">
-<div class="mobile-video-box">
+<!-- <div class="mobile-video-box">
     <div class="video-container">
         <iframe class="responsive-iframe" 
-            src="https://res.cloudinary.com/dvbhrs1gf/video/upload/v1682163798/site_gif_1_zbr9bp_tcrh9a.mp4"
+            src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682541711/ukraine-ukrainian-flag_g8dnx1.gif"
             title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
             allowfullscreen>
         </iframe>
     </div>
-</div>
+</div> -->
 <div id="about-hero" class="about-container">
     <div>
         <h2 class="col-12 text-center mb-4 main-about-heading text-white">About Us</h2>
@@ -38,7 +256,7 @@
     <hr class="message-rule main-about-rule">
     <div class="row">
         <div class="col-12 col-lg-6 my-4 text-center d-flex align-items-center">
-            <div class="media-width video-box">
+            <div class="media-width video-box video-box-adapt">
                 <div  autoplay loop poster="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682541711/ukraine-ukrainian-flag_g8dnx1.gif" 
                     muted="muted" class="video-container">
                     <video class="responsive-iframe" 
@@ -155,7 +373,7 @@
             alt="First Slide" style="max-height: 500px;">
         <div class="carousel-caption d-md-block">
           <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.0.name }}</h3>
-          <p class="testimonial-text">"{{ all_testimonials_list.0.testimonial }}"</p>
+          <p class="testimonial-text p">"{{ all_testimonials_list.0.testimonial }}"</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -163,7 +381,7 @@
             alt="Second Slide" style="max-height: 500px;">
         <div class="carousel-caption d-md-block">
           <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.1.name }}</h3>
-          <p class="testimonial-text">"{{ all_testimonials_list.1.testimonial }}"</p>
+          <p class="testimonial-text p">"{{ all_testimonials_list.1.testimonial }}"</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -171,7 +389,7 @@
             alt="Third Slide" style="max-height: 500px;">
         <div class="carousel-caption d-md-block">
           <h3 class="my-4 testimonial-heading">{{ all_testimonials_list.2.name }}</h3>
-          <p class="testimonial-text">"{{ all_testimonials_list.2.testimonial }}"</p>
+          <p class="testimonial-text p">"{{ all_testimonials_list.2.testimonial }}"</p>
         </div>
       </div>
       {% endif %}
@@ -189,7 +407,7 @@
 <!-- Links to all Testimonials -->
 
 <div class="col-12 test-link text-center">
-    <a class="techno-button text-white" href="{% url 'testimonials' %}">View All Testimonials</a>
+    <a class="btn techno-button techno-button-border text-white" href="{% url 'testimonials' %}">View All Testimonials</a>
 </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
