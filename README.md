@@ -615,27 +615,27 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 </details>
 <br>
 
-8. **Testimonials** 
+8. **Packages Page:**
 <details>
-<summary>See wireframe screenshot "Hire" page:</summary>
+<summary>See wireframe screenshot "Packages" page:</summary>
 
- ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
+ ![User Account Dashboard](static/assets/images/wireframes/packages-page-mobile.png)
 </details>
 <br>
 
-9. **Packages Page:**
-<details>
-<summary>See wireframe screenshot "Hire" page:</summary>
-
- ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
-</details>
-<br>
-
-10. **About Page:** 
+9. **About Page:** 
 <details>
 <summary>See wireframe screenshot "About" page:</summary>
 
- ![User Account Dashboard](static/assets/images/wireframes/about-page-desktop.png)
+ ![User Account Dashboard](static/assets/images/wireframes/about-page-mobile.png)
+</details>
+<br>
+
+10. **Testimonials** 
+<details>
+<summary>See wireframe screenshot "Testimonials" page:</summary>
+
+ ![User Account Dashboard](static/assets/images/wireframes/testimonials-page-mobile.png)
 </details>
 <br>
 
@@ -643,7 +643,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 <details>
 <summary>See wireframe screenshot:</summary>
 
- ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404.png)
+ ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404-mobile.png)
 </details>
 <br>
 
