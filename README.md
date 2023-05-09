@@ -69,14 +69,15 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - [Products page](#products-page)
   - [Product Detail page](#product-detail-page)
   - [Wishlist page](#wishlist-page)
+  - [About page](#about-page)
+  - [Testimonials page](#testimonials-page)
+  - [Hire page](#hire-page)
+  - [Packages page](#packages-page)
+  - [Footer](#footer)
+  - [Basket page](#basket-page)
+  - [Checkout page](#checkout-page)
   - [Sign up page](#sign-up-page)
   - [Login page](#login-page)
-  - [Pricing page](#pricing-page)
-  - [Book Now page for the logged user](#book-now-page-for-the-logged-user)
-  - [My Bookings page](#my-bookings-page)
-  - [Change booking page](#change-booking-page)
-  - [Delete page](#delete-page)
-  - [Logout page](#logout-page)
   - [Responsive design](#responsive-design)
   - [Database Schema](#database-schema)
 - [Technologies Used](#technologies-used)
@@ -768,9 +769,160 @@ The wishlist page of Home Store & More + Techno Tech Co. Ltd's website is design
 </details>
 
 ---
+### About page
+
+- **Company Overview:** A detailed introduction to Home Store & More + Techno Tech Co. Ltd, highlighting our mission, values, and unique selling points.
+- **Company History:** A timeline or narrative outlining the milestones and significant events in our company's journey since its inception, showcasing our growth and achievements.
+- **Team Profiles:** An introduction to our experienced team members, highlighting their expertise and roles within the company, fostering trust and connection with our customers.
+- **Core Values:** A presentation of our company's core values and principles, demonstrating our commitment to excellence, innovation, and customer satisfaction.
+- **Customer Testimonials:** A curated selection of customer testimonials that emphasize the positive experiences and quality of our products and services.
+- **Partners and Collaborators:** A showcase of our strategic partners and collaborators, emphasizing our commitment to working with leading industry professionals and organizations.
+- **Sustainability and Social Responsibility:** Information about our company's efforts to promote sustainability and social responsibility through eco-friendly practices and community involvement.
+- **Contact Information:** Clear and accessible contact information, including phone numbers, email addresses, and physical location, ensuring customers can easily reach out to us with any questions or concerns.
+
+The About page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a comprehensive understanding of our company's background, values, and team, fostering trust and showcasing our commitment to quality and customer satisfaction:
+
+
+<details>
+
+![About page](/static/assets/features/about.png)
+
+</details>
+
+---
+### Testimonials page
+
+- **Testimonial Collection:** A curated selection of customer testimonials, showcasing the positive experiences and satisfaction of our clients with our products and services.
+- **Featured Testimonials:** A highlighted section displaying the most impactful or recent testimonials, emphasizing the quality of our products and services.
+- **Photos Testimonials:** A collection of photos testimonials from satisfied customers, offering a more engaging and personal view of their experiences with our products and services.
+- **Responsive Design:** A mobile-friendly design that ensures the testimonials page is accessible and user-friendly on various devices, such as smartphones and tablets, for a seamless browsing experience.
+
+The Testimonials page of Home Store & More + Techno Tech Co. Ltd's website is designed to showcase the positive experiences and satisfaction of our clients, providing potential customers with valuable insights into the quality and performance of our products and services:
+
+<details>
+
+![Testimonials page](/static/assets/features/testimonials.png)
+
+</details>
+
+---
+### Hire page
+
+- **Service Overview:** A brief introduction to our equipment hire service, explaining the benefits and advantages of choosing Home Store & More + Techno Tech Co. Ltd for equipment rentals.
+
+- **Equipment Categories:** A well-organized list of equipment categories available for hire, allowing customers to easily browse and find the specific items they need for their projects or events.
+
+- **Featured Equipment:** A showcase of our most popular and in-demand equipment available for hire.
+
+
+- **Booking Process:** A step-by-step guide explaining the booking process, from selecting equipment to finalizing the rental agreement, ensuring a smooth and efficient experience for our customers.
+
+The Hire page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with all the information they need to make informed decisions about equipment rentals, ensuring a seamless and efficient booking experience.
+<details>
+
+![Hire page](/static/assets/features/hire.png)
+
+</details>
+
+---
+### Packages page
+
+- **Package Categories:** A list of organized package categories, allowing customers to easily navigate and browse our range of pre-designed and custom package options for various events and spaces.
+- **Detailed Package Information:** Comprehensive descriptions of each package, including the included products, services, and any additional features, helping customers make informed decisions based on their needs and preferences.
+- **Package Pricing:** Clear and transparent pricing information for each package, including any discounts or promotions, giving customers a clear overview of the costs involved.
+- **Customization Options:** An overview of available customization options for each package, allowing customers to tailor packages to suit their unique requirements and preferences.
+
+The Packages page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a comprehensive overview of our available package options and the benefits of choosing a package for their event or space, making it easy for them to find, compare, and purchase the perfect package for their needs.
+
+<details>
+
+![Packages page](/static/assets/features/packages.png)
+
+</details>
+
+---
+### Footer
+
+- **Company Information:** A brief introduction to Home Store & More + Techno Tech Co. Ltd, including our mission, values, and contact details, giving customers an overview of our company and easy access to our contact information.
+- **Social Media Icons:** Prominent icons linking to our company's social media profiles, encouraging customers to connect with us on platforms like Facebook, Instagram, Twitter, and LinkedIn.
+- **Newsletter Subscription:** An option for visitors to subscribe to our email newsletter, allowing them to stay updated on the latest news, promotions, and product releases from Home Store & More + Techno Tech Co. Ltd.
+- **Terms & Conditions:** A link to our website's terms and conditions, providing customers with essential information about the use of our website and our services.
+- **Privacy Policy:** A link to our privacy policy, outlining how we collect, use, and protect customer data, ensuring transparency and compliance with data protection regulations.
+- **Site Map:** A comprehensive site map, allowing customers to easily navigate our website and find the information they need.
+
+The footer of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with easy access to important information and resources, ensuring a seamless and user-friendly browsing experience.
+<details>
+
+![Footer](/static/assets/features/footer.png)
+
+</details>
+
+---
+### Basket page
+
+- **Basket Overview:** A clear and detailed display of all the items added to the shopping cart, including product names, images, quantities, and prices, allowing customers to review their selections before proceeding to checkout.
+- **Edit Cart Functionality:** Options for customers to easily update the quantities or remove items from their cart, ensuring they have full control over their selections.
+Subtotal and Total Calculation: Automatic calculation of the subtotal, shipping fees, taxes, and total cost, giving customers a clear overview of their order's total cost.
+
+- **Secure Checkout Button:** A prominent and secure checkout button, directing customers to the payment process and ensuring a seamless and secure transaction.
+
+- **Continue Shopping Button:** An easy-to-use button that allows customers to return to the website and continue browsing products without losing their cart selections.
+
+- **Guest Checkout Option:** A feature that allows customers to proceed with the checkout process without creating an account, offering a faster and more convenient option for one-time purchases.
+
+- **Sign In/Create Account:** A prompt for returning customers to sign in to their accounts for a faster checkout experience, as well as an option for new customers to create an account for future convenience and access to exclusive offers and promotions.
+
+The Basket page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a comprehensive and user-friendly overview of their cart selections and the associated costs, ensuring a seamless and efficient checkout process:
+
+<details>
+
+![Basket page](/static/assets/features/basket.png)
+
+</details>
+
+---
+### Checkout page
+
+- **Secure Checkout:** A secure and encrypted checkout process that ensures the safety and privacy of customer information, including personal details, shipping addresses, and payment information.
+
+- **Order Summary:** A clear and detailed summary of the customer's order, including product names, images, quantities, prices, and 
+allowing for a final review before submitting the order.
+
+- **Shipping Address Form:** A simple and user-friendly form for customers to enter their shipping address, with options to save the address for future orders or choose from previously saved addresses.
+
+- **Billing Address Form:** A separate form for customers to enter their billing address, with an option to use the same address as the shipping address for convenience.
+
+- **Payment Methods:** A display of available payment methods, such as credit cards secure payment gateway.
+
+- **Payment Information Input:** A secure form for customers to enter their payment information, with fields for credit card numbers, expiration dates, and CVV codes.
+
+- **Order Confirmation:** A clear and concise order confirmation message, displaying the customer's order number and a summary of their purchase.
+
+- **Email Confirmation:** An automated email sent to the customer upon successful completion of the order, containing their order details, shipping information.
+
+The Checkout page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when completing their purchase, ensuring a seamless and satisfying shopping experience.
+
+<details>
+
+![Checkout page](/static/assets/features/checkout.png)
+
+</details>
+
+---
 ### Sign up page
 
-To create an account user should fill in form provided on Sign up page:
+- **User-friendly Registration Form:** A simple and easy-to-use form for customers to enter their personal information, including name, email address, and password, streamlining the account creation process.
+
+- **Email Verification:** An email verification step to ensure the authenticity of the user's email address, enhancing account security and preventing spam or unauthorized sign-ups.
+
+- **Password Strength Indicator:** A visual indicator displaying the strength of the entered password, encouraging customers to create strong and secure passwords for their accounts.
+
+- **Sign In Option for Existing Users:** A prompt for existing customers to sign in to their accounts, providing a seamless experience for those who already have an account with Home Store & More + Techno Tech Co. Ltd.
+
+- **Responsive Design:** A mobile-friendly design that ensures the sign-up page is accessible and user-friendly on various devices, such as smartphones and tablets, for a seamless browsing experience.
+
+The Sign Up page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when creating their accounts, ensuring a seamless and enjoyable shopping experience:
+
 <details>
 
 ![Sign up page](/static/assets/features/signup.png)
@@ -781,7 +933,20 @@ To create an account user should fill in form provided on Sign up page:
 
 ### Login page
 
-To login the user should enter credential data that was used during sign up process:
+- **User-friendly Login Form:** A simple and easy-to-use form for customers to enter their email address and password, streamlining the login process and providing quick access to their accounts.
+
+- **Remember Me Checkbox:** An optional checkbox for customers to stay signed in, offering convenience for future visits to the website.
+
+- **Forgot Password Link:** A helpful link for customers who have forgotten their password, guiding them through the password reset process and ensuring account security.
+
+- **Responsive Design:** A mobile-friendly design that ensures the login page is accessible and user-friendly on various devices, such as smartphones and tablets, for a seamless browsing experience.
+
+- **Login Error Messages:** Clear and helpful error messages displayed in case of incorrect email address or password, guiding customers to correct their input and successfully log in.
+
+- **Secure Login Process:** A secure and encrypted login process that ensures the safety and privacy of customer information, including email addresses and passwords.
+
+The Login page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when accessing their accounts, ensuring a seamless and enjoyable shopping experience.
+
 <details>
 
 ![Sign in page](/static/assets/features/login.png)
@@ -790,100 +955,98 @@ To login the user should enter credential data that was used during sign up proc
 
 ---
 
-### Pricing page
-
-The Pricing page provides information about all available Aquarium House services. User also can book necessary service straight from the Pricing page by clicking on the services price:
-<details>
-
-![Sign up page](/static/assets/features/pricing.png)
-
-</details>
-
----
-
-### Book Now page for the logged user
-
-Users must be logged in to make a booking. To book a service, the user must fill in the required fields in the form: name, services, date, time and an optional email,  phone fields:
-<details>
-
-![Book Now page message](/static/assets/features/booknow.png)
-
-</details>
-
----
-
-If the user is not authenticated then the user will be shown a message that the user has to sign up or login:
-<details>
-
-![Book Now page message](/static/assets/features/booknow-msg.png)
-
-</details>
-
----
-
-### My Bookings page
-
-The Booking page is available only to authorized users. The booking page displays the following data: order ID, date, time, service name and cost of the booked service:
-<details>
-
-![Booking page](/static/assets/features/mybookings.png)
-
-</details>
-
----
-
-If the user has not yet booked any services, then the user will be shown a message that the user has no bookings at the moment and there is an opportunity  to make a booking:
-<details>
-
-![Booking page message](/static/assets/features/mybookings-msg.png)
-
-</details>
-
----
-
-### Change booking page
-
-Each booking can be changed or deleted. The user must be authenticated in order to access the change user's bookings.
-The change booking page can be accessed for a specific booking. The page Change booking contains an auto-filled booking form. The user can change the fields at his discretion, or go back to bookings page by clicking the button "Back to my bookings":
-<details>
-
-![Booking page message](/static/assets/features/change-booking.png)
-
-</details>
-
----
-
-### Delete page
-
-The User must be authenticated to delete the booking. The Delete booking page provides two buttons: 'Yes, delete booking' and 'Back to my bookings' if the user changes his mind.
-Deletion will delete the only specific booking for the user:
-<details>
-
-![Delete booking page](/static/assets/features/delete-booking.png)
-
-</details>
-
----
-
-### Logout page
-
-An authenticated user can logout from account by clicking the Logout button, after which the user will be redirected to the Logout page where the user needs to confirm to logout from account to prevent occasionally log out of user account:
-<details>
-
-![Logout page](/static/assets/features/logout.png)
-
-</details>
-
----
-
 ### Responsive design
 
-The site has been designed to be responsive and adapted for desktop and mobile use.
-The project has been tested using a multi-device emulator with different screen sizes in the Google Chrome Developer Dashboard.
+Key features of responsive design include:
+
+- **Fluid Grid Layout:** A flexible layout system that uses relative units (e.g., percentages) instead of fixed units (e.g., pixels) to define the width and height of elements, ensuring that the layout adjusts according to the screen size.
+
+- **Flexible Images and Media:** Images, videos, and other media elements are set to automatically scale and resize according to the screen's dimensions, preventing distortion or overflow.
+
+- **CSS Media Queries:** Media queries allow developers to apply different CSS styles based on the device's characteristics, such as screen size, resolution, and orientation. This enables the creation of device-specific designs that adapt to different viewing conditions.
+
+- **Mobile-first Approach:** A design strategy that prioritizes the development of mobile layouts before scaling up to larger screens, ensuring that the user experience is optimized for mobile devices.
+
+- **Touch-friendly Navigation:** User interface elements, such as buttons and menus, are designed to be easily accessible and navigable on touch-screen devices.
+
+- **Optimized Performance:** Responsive designs often include techniques for improving website performance, such as image optimization, minification of CSS and JavaScript files, and lazy loading of assets, ensuring faster load times on mobile devices.
+
+- **Seamless Content Display:** Content is organized and displayed in a way that maintains readability and usability across different devices, often using techniques such as collapsible menus, accordions, and content prioritization.
+
+- **Cross-browser Compatibility:** Responsive designs are tested and optimized for compatibility across various web browsers, ensuring a consistent user experience.
+
+- **Accessibility:** A responsive design should also consider accessibility guidelines and best practices, such as proper use of HTML tags, color contrast, and keyboard navigation, ensuring that the website is usable for people with disabilities.
+
+Responsive design has become an essential aspect of modern web development, as it ensures that websites and applications are easily accessible and provide a consistent user experience across a wide range of devices.
 
 ---
 
 ### Database Schema
+
+A database schema is a blueprint or structure that defines how data is organized in a database. It includes tables, fields, data types, relationships, and constraints that determine how the data is stored, related, and manipulated. Below is a basic example of a database schema for an e-commerce website like the one I mentioned earlier:
+
+**Users Table:**
+- user_id (Primary Key, Integer, Auto-increment)
+- first_name (Varchar)
+- last_name (Varchar)
+- email (Varchar, Unique)
+- password_hash (Varchar)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Products Table:**
+- product_id (Primary Key, Integer, Auto-increment)
+- product_name (Varchar)
+- description (Text)
+- price (Decimal)
+- image_url (Varchar)
+- stock (Integer)
+- category_id (Foreign Key, Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Categories Table:**
+- category_id (Primary Key, Integer, Auto-increment)
+- category_name (Varchar)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Orders Table:**
+- order_id (Primary Key, Integer, Auto-increment)
+- user_id (Foreign Key, Integer)
+- order_status (Varchar)
+- total_price (Decimal)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Order_Items Table:**
+- order_item_id (Primary Key, Integer, Auto-increment)
+- order_id (Foreign Key, Integer)
+- product_id (Foreign Key, Integer)
+- quantity (Integer)
+- price (Decimal)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Addresses Table:**
+- address_id (Primary Key, Integer, Auto-increment)
+- user_id (Foreign Key, Integer)
+- street (Varchar)
+- city (Varchar)
+- state (Varchar)
+- zip_code (Varchar)
+- country (Varchar)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Wishlist Table:**
+- wishlist_id (Primary Key, Integer, Auto-increment)
+- user_id (Foreign Key, Integer)
+- product_id (Foreign Key, Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+This is a simplified example of a database schema for an e-commerce website. Depending on the specific requirements and features of my website.
 
 <details><summary>Table</summary>
 
