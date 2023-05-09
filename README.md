@@ -85,6 +85,8 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 - [Installed Packages](#installed-packages)
   - [Frameworks](#frameworks)
   - [Database](#database)
+  - [Cloud Hosting](#cloud-hosting)
+  - - [Additional Media Hosting](#additional-media-hosting)
   - [Tools](#tools)
 - [Testing](#testing)
   - [Bugs](#bugs)
@@ -1046,6 +1048,53 @@ A database schema is a blueprint or structure that defines how data is organized
 - created_at (Timestamp)
 - updated_at (Timestamp)
 
+**About_Content Table:**
+- about_id (Primary Key, Integer, Auto-increment)
+- title (Varchar)
+- content (Text)
+- image_url (Varchar, Nullable)
+- display_order (Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Testimonials Table:**
+- testimonial_id (Primary Key, Integer, Auto-increment)
+- user_id (Foreign Key, Integer)
+- content (Text)
+- rating (Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Equipment_Hire Table:**
+- equipment_hire_id (Primary Key, Integer, Auto-increment)
+- user_id (Foreign Key, Integer)
+- package_id (Foreign Key, Integer)
+- hire_start_date (Date)
+- hire_end_date (Date)
+- total_price (Decimal)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Contact_Submissions Table:**
+- contact_id (Primary Key, Integer, Auto-increment)
+- name (Varchar)
+- email (Varchar)
+- subject (Varchar)
+- message (Text)
+- status (Varchar, default: 'New') [e.g., New, In Progress, Closed]
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
+**Banners Table:**
+- banner_id (Primary Key, Integer, Auto-increment)
+- title (Varchar)
+- description (Text, Nullable)
+- image_url (Varchar)
+- link (Varchar, Nullable)
+- display_order (Integer)
+- created_at (Timestamp)
+- updated_at (Timestamp)
+
 This is a simplified example of a database schema for an e-commerce website. Depending on the specific requirements and features of my website.
 
 <details><summary>Table</summary>
@@ -1077,39 +1126,65 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 Installed Packages
 ---
 
-Package        &        Version
-
-- vasgiref                3.6.0
-- cloudinary             1.32.0
-- coverage               7.2.2
-- crispy-bootstrap5      0.7
-- DateTime               5.0
-- dj-database-url        0.5.0
-- dj3-cloudinary-storage 0.0.6
-- Django                 3.2.18
-- django-allauth         0.52.0
-- django-crispy-forms    1.14.0
-- django-summernote      0.8.20.0
-- gunicorn               20.1.0
-- oauthlib               3.2.2
-- pip                    23.0.1
-- psycopg2               2.9.5
-- PyJWT                  2.6.0
-- python-dateutil        2.8.2
-- python3-openid         3.2.0
-- pytz                   2022.7.1
-- requests-oauthlib      1.3.1
-- six                    1.16.0
-- sqlparse               0.4.3
-- zope.interface         5.5.2
+**Package**          &         **Version**
+------------------------- --------
+- asgiref                   3.6.0
+- boto3                     1.26.129
+- botocore                  1.29.129
+- cloudinary                1.32.0
+- coverage                  7.2.5
+- dj-database-url           0.5.0
+- Django                    3.2
+- django-allauth            0.41.0
+- django-cloudinary-storage 0.3.0
+- django-countries          7.2.1
+- django-crispy-forms       1.14.0
+- django-storages           1.13.2
+- gunicorn                  20.1.0
+- jmespath                  1.0.1
+- oauthlib                  3.2.2
+- Pillow                    9.5.0
+- pip                       23.1.2
+- psycopg2                  2.9.6
+- python3-openid            3.2.0
+- pytz                      2023.3
+- requests-oauthlib         1.3.1
+- s3transfer                0.6.1
+- sqlparse                  0.4.4
+- stripe                    5.4.0
 
 ### Frameworks
 
-- [Django](https://www.djangoproject.com/): python framework used to create all the backend
+- [Django](https://www.djangoproject.com/): is a high-level Python web framework that enables rapid development of secure and maintainable websites.
+<br>It follows the Model-View-Template (MVT) architectural pattern and promotes the DRY (Don't Repeat Yourself) principle,
+ <br> which encourages the reuse of code and separation of concerns. Django comes with a built-in admin interface, 
+ <br>a powerful ORM (Object-Relational Mapper), and support for various database systems, making it a popular choice for web developers. 
+ <br>In this project, Django is used to create the backend, handle user authentication, manage the database, 
+ <br>and serve the dynamic content for the PP5 House Stock E-Commerce website.
 
 ### Database
 
-- [PostgreSQL](https://www.postgresql.org/): the database used to store all the data.
+- [PostgreSQL](https://www.postgresql.org/): the database used to store All of the data.
+<br>PostgreSQL is a powerful, open-source, object-relational database system that provides high performance, reliability, and extensibility. 
+<br>It supports advanced data types, full-text search, and offers a vast array of features that make it suitable for various types of applications, 
+<br>including web applications, data warehousing, and analytics. In this project, PostgreSQL is used as the production database to store all the data, 
+<br>such as user information, products, orders, and other related information, ensuring data integrity and efficient data management for the PP5 E-Commerce website. 
+<br>SQLite is used for the development environment, allowing for easy setup and testing during the development process.
+
+### Cloud Hosting
+
+- [Amazon Web Services](https://signin.aws.amazon.com/): AWS is a comprehensive cloud computing platform that offers a wide range of services, including computing power, storage, and databases. 
+<br>AWS provides reliable, scalable, and cost-effective solutions for hosting web applications, making it a popular choice among developers and businesses. 
+<br>In this project, AWS is utilized to host the static CSS files and media images for the PP5 E-Commerce website. By hosting these assets on a cloud platform like AWS, <br>the website benefits from increased performance, reduced latency, and enhanced scalability, ensuring a smooth and responsive user experience.
+
+### Additional Media Hosting
+
+- [Cloudinary](https://cloudinary.com/): the media hosting used to store some media due to extend more available storege for media. Cloudinary is a powerful, 
+<br>feature-rich, and easy-to-use cloud-based media management platform. It offers an end-to-end solution for storing, transforming, and delivering images, 
+<br>videos, and other media assets. Cloudinary enables developers to optimize media files for performance, automate image and video transformations, 
+<br>and deliver content via a fast CDN (Content Delivery Network). In this project, Cloudinary is utilized for hosting and managing media assets, 
+<br>such as product images, for the PP5 House Stock E-Commerce website. By leveraging Cloudinary, the website can efficiently serve optimized 
+<br>and responsive media assets, ensuring a fast and visually appealing user experience.
 
 ### Tools
 
