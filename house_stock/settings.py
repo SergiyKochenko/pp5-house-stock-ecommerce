@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    "allauth.socialaccount.providers.github",
+    # "allauth.socialaccount.providers.github",
     'home',
     'products',
     'bag',
@@ -109,15 +109,15 @@ TEMPLATES = [
     },
 ]
 
-SOCIALACCOUNT_PROVIDERS = {
-    'github': {
-        'APP': {
-            'client_id': os.environ.get('GITHUB_CLIENT_ID'),
-            'secret': os.environ.get('GITHUB_SECRET'),
-            'key': ''
-        }
-    }
-}
+# SOCIALACCOUNT_PROVIDERS = {
+#     'github': {
+#         'APP': {
+#             'client_id': os.environ.get('GITHUB_CLIENT_ID'),
+#             'secret': os.environ.get('GITHUB_SECRET'),
+#             'key': ''
+#         }
+#     }
+# }
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 

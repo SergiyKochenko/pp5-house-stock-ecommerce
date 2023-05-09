@@ -66,7 +66,9 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 - [Features](#features)
   - [Navbar](#navbar)
   - [Home page](#home-page)
-  - [Detail post page](#detail-post-page)
+  - [Products page](#products-page)
+  - [Product Detail page](#product-detail-page)
+  - [Wishlist page](#wishlist-page)
   - [Sign up page](#sign-up-page)
   - [Login page](#login-page)
   - [Pricing page](#pricing-page)
@@ -651,17 +653,36 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 
 ## Features
 
-- Responsive and modern user interface
-- Product catalog organized into different categories
-- Search functionality for easy product discovery
-- User account creation and authentication
-- Shopping cart and checkout process (demo purposes only)
-- Optimized performance and user experience
+1. User-friendly Interface: Our website boasts a clean, intuitive design that makes navigation a breeze, ensuring a seamless and enjoyable shopping experience.
+2. Comprehensive Product Catalog: Browse our extensive range of innovative equipment and supplementary products, curated to enhance your home or event space.
+3. Secure E-commerce Platform: Shop with confidence on our secure e-commerce platform, featuring encrypted payment processing and robust data protection measures.
+4. Customizable Packages: Choose from our pre-designed packages or create a custom solution tailored to your specific needs, ensuring a personalized experience for every occasion.
+5. Informative Product Descriptions: Access detailed product descriptions, specifications, and images to help you make informed purchasing decisions.
+6. Customer Testimonials: Read reviews and testimonials from our satisfied customers, providing valuable insights into the quality of our products and services.
+7. Responsive Customer Support: Connect with our dedicated customer support team, ready to assist you with any questions or concerns throughout your shopping journey.
+8. Worldwide Shipping: Enjoy the convenience of our worldwide shipping options, ensuring timely delivery of your purchases no matter where you are located.
+9. Worldwide Shipping: Enjoy the convenience of our worldwide shipping options, ensuring timely delivery of your purchases no matter where you are located.
+10. Expert Tips and Inspiration: Explore our blog and resource sections for expert advice, tips, and inspiration on how to make the most of our products and services in your home or event space.
 
 ### Navbar
 
-The navigation bar is present on all pages of the site. The navigation bar changes depending on whether the user is a guest or an authorized visitor.
-Also, the navigation bar is an adaptive element, and on mobile screens it collapses into a hamburger icon.
+- **Home:** Click to return to the homepage at any time, providing a starting point for browsing our website and exploring our products and services.
+
+- **Products:** Access our comprehensive product catalog, showcasing our innovative equipment and supplementary products designed to enhance your home or event space.
+
+- **Packages:** Explore our pre-designed and custom package options, tailored to meet the unique needs of various occasions and celebrations.
+
+- **Testimonials:** Read reviews and testimonials from our satisfied customers, offering valuable insights into the quality of our products and services.
+
+- **Blog:** Visit our blog for expert advice, tips, and inspiration on how to make the most of our products and services in your home or event space.
+
+- **Contact Us:** Reach out to our dedicated customer support team with any questions or concerns, or to request a custom package tailored to your specific needs.
+
+- **My Account:** Log in or create an account to access your order history, manage your personal information, and track your orders with ease.
+
+- **Shopping Cart:** View your selected items, manage your order, and proceed to our secure checkout process to complete your purchase.
+
+- **Search:** Utilize our integrated search feature to quickly find products or content on our website, making your shopping experience more efficient and enjoyable.
 
 ---
 
@@ -692,18 +713,61 @@ On the Home page a user can create an account or Login from the menu:
 </details>
 
 ---
+### Products page
 
-### Detail post page
+- **Product Categories:** A list of organized product categories, allowing customers to easily navigate and browse our extensive range of innovative equipment and supplementary products.
+- **Product Availability:** Essential information about product availability, ensuring customers have a clear understanding of the product in stock.
+- **Add to Wishlist:** An option for customers to save the product to their wishlist for future reference, making it simple to return to items they are interested in.
+- **Product Images:** High-quality images that showcase the product, allowing customers to view the item in detail and make informed purchasing decisions.
+- **Price Details:** Display the current price of the product, as well as giving customers a clear overview of the item's cost.
 
-In the Home page a user can create an post and view the post details:
+The product page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide a comprehensive and engaging shopping experience, making it easy for customers to find, compare, and purchase the perfect products to enhance their home or event space:
 <details>
 
-![Detail post page](/static/assets/features/post-detail-page.png)
+![Products page](/static/assets/features/product-page.png)
 
 </details>
 
 ---
+### Products Detail page
 
+- **Detailed Product Information:** Comprehensive product descriptions, specifications, and images, helping customers make informed purchasing decisions based on their needs and preferences.
+- **Customer Reviews and Ratings:** Real-life experiences and ratings from customers who have purchased and used the products, offering valuable insights into the quality and performance of each item.
+- **Add to Cart Button:** A prominent and easy-to-use button that allows customers to quickly add products to their shopping cart and continue browsing the website.
+- **Add to Wishlist:** An option for customers to save the product to their wishlist for future reference, making it simple to return to items they are interested in.
+- **Product Images:** High-quality images that showcase the product, allowing customers to view the item in detail and make informed purchasing decisions.
+- **Product Availability:** Essential information about product availability, ensuring customers have a clear understanding of the product in stock.
+- **Price Details:** Display the current price of the product, as well as giving customers a clear overview of the item's cost.
+
+The product detail page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with all the information they need to make an informed purchasing decision, offering a comprehensive and engaging shopping experience:
+
+<details>
+
+![Product Detail page](/static/assets/features/product-detail-page.png)
+
+</details>
+
+---
+### Wishlist page
+
+- **Wishlist Feature:** An option for customers to save their favorite products for future reference, making it simple to return to items they are interested in.
+- **User-friendly Interface:** An intuitive design that makes it easy for customers to view, manage, and interact with their saved items on the wishlist page.
+- **Product Thumbnails:** Visual representations of saved products, complete with images, product names, and brief descriptions, allowing customers to quickly recognize and review their saved items.
+- **Add to Cart Button:** A convenient button next to each product that enables customers to add items directly from their wishlist to their shopping cart, streamlining the purchasing process.
+- **Remove from Wishlist:** An option for customers to remove items from their wishlist, decluttering the list and keeping it up-to-date with their current preferences.
+- **Product Availability Indicator:** A clear indication of each product's availability status, helping customers decide when to proceed with their purchase.
+- **Price Information:** Display the current price of each saved product, allowing customers to make informed purchasing decisions and keep track of any changes in pricing.
+- **Mobile Compatibility:** A responsive design that ensures the wishlist page is accessible and user-friendly on various devices, such as smartphones and tablets, for a seamless browsing experience.
+
+The wishlist page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide a convenient and personalized shopping experience, allowing customers to save, manage, and purchase their favorite products with ease:
+
+<details>
+
+![Wishlist page](/static/assets/features/wishlist.png)
+
+</details>
+
+---
 ### Sign up page
 
 To create an account user should fill in form provided on Sign up page:
