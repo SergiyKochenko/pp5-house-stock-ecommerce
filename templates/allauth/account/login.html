@@ -68,12 +68,12 @@
             <a class="btn techno-button techno-button-border" href="{% url 'home' %}">Home</a>
             <button class="primaryAction btn techno-button techno-button-border" type="submit"><i
                     class="fa-solid fa-right-to-bracket"></i>{% trans "Sign In" %}</button>
-            <div class="buttons-div">
+            <!-- <div class="buttons-div">
                 <p class="buttons-p">
                     <button class="btn btn-primary"><span class="fa fa-github"></span>&nbsp;Login with GitHub
                     {% include "socialaccount/snippets/provider_list.html" with process="login" %}</button>
                 </p>
-            </div>
+            </div> -->
             <p class="mt-2">
                 <a class="button secondaryAction" href="{% url 'account_reset_password' %}">
                 {% trans "Forgot Password?" %}</a>
