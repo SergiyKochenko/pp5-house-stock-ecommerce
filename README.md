@@ -50,6 +50,7 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 
 - [Overview](#overview)
   - [Project goals](#project-goals)
+  - [Web Marketing Strategy](#web-marketing-strategy)
   - [UX (User Experience)](#ux-user-experience)
   - [User Experience](#user-experience)
   - [User stories](#user-stories)
@@ -132,6 +133,31 @@ The primary goals of the Home Store & More e-commerce webstore project are:
 7. **Performance and Optimization:** Optimize the website for performance and fast load times, ensuring a smooth and enjoyable user experience.
    
 8. **Scalability and Extensibility:** Build a solid foundation that allows for future expansion and refinement, making it possible to add new features, products, and functionalities as the platform grows.
+
+
+
+## Web Marketing Strategy
+
+The PP5 E-Commerce website aims to attract and convert visitors into customers by implementing a comprehensive web marketing strategy that focuses on the following key channels and tactics:
+
+1. **Search Engine Optimization (SEO)**: Improve the website's organic search ranking by optimizing content, structure, and technical aspects for search engines.
+
+2. **Content Marketing**: Create engaging and informative content, such as blog posts and articles, to attract potential customers and establish the website as an industry authority.
+
+3. **Social Media Marketing**: Engage with users on popular social media platforms to promote content, share updates, and build brand awareness.
+
+4. **Email Marketing**: Utilize email campaigns to keep subscribers informed about promotions, new products, and other updates.
+
+5. **Influencer Marketing**: Partner with influencers in the home equipment and decor niche to reach a larger audience and boost brand visibility.
+
+6. **Affiliate Marketing**: Encourage partners to promote the website and its products through an affiliate program.
+
+7. **Conversion Rate Optimization (CRO)**: Continuously optimize the website's design, user experience, and calls-to-action to improve conversion rates.
+
+By implementing this web marketing strategy, the PP5 House Stock E-Commerce website aims to increase online visibility, drive more traffic, and ultimately boost sales and revenue.
+
+
+
 
 ## UX (User Experience)
 
@@ -657,12 +683,19 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 ## Features
 
 1. **User-friendly Interface:** My website boasts a clean, intuitive design that makes navigation a breeze, ensuring a seamless and enjoyable shopping experience.
+
 2. **Comprehensive Product Catalog:** Browse our extensive range of innovative equipment and supplementary products, curated to enhance your home or event space.
+
 3. **Secure E-commerce Platform:** Shop with confidence on our secure e-commerce platform, featuring encrypted payment processing and robust data protection measures.
+
 4. **Customizable Packages:** Choose from our pre-designed packages or create a custom solution tailored to your specific needs, ensuring a personalized experience for every occasion.
+
 5. **Informative Product Descriptions:** Access detailed product descriptions, specifications, and images to help you make informed purchasing decisions.
+
 6. **Customer Testimonials:** Read reviews and testimonials from our satisfied customers, providing valuable insights into the quality of our products and services.
+
 7. **Responsive Customer Support:** Connect with our dedicated customer support team, ready to assist you with any questions or concerns throughout your shopping journey.
+
 8. **Worldwide Shipping:** Enjoy the convenience of our worldwide shipping options, ensuring timely delivery of your purchases no matter where you are located.
 
 ### Navbar
