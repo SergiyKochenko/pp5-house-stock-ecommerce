@@ -56,29 +56,28 @@
                                 Out of Stock</small>
                                 {% endif %}
                             </div>
-                            <div class="col-12 col-md-7 text-md-end mt-3 mt-md-0"
-                                style="display: flex; flex-direction: column;">
+                            <div class="col-12 col-md-7 text-md-end mt-3 mt-md-0" style="display: flex; flex-direction: column;">
                                 {% if item.product.in_stock %}
-                                <input class="fa-input btons fas fa-shopping-basket  rounded-0 techno-button"
-                                    type="submit" value="&#xf291; Add To Basket">
-                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    <button class="btn btons techno-button rounded-0 text-uppercase mt-2 ms-3" type="submit">
+                                        <i class="fa-solid fa-shopping-basket"></i>
+                                        <span class="text-white">Add To Basket</span>
+                                    </button>
+                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 {% endif %}
-                                <a href="{% url 'product_detail' item.product.id %}"
-                                    class="btn btns btons btn-black rounded-0 text-uppercase mt-2">
-                                <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                                <span class="btn text-uppercase text-white">Back to Product</span>
+                                <a href="{% url 'product_detail' item.product.id %}" class="btn btons techno-button  rounded-0 text-uppercase mt-2">
+                                    <i class="fa-solid fa-circle-arrow-left"></i>
+                                    <span class="text-white">Back to Product</span>
                                 </a>
-                                <a href="{% url 'products' %}"
-                                    class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3">
-                                <span class="icon"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                                <span class="btn text-uppercase text-white">Find More Products</span>
+                                <a href="{% url 'products' %}" class="btn btons techno-button rounded-0 text-uppercase mt-2 ms-3">
+                                    <i class="fa-solid fa-circle-arrow-left"></i>
+                                    <span class="text-white">Find More Products</span>
                                 </a>
-                                <a class="btn btns btons btn-black rounded-0 text-uppercase mt-2 ms-3"
-                                    href="{% url 'remove_from_wishlist' item.id %}" onclick="wishlistRemove(event)">
-                                <span class="icon"><i class="fa-solid fa-trash"></i></span>
-                                <span class="btn text-uppercase text-white">Remove from Wishlist</span>
+                                <a class="btn btons techno-button rounded-0 text-uppercase mt-2 ms-3" href="{% url 'remove_from_wishlist' item.id %}" onclick="wishlistRemove(event)">
+                                    <i class="fa-solid fa-trash"></i>
+                                    <span class="text-white">Remove from Wishlist</span>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

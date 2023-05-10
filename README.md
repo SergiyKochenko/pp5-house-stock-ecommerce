@@ -1071,8 +1071,8 @@ The footer of Home Store & More + Techno Tech Co. Ltd's website is designed to p
 ### Basket page
 
 - **Basket Overview:** A clear and detailed display of all the items added to the shopping cart, including product names, images, quantities, and prices, allowing customers to review their selections before proceeding to checkout.
+
 - **Edit Cart Functionality:** Options for customers to easily update the quantities or remove items from their cart, ensuring they have full control over their selections.
-Subtotal and Total Calculation: Automatic calculation of the subtotal, shipping fees, taxes, and total cost, giving customers a clear overview of their order's total cost.
 
 - **Secure Checkout Button:** A prominent and secure checkout button, directing customers to the payment process and ensuring a seamless and secure transaction.
 
