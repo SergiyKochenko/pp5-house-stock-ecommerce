@@ -1510,6 +1510,123 @@ See bug report: [bug reports](https://github.com/users/SergiyKochenko/projects/6
 
 ## Manual Testing
 
+Manual Testing of the website https://pp5-house-stock-ecommerce.herokuapp.com/
+
+**Introduction:**
+<br>The purpose of this manual testing guide is to provide a step-by-step process for testing the functionality and user experience of the website. This guide will help ensure the website is functioning as intended and provide valuable feedback for potential improvements.
+
+1. Pre-requisites:
+
+- A computer or device with internet access
+- Web browser (Chrome, Firefox, Safari, or Edge)
+- A text editor or note-taking application to record observations and issues
+
+2. Test Cases:
+
+2.1. Homepage
+
+- Open the web browser and navigate to https://pp5-house-stock-ecommerce.herokuapp.com/ || &check; pass
+- Verify that the website loads without errors || &check; pass
+- Check the website header and logo for readability and appropriate branding || &check; pass
+- Verify the navigation menu is functioning correctly and includes relevant links
+- Test responsiveness by resizing the browser window and accessing the website on different devices || &check; pass
+- Check for proper loading of images and multimedia content || &check; pass
+
+2.2 User Registration & Login
+
+- Navigate to the registration page by clicking "Register" or "Sign Up" || &check; pass
+- Test the user registration process by entering valid and invalid information || &check; pass
+- Verify that the user receives an email confirmation upon successful registration || &check; pass
+- Navigate to the login page and test the login functionality with valid and invalid credentials || &check; pass
+- Test the "Forgot Password" feature and ensure it functions as intended || &check; pass
+
+2.3 Product Browsing & Filtering
+
+- Browse through various product categories and subcategories || &check; pass
+- Verify that product images, titles, descriptions, and prices are displayed correctly || &check; pass
+- Test the search functionality by entering keywords related to products || &check; pass
+- Test the filtering and sorting options to ensure they are functioning properly || &check; pass
+
+2.4 Product Details & Reviews
+
+- Select a product to view its details page || &check; pass
+- Verify the accuracy of product information, images, and pricing || &check; pass
+- Test the functionality for adding a product to the shopping cart || &check; pass
+- Check the user review section and ensure that user-submitted reviews are displayed correctly || &check; pass
+- Test the process of submitting a review for a product || &check; pass
+
+2.5 Shopping Cart & Checkout
+
+- Add one or more products to the shopping cart || &check; pass
+- Navigate to the shopping cart page and verify the accuracy of the items, quantities, and pricing || &check; pass
+- Test the functionality for updating item quantities and removing items from the cart || &check; pass
+- Proceed to the checkout process and test the shipping and payment information forms || &check; pass
+- Verify the order summary and complete the transaction to ensure the order is successfully placed || &check; pass
+- Check the order confirmation page and email for accuracy || &check; pass
+
+2.6 User Account Management
+
+- Navigate to the user account page and verify the correct display of user information || &check; pass
+- Test the functionality for editing user profile information, such as name, email, and address || &check; pass
+- Check the order history section and ensure that previous orders are displayed accurately || &check; pass
+
+2.7 About Page
+
+- Navigate to the "About" page using the link in the navigation menu || &check; pass
+- Verify that the "About" page content is relevant, informative, and well-organized || &check; pass
+- Check for proper formatting, including headings, paragraphs, images, and multimedia content || &check; pass
+- Ensure that the page is free of grammatical errors and typos || &check; pass
+- Test any embedded links or buttons to ensure they function as intended and direct to the correct destinations || &check; pass
+- Test responsiveness by resizing the browser window and accessing the "About" page on different devices || &check; pass
+
+2.8 Testimonials Page
+
+- Navigate to the "Testimonials" page using the link in the navigation menu || &check; pass
+- Verify that the "Testimonials" page displays a collection of customer reviews or success stories || &check; pass
+- Check the layout and formatting of the testimonials, ensuring that they are organized and visually appealing || &check; pass
+- Ensure that each testimonial includes the customer's name, photo, and a quote or description of their experience || &check; pass
+- Test carousel, navigation features to ensure they function smoothly and provide a positive user experience || &check; pass
+- Verify that the "Testimonials" page is free of grammatical errors and typos || &check; pass
+- Test responsiveness by resizing the browser window and accessing the "Testimonials" page on different devices || &check; pass
+
+2.9 Hire Page
+
+- Navigate to the "Hire" page using the link in the navigation menu || &check; pass
+- Verify that the "Hire" page provides clear information about the hiring process, available positions, or freelance opportunities || &check; pass
+- Check the layout and formatting of the page, ensuring that it is organized, visually appealing, and easy to read || &check; pass
+- Verify that the "Hire" page is free of grammatical errors and typos || &check; pass
+- Test any embedded links or buttons to ensure they function as intended and direct to the correct destinations || &check; pass
+- Test responsiveness by resizing the browser window and accessing the "Hire" page on different devices || &check; pass
+
+2.10 Packages Page
+
+- Navigate to the "Packages" page using the link in the navigation menu || &check; pass
+- Verify that the "Packages" page displays a selection of product or service bundles available for purchase || &check; pass
+- Check the layout and formatting of the packages, ensuring that they are organized, visually appealing, and easy to understand || &check; pass
+- Ensure that each package includes a title, description, list of included products or services, and pricing information || &check; pass
+- Verify that the "Packages" page is free of grammatical errors and typos || &check; pass
+- Test any embedded links or buttons to ensure they function as intended and direct to the correct destinations || &check; pass
+- Test responsiveness by resizing the browser window and accessing the "Packages" page on different devices || &check; pass
+
+2.11 Contact Us Page
+
+- Navigate to the "Contact Us" page using the link in the navigation menu || &check; pass
+- Check the layout and formatting of the page, ensuring that it is organized, visually appealing, and easy to read || &check; pass
+- Test the functionality of any contact forms, ensuring that fields for name, email, subject, and message are present and that required fields are appropriately marked || &check; pass
+- Test the form submission process, ensuring that it functions correctly and provides a confirmation message upon successful submission || &check; pass
+- Verify that the "Contact Us" page is free of grammatical errors and typos || &check; pass
+- Test responsiveness by resizing the browser window and accessing the "Contact Us" page on different devices || &check; pass
+
+2.12 Footer
+
+- Scroll down to the bottom of any page on the website to view the footer || &check; pass
+- Verify that the footer is consistently displayed across all pages of the website || &check; pass
+- Check the layout and formatting of the footer, ensuring that it is organized, visually appealing, and easy to read || &check; pass
+- Ensure that the footer contains relevant and up-to-date information, such as copyright notices, terms and conditions, privacy - policy, or other legal disclaimers || &check; pass
+- Test any embedded links or buttons in the footer to ensure they function as intended and direct to the correct destinations, such as social media profiles, email addresses, or other pages on the website || &check; pass
+- Verify that the footer is free of grammatical errors and typos || &check; pass
+- Test responsiveness by resizing the browser window and accessing the website on different devices, ensuring that the footer adapts to different screen sizes and remains visually appealing and functional || &check; pass
+
 #### Device Testing
 
 The Project was tested using a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
