@@ -100,7 +100,6 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - [Manual Testing](#manual-testing)
   - [Device Testing](#device-testing)
   - [Browsers Tested](#browsers-tested)
-  - [Testing CRUD functionality](#testing-crud-functionality)
 - [Validations](#validations)
   - [HTML Validation](#html-validation)
   - [CSS Validation](#css-validation)
@@ -1627,10 +1626,41 @@ Manual Testing of the website https://pp5-house-stock-ecommerce.herokuapp.com/
 - Verify that the footer is free of grammatical errors and typos || &check; pass
 - Test responsiveness by resizing the browser window and accessing the website on different devices, ensuring that the footer adapts to different screen sizes and remains visually appealing and functional || &check; pass
 
+2.13 MailChimp Integration
+
+- Locate the MailChimp signup form, which is present in the footer (button "Subscribe To Our Newsletter"), on a dedicated newsletter subscription page || &check; pass
+- Verify that the form is visually appealing and easy to understand, with clear instructions for users to subscribe to the newsletter || &check; pass
+- Test the form fields, ensuring that fields for email address is present and functioning correctly || &check; pass
+- Test the form submission process with valid and invalid email addresses, ensuring that appropriate validation and error messages are displayed when necessary || &check; pass
+- Upon successful form submission, verify that the user receives a confirmation message || &check; pass
+- Log in to the MailChimp account associated with the website and verify that the submitted email addresses are correctly added to the appropriate list or segment || &check; pass
+- Test responsiveness by resizing the browser window and accessing the website on different devices, ensuring that the MailChimp signup form adapts to different screen sizes and remains visually appealing and functional || &check; pass
+
+2.14 Product Management for Admin
+
+- Log in to the website using an admin account, or navigate to the admin area dashboard || &check; pass
+- Locate the product management section, which is accessible through a menu item, and a dedicated page within the admin area || &check; pass
+- Verify that the product management interface is visually appealing, organized, and easy to understand || &check; pass
+- Test the functionality for adding a new product, ensuring that fields for product name, description, image, category, price, and any other relevant information are present and functioning correctly || &check; pass
+- Test the process of saving and publishing a new product, ensuring that it is correctly added to the website and visible to users || &check; pass
+- Locate an existing product in the product management interface and test the functionality for editing its details, such as updating the name, description, image, category, or price || &check; pass
+- Test the process of saving and publishing edited product details, ensuring that the changes are correctly reflected on the website || &check; pass
+- Test the functionality for deleting a product, ensuring that it is removed from the website and no longer visible to users || &check; pass
+- Verify that any product search, filtering, or sorting options within the product management interface function as intended || &check; pass
+- Test responsiveness by accessing the admin area and product management interface on different devices, ensuring that it adapts to different screen sizes and remains visually appealing and functional || &check; pass
+
 #### Device Testing
 
-The Project was tested using a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
-The following devices have been tested:
+In addition to the manual testing steps outlined above, it is crucial to test the website on a variety of devices to ensure a consistent and positive user experience across different platforms, screen sizes, and browsers. The following steps outline a general process for device testing.
+
+**Device Testing Process:** <br> 
+- For each device, follow the manual testing steps outlined in manual tests above, paying close attention to any inconsistencies, layout issues, or functionality problems that may be specific to that device
+- Test the website's responsiveness, ensuring that content, images, and navigation elements adapt to different screen sizes and orientations (portrait or landscape) on both tablets and smartphones
+- Ensure that any touch-based interactions, such as tapping or swiping, function properly on touchscreen devices
+
+**Multi-Device Emulator Testing**
+
+The website has been tested using a multi-device emulator in the Google Chrome Developer Dashboard. This testing approach allows for a quick evaluation of the website's performance and layout across various devices and screen sizes. The devices tested include:
 
 - Nest HubMax (Desktop)
 - iPad Pro (Tablet)
@@ -1653,41 +1683,6 @@ Testing has been carried out on the  following browsers:
 - Safari iOS
 
 The site was constantly tested during the process of creating the site in the Gitpod Environment and the deployed site on Heroku was also tested in terms of user experience.
-The available functionality and user experience is reflected in the table below.
-
-| Goals/actions  | As a guest | As a logged user  | Result | Comment |
-|--|:--:|:--:|:--:|--|
-| User can use menu and navigating through pages | &check; | &check; | Pass | Click on menu item redirects to appropriate page |
-| User can see the home page | &check; | &check; | Pass | |
-| User can see the Pricing page | &check; |&check;  |  Pass| |
-| User can see the Sign Up page | &check; |&check;  |  Pass| |
-| User can see the Login page  | &check; |&check;  |  Pass| |
-| User can see the Logout page  | &check; |&check;  |  Pass| |
-| User can click the Book Now button  | &check; |&check;  |  Pass| Redirects to the page with a message that the user must register or log in for guest or shows up form for authorized user |
-| User can see the Booknow page | &cross; | &check;  | Pass |A page is displayed with a message that the user must register or log in  |
-| User can fill fields in the form the Booknow page | &cross; | &check;  | Pass |This page and form are available only to authorized users |
-| User can see the Bookings page   | &cross; | &check;  | Pass | This page is available only to an authorized users|
-| User can see the Change booking page  | &cross;  | &check;  | Pass | This page is available only to authorized users|
-| User can edit booking in the form on the Change booking page  | &cross;  | &check;  | Pass |This page is available only to authorized users ||
-| User can see the Delete booking page  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| User can see the  User's blog page  |  &check; | &check;  |Pass  |  |
-| User can see the Create post  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| User can see the Delete post  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| User can see the  Update post  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| User can see the  attach image  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| User can like post and unlike  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
-| Admin can create service, edit and delete from admin site  |  &cross; | &check;  |Pass  | This page is available only for authorized admin |
-| Admin can create post, update and delete from admin panel  |  &cross; | &check;  |Pass  | This page is available only for authorized admin |
-| Admin can approve or delete comments from admin panel  |  &cross; | &check;  |Pass  | This page is available only for authorized admin |
-| |
-
-### Testing CRUD functionality
-
-- Each of the features were tested multiple times to ensure that numerous new posts could be submitted, and that each post had the ability to be updated, edited and delete by the user that submitted it.
-- If a post is submitted by another user, the edit/delete buttons do not appear on the page.
-- Each of the features were tested multiple times to ensure that numerous new booking could be submitted, and that each booking had the ability to be updated, edited and delete by the user that submitted it.
-- If a booking is submitted by another user, the particular ID booking list with edit/delete buttons do not appear on the page.
-
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
