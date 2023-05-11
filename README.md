@@ -640,59 +640,59 @@ The wireframes can be seen below:
 
 1. **Homepage:** Include a header with the logo, search bar, user account options, and navigation menu. Feature a large banner or carousel, followed by sections showcasing featured products, categories, and promotions. Optionally, include a section for customer testimonials or reviews.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Homepage](static/assets/images/wireframes/home-desktop.png)
 </details>
-<br>
+<hr>
 
 2. **Product Listing Page:** Design a clean layout with a grid of products, including images, titles, prices, and brief descriptions. Add pagination, filtering, and sorting options for easy browsing.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Product Listing Page](static/assets/images/wireframes/product-listing-page-desktop.png)
 </details>
-<br>
+<hr>
 
 3. **Product Detail Page:** Display high-quality product images, title, price, and availability information. Include a detailed description, specifications, and an "Add to Cart" button. Optionally, showcase related products or upsell items.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Product Detail Page](static/assets/images/wireframes/product-detail-page-desktop.png)
 </details>
-<br>
+<hr>
 
 4. **Shopping Cart Page:** Present a clear layout of the selected products with images, titles, prices, and quantities. Allow users to update quantities or remove items, and display the subtotal, shipping fees, taxes, and total amount. Include a "Proceed to Checkout" button and options to continue shopping or save the cart for later.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-desktop.png)
 </details>
-<br>
+<hr>
 
 5. **Checkout Page:** Design a simple and user-friendly checkout process with input fields for shipping and billing information and a summary of the order details. Offer guest checkout or user registration and provide clear indications of the payment process and security measures.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Checkout Page](static/assets/images/wireframes/checkout-page-desktop.png)
 </details>
-<br>
+<hr>
 
 6. **User Account Dashboard:** Create a dashboard for registered users with options to view and edit account information, manage shipping addresses, view order history, and access other relevant features.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-desktop.png)
 </details>
-<br>
+<hr>
 
 7. **Hire Page:** Design a page dedicated to offering professional services, such as interior design, furniture assembly, or home improvement consultations. Include the following sections:
 <details>
-<summary>See wireframe screenshot "Hire" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/hire-page-desktop.png)
 </details>
-<br>
+<hr>
 
 a. **Service Categories:** Display a grid or list of the different services offered, along with a brief description and an eye-catching image or icon for each category.
 
@@ -703,11 +703,11 @@ c. **Testimonials and Reviews:** Showcase positive feedback from previous custom
 8. **Packages Page:** Design a page dedicated to showcasing pre-selected or custom package deals, such as furniture sets, home decor bundles, or appliance combinations. Include the following sections:
 
 <details>
-<summary>See wireframe screenshot "Packages" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/packages-page-desktop.png)
 </details>
-<br>
+<hr>
 
 a. **Featured Packages:** Display a grid or list of the featured packages, including images, titles, descriptions, and prices. Highlight any discounts or special offers associated with these packages.
 
@@ -722,11 +722,12 @@ d. **Customer Testimonials:** Showcase positive feedback from customers who have
 
 9. **About Page:** Design a page that shares the story, mission, and values of the Home Store & More e-commerce webstore. Include the following sections:
 <details>
-<summary>See wireframe screenshot "About" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/about-page-desktop.png)
 </details>
-<br>
+<hr>
+
 a. **Our Story:** Provide a brief history of the company, its founders, and its journey to becoming an e-commerce webstore. Use engaging storytelling to connect with users on a personal level.
 
 b. **Mission and Values:** Clearly articulate the company's mission and core values, emphasizing its commitment to customer satisfaction, product quality, and social responsibility.
@@ -741,11 +742,11 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 
 8. **404, 403, and 500 Error Pages:** Design error pages that clearly communicate the issue, offer helpful suggestions or actionable steps, and provide navigation options to guide users back to the main site.
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404.png)
 </details>
-<br>
+<hr>
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -754,91 +755,91 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 
 1. **Homepage:**
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Homepage](static/assets/images/wireframes/home-mobile.png)
 </details>
-<br>
+<hr>
 
 2. **Product Listing Page:** 
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Product Listing Page](static/assets/images/wireframes/product-listing-page-mobile.png)
 </details>
-<br>
+<hr>
 
 3. **Product Detail Page:**
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Product Detail Page](static/assets/images/wireframes/product-detail-page-mobile.png)
 </details>
-<br>
+<hr>
 
 4. **Shopping Cart Page:** 
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Shopping Cart Page](static/assets/images/wireframes/shopping-cart-page-mobile.png)
 </details>
-<br>
+<hr>
 
 5. **Checkout Page:** 
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![Checkout Page](static/assets/images/wireframes/checkout-page-mobile.png)
 </details>
-<br>
+<hr>
 
 6. **User Account Dashboard:** 
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/user-account-dashboard-mobile.png)
 </details>
-<br>
+<hr>
 
 7. **Hire Page:** 
 <details>
-<summary>See wireframe screenshot "Hire" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/hire-page-mobile.png)
 </details>
-<br>
+<hr>
 
 8. **Packages Page:**
 <details>
-<summary>See wireframe screenshot "Packages" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/packages-page-mobile.png)
 </details>
-<br>
+<hr>
 
 9. **About Page:** 
 <details>
-<summary>See wireframe screenshot "About" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/about-page-mobile.png)
 </details>
-<br>
+<hr>
 
 10. **Testimonials** 
 <details>
-<summary>See wireframe screenshot "Testimonials" page:</summary>
+<summary>Screenshot</summary>
 
  ![User Account Dashboard](static/assets/images/wireframes/testimonials-page-mobile.png)
 </details>
-<br>
+<hr>
 
 11. **404, 403, and 500 Error Pages:** 
 <details>
-<summary>See wireframe screenshot:</summary>
+<summary>Screenshot</summary>
 
  ![404, 403, and 500 Error Pages](static/assets/images/wireframes/404-mobile.png)
 </details>
-<br>
+<hr>
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -918,8 +919,10 @@ The Home Page of the PP5 E-Commerce website serves as the main entry point for u
 The Home Page is designed to provide a welcoming and informative experience for users, guiding them through the website and encouraging interaction with the store's products and services.
 
 <details>
+<summary>Screenshots</summary>
 
-![Home page](/static/assets/features/home.png)
+![Home page](static/assets/images/features/home.png)
+![Home page](static/assets/images/features/home-mobile.png)
 
 </details>
 
@@ -934,8 +937,10 @@ The Home Page is designed to provide a welcoming and informative experience for 
 
 The product page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide a comprehensive and engaging shopping experience, making it easy for customers to find, compare, and purchase the perfect products to enhance their home or event space:
 <details>
+<summary>Screenshots</summary>
 
-![Products page](/static/assets/features/product-page.png)
+![Products page](static/assets/images/features/product-page.png)
+![Products page](static/assets/images/features/product-mobile-page.png)
 
 </details>
 
@@ -953,8 +958,10 @@ The product page of Home Store & More + Techno Tech Co. Ltd's website is designe
 The product detail page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with all the information they need to make an informed purchasing decision, offering a comprehensive and engaging shopping experience:
 
 <details>
+<summary>Screenshots</summary>
 
-![Product Detail page](/static/assets/features/product-detail-page.png)
+![Product Detail page](static/assets/images/features/product-detail-page.png)
+![Product Detail page](static/assets/images/features/product-detail-mobile-page.png)
 
 </details>
 
@@ -973,8 +980,10 @@ The product detail page of Home Store & More + Techno Tech Co. Ltd's website is 
 The wishlist page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide a convenient and personalized shopping experience, allowing customers to save, manage, and purchase their favorite products with ease:
 
 <details>
+<summary>Screenshots</summary>
 
-![Wishlist page](/static/assets/features/wishlist.png)
+![Wishlist page](static/assets/images/features/wishlist.png)
+![Wishlist page](static/assets/images/features/wishlist-mobile.png)
 
 </details>
 
@@ -994,8 +1003,10 @@ The About page of Home Store & More + Techno Tech Co. Ltd's website is designed 
 
 
 <details>
+<summary>Screenshots</summary>
 
-![About page](/static/assets/features/about.png)
+![About page](static/assets/images/features/about.png)
+![About page](static/assets/images/features/about-mobile.png)
 
 </details>
 

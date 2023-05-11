@@ -99,8 +99,6 @@
                             </div>
                         </div>
 
-<!-- --------------------------------------------------------- -->
-                        <!-- --------------------------------------------------------- -->
                         {% if user.is_authenticated %}
                         <div class="col-12 mb-4">
                             {% if not in_wishlist %}
@@ -117,10 +115,7 @@
                                     <i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i></p>
                         </div>
                         {% endif %}
-                       
-<!-- --------------------------------------------------------- -->
                         <hr>
-<!-- --------------------------------------------------------- -->
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <div class="d-flex">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5 mr-2">
