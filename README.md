@@ -1021,8 +1021,11 @@ The About page of Home Store & More + Techno Tech Co. Ltd's website is designed 
 The Testimonials page of Home Store & More + Techno Tech Co. Ltd's website is designed to showcase the positive experiences and satisfaction of our clients, providing potential customers with valuable insights into the quality and performance of our products and services:
 
 <details>
+<summary>Screenshots</summary>
 
-![Testimonials page](/static/assets/features/testimonials.png)
+![Testimonials page](static/assets/images/features/testimonials.png)
+![Testimonials page](static/assets/images/features/testimonials-mobile.png)
+
 
 </details>
 
@@ -1040,8 +1043,10 @@ The Testimonials page of Home Store & More + Techno Tech Co. Ltd's website is de
 
 The Hire page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with all the information they need to make informed decisions about equipment rentals, ensuring a seamless and efficient booking experience.
 <details>
+<summary>Screenshots</summary>
 
-![Hire page](/static/assets/features/hire.png)
+![Hire page](static/assets/images/features/hire.png)
+![Hire page](static/assets/images/features/hire-mobile.png)
 
 </details>
 
@@ -1056,8 +1061,10 @@ The Hire page of Home Store & More + Techno Tech Co. Ltd's website is designed t
 The Packages page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a comprehensive overview of our available package options and the benefits of choosing a package for their event or space, making it easy for them to find, compare, and purchase the perfect package for their needs.
 
 <details>
+<summary>Screenshots</summary>
 
-![Packages page](/static/assets/features/packages.png)
+![Packages page](static/assets/images/features/packages.png)
+![Packages page](static/assets/images/features/packages-mobile.png)
 
 </details>
 
@@ -1073,8 +1080,10 @@ The Packages page of Home Store & More + Techno Tech Co. Ltd's website is design
 
 The footer of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with easy access to important information and resources, ensuring a seamless and user-friendly browsing experience.
 <details>
+<summary>Screenshots</summary>
 
-![Footer](/static/assets/features/footer.png)
+![Footer](static/assets/images/features/footer.png)
+![Footer](static/assets/images/features/footer-mobile.png)
 
 </details>
 
