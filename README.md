@@ -51,21 +51,20 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 - [Overview](#overview)
   - [Project goals](#project-goals)
   - [Business Plan](#business-plan)
-  - - [Web Marketing Strategy](#web-marketing-strategy)
-  - - - [MailChimp](#mailchimp)
+    - [Web Marketing Strategy](#web-marketing-strategy)
+      - [MailChimp](#mailchimp)
   - [UX (User Experience)](#ux-user-experience)
-  - [User Experience](#user-experience)
   - [User stories](#user-stories)
   - [Site Administrator goals](#site-administrator-goals)
 - [Design Structure](#design-structure)
   - [Color Scheme](#color-scheme)
   - [Functional Structure](#functional-structure)
-  - - [404 page](#404-page)
-  - - [403 page](#403-page)
-  - - [500 page](#500-page)
+    - [404 page](#404-page)
+    - [403 page](#403-page)
+    - [500 page](#500-page)
   - [Wireframes](#wireframes)
-  - - [For Desktop view](#for-desktop-view)
-  - - [For Mobile view and small screens](#for-mobile-view-and-small-screens)
+    - [For Desktop view](#for-desktop-view)
+    - [Wireframes for Mobile view and small screens](#wireframes-for-mobile-view-and-small-screens)
 - [Features](#features)
   - [Navbar](#navbar)
   - [Home page](#home-page)
@@ -89,22 +88,23 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - [Frameworks](#frameworks)
   - [Database](#database)
   - [Cloud Hosting](#cloud-hosting)
-  - - [Additional Media Hosting](#additional-media-hosting)
-  - [Tools](#tools)
-- [Testing](#testing)
+    - [Additional Media Hosting](#additional-media-hosting)
+- [Tools](#tools)
+- [Bug Reports](#bug-reports)
   - [Bugs](#bugs)
   - [Fixed Bugs](#fixed-bugs)
   - [Bug reports bug reports](#bug-reports-bug-reports)
   - [Unresolved Bugs](#unresolved-bugs)
-- [Automated testing (Unit test)](#automated-testing-unit-test)
+- [Testing](#testing)
   - [Manual Testing](#manual-testing)
-  - [Device Testing](#device-testing)
-  - [Browsers Tested](#browsers-tested)
-- [Validations](#validations)
-  - [HTML Validation](#html-validation)
-  - [CSS Validation](#css-validation)
-  - [Python Validation (PEP8)](#python-validation-pep8)
-  - [Lighthouse report](#lighthouse-report)
+    - [Device Testing](#device-testing)
+    - [Browsers Tested](#browsers-tested)
+  - [Automated testing (Unit test)](#automated-testing-unit-test)
+  - [Validations](#validations)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [Python Validation (PEP8)](#python-validation-pep8)
+    - [Lighthouse report](#lighthouse-report)
 - [Deployment](#deployment)
   - [Forking the GitHub Repository](#forking-the-github-repository)
   - [Making a Local Clone](#making-a-local-clone)
@@ -321,9 +321,10 @@ For more information about MailChimp and its features, visit the official MailCh
 
 [Back to Table of Contents](#table-of-contents)
 
+<hr>
+
 ## UX (User Experience)
 
-### User Experience
 
 UX, or User Experience, refers to the overall experience a user has while interacting with a product, service, or website. It encompasses various aspects of design, functionality, and usability to create a seamless and enjoyable experience for users. Here are some key elements to consider when creating a positive UX for the Home Store & More e-commerce webstore:
 
@@ -345,12 +346,16 @@ UX, or User Experience, refers to the overall experience a user has while intera
    
 By considering these aspects and focusing on creating a positive user experience, the Home Store & More e-commerce webstore will be more likely to engage users, encourage repeat visits, and ultimately drive conversions and sales
 
-### User stories
+<hr>
+
+## User stories
 
 See the GitHub Projects section was used as a [Kanban board](https://github.com/users/SergiyKochenko/projects/14) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.
 [User stories](https://github.com/users/SergiyKochenko/projects/14) were used to break down the project into sub-tasks and placed on the Kanban board to work on them and track progress.
 
-#### Site Administrator goals
+<hr>
+
+## Site Administrator goals
 
 Site Administrator Goals for the Home Store & More e-commerce webstore:
 
@@ -360,18 +365,16 @@ Site Administrator Goals for the Home Store & More e-commerce webstore:
 3. **User Management:** Implement a user management system that allows the site administrator to manage registered users, monitor user activity, and address any reported issues or concerns.
    
 4. **Secure Payment Processing:** Ensure the secure handling and processing of payment information, even though the website currently does not accept real transactions, to demonstrate a commitment to security and data protection.
-
-5. **Site Analytics and Reporting:** Integrate site analytics and reporting features that provide the site administrator with valuable insights into user behavior, popular products, sales trends, and other key performance indicators (KPIs).
    
-6. **Marketing and Promotion:** Facilitate the creation and management of marketing campaigns and promotions, such as discounts, special offers, and email marketing, to drive traffic and increase sales.
+5. **Marketing and Promotion:** Facilitate the creation and management of marketing campaigns and promotions, such as discounts, special offers, and email marketing, to drive traffic and increase sales.
    
-7. **Content Management:** Implement an easy-to-use content management system (CMS) that allows the site administrator to update and maintain the website's content, including banners, blog posts, and static pages.
+6. **Content Management:** Implement an easy-to-use content management system (CMS) that allows the site administrator to update and maintain the website's content, including banners, blog posts, and static pages.
 
-8. **Customer Support:** Develop a system for managing customer inquiries, complaints, and feedback, enabling the site administrator to provide timely and effective support to users.
+7. **Customer Support:** Develop a system for managing customer inquiries, complaints, and feedback, enabling the site administrator to provide timely and effective support to users.
    
-9. **System Maintenance and Updates:** Ensure regular system maintenance and updates to keep the website running smoothly, address any potential security vulnerabilities, and implement new features and improvements as needed.
+8. **System Maintenance and Updates:** Ensure regular system maintenance and updates to keep the website running smoothly, address any potential security vulnerabilities, and implement new features and improvements as needed.
 
-10. **Scalability and Performance:** Monitor and optimize the website's performance and infrastructure to ensure fast load times and a smooth user experience, as well as plan for scalability to accommodate future growth.
+9. **Scalability and Performance:** Monitor and optimize the website's performance and infrastructure to ensure fast load times and a smooth user experience, as well as plan for scalability to accommodate future growth.
 
 By focusing on these goals, the site administrator can effectively manage and maintain the Home Store & More e-commerce webstore, ensuring a positive experience for both users and the website's stakeholders.
 
@@ -489,35 +492,20 @@ Aquerium House website design templates:
 
 A well-chosen color scheme for the Home Store & More e-commerce webstore will create a visually appealing and cohesive user experience. Here is a proposed color scheme for the website:
 
-1. Primary Color - Dark Blue: #1D3557
-- Use this color for important elements, such as the header, footer, and main navigation menu. Dark blue conveys trust, professionalism, and stability, making it a popular choice for e-commerce websites.
 
-2. Secondary Color - Light Blue: #A8DADC
 
-- Apply this color for accents, such as buttons, links, and other interactive elements. Light blue provides a pleasant contrast to the dark blue and is associated with calmness and reliability.
-
-3. Tertiary Color - Orange: #E76F51
-
-- Use this color sparingly for attention-grabbing elements, such as call-to-action buttons, sale tags, or promotion banners. Orange is an energetic and eye-catching color that can encourage users to take action.
-
-4. Background Color - Light Gray: #F1FAEE
-
-- Utilize this color for the main background of the website, as it provides a clean and neutral backdrop that allows other colors and content to stand out.
-
-5. Text Color - Dark Gray: #333333
-
-- Use this color for the majority of the text content on the website. Dark gray is an excellent choice for readability and contrasts well with the light gray background.
-
-By implementing this color scheme, the Home Store & More e-commerce webstore will create a visually appealing and user-friendly experience for its visitors. These colors will work together to establish a professional and trustworthy appearance, which is essential for an e-commerce website.
+By implementing this color scheme, the Home Store & More e-commerce webstore is creating a visually appealing and user-friendly experience for its visitors. These colors works together to establish a professional and trustworthy appearance, which is essential for an e-commerce website.
 <details>
 <summary>Color palette generator </summary>
 
-![Register page](/static/assets/images/color-palette-generator.png)
+![Palette generator](static/assets/images/color-palette-generator.png)
 </details>
 
-<br/>
+<hr/>
+<br>
 
 ### Functional Structure
+<br>
 
 **Home page (User's Blog):** The home page contains a posts, logo and an image that gives the user an idea of ​​the type of service provided. Under the nav menu in the center is the button to create post, a new user or login for an existing user, only existing users can create a post. Not registered user will redirect to registration page.
 Registration and login are also available from the navigation bar.
@@ -750,7 +738,7 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 
 [Back to Table of Contents](#table-of-contents)
 
-### For Mobile view and small screens
+### Wireframes for Mobile view and small screens
 
 
 1. **Homepage:**
@@ -1186,8 +1174,8 @@ The Login page of Home Store & More + Techno Tech Co. Ltd's website is designed 
 <details>
 <summary>Screenshots</summary>
 
-![Sign in page](/static/assets/features/login.png)
-![Sign in page](/static/assets/features/login-mobile.png)
+![Sign in page](static/assets/images/features/login.png)
+![Sign in page](static/assets/images/features/login-mobile.png)
 
 </details>
 
@@ -1359,8 +1347,8 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 - HTML5
 - CSS3
 
-Installed Packages
 ---
+Installed Packages:
 
 **Package**          &         **Version**
 ------------------------- --------
@@ -1422,14 +1410,17 @@ Installed Packages
 <br>such as product images, for the PP5 House Stock E-Commerce website. By leveraging Cloudinary, the website can efficiently serve optimized 
 <br>and responsive media assets, ensuring a fast and visually appealing user experience.
 
-### Tools
+<hr>
+
+## Tools
 
 - [Google Fonts:](https://fonts.google.com/) Was used to to incorporate font styles.  
 - [Font Awesome](https://fontawesome.com/): was used to create the icons used on the website.
 - [Bootstrap](https://getbootstrap.com/) Was used to create the front-end design.
 - [Gitpod:](https://Gitpod.io/) Gitpod was used as IDE to commit and push the project to GitHub.
 - [GitHub:](https://github.com/) Was used as a version control system to manage the code
-- [Figma:](https://www.figma.com/) Was used to create wireframes
+- [Balsamiq:](https://balsamiq.com/) Was used to create wireframes
+- [Freelogoservices:](https://www.freelogoservices.com/) Was used for creating logo
 - [TinyPNG:](https://www.figma.com/) Was used to reduce the size and weight of images and optimizing interaction with the site
 - [Color Palette Generator:](https://mybrandnewlogo.com/color-palette-generator) Was used to select colors of the web site.
 - [Am I Responsive](http://ami.responsivedesign.is/) to generate an image showcasing the website's responsiveness to different screen sizes
@@ -1450,7 +1441,7 @@ Installed Packages
 
 [Back to Table of Contents](#table-of-contents)
 
-## Testing
+## Bug Reports
 
 ### Bugs
 
@@ -1486,54 +1477,13 @@ See bug report: [bug reports](https://github.com/users/SergiyKochenko/projects/6
 ![Create post page](/static/assets/bugs/create-post1.png)
 
 </details>
+<br>
 
 [Back to Table of Contents](#table-of-contents)
 
 ---
 
-## Automated testing (Unit test)
-
-- I have tested my web site, as experiment with automated testing. Currently I have covered 100% in total.
-- See below the attached screen shots of the unit tests:
-
-<details>
-<summary>tests_admin.py</summary>
-
-![Admin test](/static/assets/unit_tests/admin.png)
-
-![Admin coverage](/static/assets/unit_tests/admin_coverage.png)
-
-</details>
-<details>
-<summary>tests_models.py</summary>
-
-![Models test](/static/assets/unit_tests/models.png)
-
-![Models coverage](/static/assets/unit_tests/admin_coverage.png)
-
-</details>
-<details>
-<summary>tests_views.py</summary>
-
-![Views test](/static/assets/unit_tests/views.png)
-
-![Views coverage](/static/assets/unit_tests/views_coverage.png)
-
-</details>
-<details>
-<summary>Total test and coverage</summary>
-
-![Total tests](/static/assets/unit_tests/total_tests.png)
-
-![Total coverage](/static/assets/unit_tests/total_coverage.png)
-
-</details>
-
-<br/>
-
-[Back to Table of Contents](#table-of-contents)
-
----
+# Testing
 
 ## Manual Testing
 
@@ -1711,7 +1661,47 @@ Testing has been carried out on the  following browsers:
 - Safari iOS
 
 The site was constantly tested during the process of creating the site in the Gitpod Environment and the deployed site on Heroku was also tested in terms of user experience.
-<br/>
+<hr/>
+
+## Automated testing (Unit test)
+
+- I have tested my web site, as experiment with automated testing. Currently I have covered 100% in total.
+- See below the attached screen shots of the unit tests:
+
+<details>
+<summary>tests_admin.py</summary>
+
+![Admin test](/static/assets/unit_tests/admin.png)
+
+![Admin coverage](/static/assets/unit_tests/admin_coverage.png)
+
+</details>
+<details>
+<summary>tests_models.py</summary>
+
+![Models test](/static/assets/unit_tests/models.png)
+
+![Models coverage](/static/assets/unit_tests/admin_coverage.png)
+
+</details>
+<details>
+<summary>tests_views.py</summary>
+
+![Views test](/static/assets/unit_tests/views.png)
+
+![Views coverage](/static/assets/unit_tests/views_coverage.png)
+
+</details>
+<details>
+<summary>Total test and coverage</summary>
+
+![Total tests](/static/assets/unit_tests/total_tests.png)
+
+![Total coverage](/static/assets/unit_tests/total_coverage.png)
+
+</details>
+
+<hr/>
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1722,13 +1712,25 @@ The site was constantly tested during the process of creating the site in the Gi
 The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website.
 There were errors and warnings in the reports about unclosed elements and tags, incorrect values ​​and types of elements, unnecessary trailing slashes. All errors and warnings have been fixed, the project's HTML code has been re-checked without errors.
 
-<details><summary>base.html</summary>
+<details><summary>about app</summary>
 
-![](/static/assets/validation/html/base.png)
+![](static/assets/images/validation/about.png)
+![](static/assets/images/validation/filtering-1.png)
 </details>
-<details><summary>about.html</summary>
+<details><summary>bag app</summary>
 
-![](/static/assets/validation/html/about.png)
+bag-total.html
+![](static/assets/images/validation/bag-total.png)
+bag.html
+![](static/assets/images/validation/bag.png)
+checkout-buttons.html
+![](static/assets/images/validation/checkout-buttons.png)
+product-imag.html
+![](static/assets/images/validation/product-image.png)
+product-info.html
+![](static/assets/images/validation/product-info.png)
+quantity-form.html
+![](static/assets/images/validation/quantity-form.png)
 </details>
 <details><summary>bookings.html</summary>
 
@@ -1881,61 +1883,226 @@ Mobile:
 ![](/static/assets/lighthouse/mybookings-mobile.png)
 </details>
 
----
+
 [Back to Table of Contents](#table-of-contents)
+
+<br>
 
 ## Deployment
 
-The project was developed using Gitpod, the project code is stored on GitHub, and then deployed to Heroku.
-To deploy, follow these steps:
+<hr>
 
-1. Log in to Heroku or create an account if required.
-On the Welcome page in the top right corner click the button labeled 'New'.
+This project was deployed using
 
-2. From the drop-down menu select 'Create new app'.
-Enter a preferred app name.
-Select the relevant geographical region.
-Click to 'Create App'.
+- Github - To store code and deploy the site.
+- ElephantSql.com - To create an external database.
+- Django and Heroku - To host the deployed project.
+- Amazon AWS - To host the static and media files.
 
-3. Navigate to 'Settings' and scroll down to the 'Config Vars' section.
-Click 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value. Then click 'Add'.
-Add CLOUDINARY_URL, DATABASE_URL and SECRET_KEY. URL variable values ​​must be copied from your [CLOUDINARY](https://cloudinary.com/) account  and [ElephantSQL](https://www.elephantsql.com/) account.
-To create a SECRET KEY, use the online service or come up with your own.
+### GitHub
 
-4. Click on the 'Deploy' tab.
-Next to 'Deployment method' select 'GitHub'.
-Connect the relevant GitHub repository.
-Under 'Manual deploy' choose the correct branch and click 'Deploy Branch'.
-Also you can select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub.
+To create a new repository, I took the following steps:
 
-5. After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
+1. Logged into GitHub.
+2. Click the ‘repositories’ section.
+3. Click the green ‘new’ button to create new repository.
+4. Choose ‘repository template’ Used the code institute template as recommended from the dropdown menu.
+5. Add repository name then clicked the green ‘create repository button’ at the bottom of the page.
+6. Open the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
 
-### Forking the GitHub Repository
+### ElephantSql
 
-To use this code and make changes without affecting the original code, it is possible to 'fork' the code on the GitHub repository through the following steps:
+Setting up ElephantSQL:
 
-1. Create  or log into your GitHub account.
-2. Go to the GitHub [repository](https://github.com/SergiyKochenko/portfolio-project-four).
-3. Click the 'Fork' button in the upper right-hand corner of the page.
-A copy of the repository will be available in your own repository.
+1. Access your ElephantSQL dashboard by logging in to ElephantSQL.com.
+2. Click on "Create New Instance".
+3. Set up your plan by giving it a name (usually the name of your project), selecting the Tiny Turtle (Free) plan, and leaving the Tags field blank.
+4. Click on "Select Region" and then click on "Review".
+5. Check your details and then click on "Create instance".
+6. Go back to the ElephantSQL dashboard and click on the name of the database instance for your project.
+7. To copy the database URL to your clipboard, click on the copy icon in the URL section.
+
+### Django and Heroku
+
+To set up the Django framework and configure the Heroku deployment, I followed these step-by-step instructions:
+
+1. Installed Django framework and revisited the Walkthrough provided by Code institutes for assistance.
+2. Logged into Heroku, went to the Dashboard and clicked on New to create a new app.
+3. Gave the app a name, selected the region closest to me, and clicked Create app to confirm.
+4. Opened the Settings tab and added the config var DATABASE_URL, and for the value, copied in the database URL from ElephantSQL.
+5. Installed dj_database_url and psycopg2 in the terminal, both of which are required to connect to an external database.
+6. Updated the requirements.txt file with the newly installed packages using pip freeze > requirements.txt.
+7. Imported dj_database_url in the settings.py file and updated the DATABASES section with the new connection to the ElephantSQL database.
+8. Ran the showmigrations command in the terminal to confirm the connection to the external database.
+9. Migrated the database models to the new database using python3 manage.py migrate command.
+10. Loaded in the fixtures in the correct order: categories first and then products.
+11. Created a superuser for the new database using python3 manage.py createsuperuser command.
+12. Deleted the database from the settings.py file to prevent exposing it when pushing to GitHub and reconnected to the local sqlite database.
+13. Deployed the final version with DEBUG = 'DEVELOPMENT' in os.environ.
+
+Note: For safety and security reasons, I generated a new Django secret key using a Django key generator and added it to both the env.py file and Heroku config vars. This ensured that even if the secret key had been pushed accidentally to GitHub, it would now be an invalid key.
+
+### Amazon AWS
+
+- #### Setting up Amazon AWS
+
+To set up Amazon AWS, the following steps were taken (following the Code Institute walkthroughs to assist in setting up Amazon AWS):
+
+1.  Log into Amazon AWS and signed in to the upper right by accessing the AWS management console under my account.
+2.  Navigate to the Storage menu under All Services and clicked the link that says S3.
+3.  Click the orange button that says 'Create Bucket'.
+4.  Name the bucket and selected the closest region to me.
+5.  Follow the [steps](https://codeinstitute.s3.amazonaws.com/fullstack/AWS%20changes%20sheet.pdf) supplied by the Code Institute for Object Ownership.
+
+- #### Connecting Django to S3
+
+To connect Django to S3, the following steps were taken:
+
+1.  Install the `Boto3` and `Django storages` packages by running the following commands:
+
+    `pip3 install boto3`
+
+    `pip3 install django-storages`
+
+2.  Run the following command to save the installed packages to the `requirements.txt` file:
+
+    `pip3 freeze > requirements.txt`
+
+3.  Add 'storages' to the installed apps section inside the `settings.py` file.
+
+4.  Add some additional settings to the same file to let Django know what bucket it's communicating with:
+    - Near the bottom of the file, write an `if` statement to check if there is an environment variable called `USE_AWS` and add the following code inside:
+
+```
+if USE_AWS in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
+    AWS_S3_REGION_NAME = 'insert-your-region-here'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+```
+
+5.  Add the following config vars in Heroku:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - USE_AWS set to True
+6.  Remove the `DISABLE_COLLECTSTATIC` variable in Heroku.
+7.  Go to the `settings.py` file in my Django project and add the following line inside the `if` statement written earlier:
+
+    `AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'`
+
+8.  Create a custom_storages.py file and import my settings as well as the s3boto3 storage.
+9.  Add the following two classes inside the `custom_storages.py` file:
+
+```
+class StaticStorage(S3Boto3Storage):
+	location = settings.STATICFILES_LOCATION
+
+class MediaStorage(S3Boto3Storage):
+	location = settings.MEDIAFILES_LOCATION
+```
+
+10. In the `settings.py` file, underneath the bucket config settings but still inside the `if` statement, add the following lines:
+
+```
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+```
+
+11. Override and explicitly set the URLs for static and media files using my custom domain and new locations. Add the following two lines inside the same if statement:
+
+```
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+12. After pushing the changes, the S3 bucket has a static folder with all the static files inside.
+
+- #### Caching, Media Files & Stripe
+
+To set up caching, media files, and Stripe, the following steps were taken:
+
+1.  Open your `settings.py` file and add an `if` statement to handle media files caching. This allows static files to be cached for a long time and speeds up the loading of your site. Here's the code to add:
+
+```
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
+```
+
+2.  Save your changes to `settings.py`, then add, commit, and push your changes to Git.
+3.  Log in to your Amazon AWS account and navigate to your S3 bucket. Create a new folder called "media" and save it.
+4.  Inside the new "media" folder, click "Upload," "Add files," and select all of the images you're using on your site. Note that your media folder must match the media folder within your Workspace gitpod.io.
+5.  Under "Permissions," select "Grant public-read access" and click Upload. You may also need to check an acknowledgement warning checkbox.
+6.  With those steps completed, all of your static and media files should automatically link from Django to your S3 bucket.
+7.  In the Django admin, confirm the email address for the superuser in the Postgres database. This is necessary for the user to log in to the store.
+8.  Add your Stripe keys to the Heroku Config Vars.
+9.  Sign in to your Stripe account and navigate to the "Developers" tab at the top right of the navbar.
+10. Under "Developers," click "Webhooks," then "Add endpoint" in the side-nav.
+
+11. On the next page, enter the link to your Heroku app followed by `/checkout/wh/`. It should look something like this:
+
+`https://your-app-name.herokuapp.com/checkout/wh/`
+
+12. Click "+ Select events" and check the "Select all events" checkbox at the top. Then click "Add events" at the bottom to complete the form.
+
+13. Your webhook is now created, and it should have generated a secret key. You'll need this to add to your Heroku config vars.
+
+14. Navigate to your app in Heroku and go to the "Config Vars" section under settings. You'll need the secret key you generated for your webhook, as well as your publishable key and secret key that you can find in the API keys section in Stripe.
+
+15. Add these values under these keys:
+
+```
+STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+STRIPE_SECRET_KEY = 'insert your secret key'
+STRIPE_WH_SECRET = 'insert your webhooks secret key'
+```
+
+16. Finally, go back to your `settings.py` file in Django and insert the following near the bottom of the file:
+
+```
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+```
+
+With these steps completed, you should be all set with caching, media files, and Stripe integration for your Django project.
+
+[Back to top](#mi-primera-cajita)
+
+### How to Fork it
+
+1. On GitHub, go to [CarmenCantudo/mi-primera-cajita](https://github.com/CarmenCantudo/mi-primera-cajita).
+2. In the top right, click "Fork".
+
+### How to Clone it
+
+1. Go to the main page of the repository.
+2. Above the file list, click "Code".
+3. Select HTTPS, SSH, or GitHub CLI and then click copy to clone it.
+4. Open Git Bash.
+5. Change the location of your cloned repository.
+6. Type `git clone` and then paste the URL you copied.
+7. Press “Enter” to create your clone.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the GitHub Repository
-2. Under the repository name choose button "Code",  click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open your development editor of choice and open a terminal window in a directory of your choice
-5. Type *git clone*, and then paste the URL you copied in Step 3.
+1. Locate the [Repository](https://github.com/CarmenCantudo/mi-primera-cajita).
+2. Click "Code".
+3. Click Clone or Download.
+4. Copy the Git URL from the dialogue box.
+5. Open a terminal window in your chosen directory using your preferred development editor.
+6. Change the location to where you want the cloned directory to be.
+7. Type `git clone`, and then paste the URL you copied.
+8. Press Enter, and your local clone will be created.
 
-``> git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY``
-
-Press Enter.
-
-Your local clone will be created.
-
-For more information follow this [link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
+<br>
 
 [Back to Table of Contents](#table-of-contents)
+
+<hr>
 
 ## Credits
 
