@@ -1732,22 +1732,25 @@ product-info.html
 quantity-form.html
 ![](static/assets/images/validation/quantity-form.png)
 </details>
-<details><summary>bookings.html</summary>
+<details><summary>checkout app</summary>
 
-![](/static/assets/validation/html/bookings.png)
+checkout_success.html
+![](static/assets/images/validation/checkout_success.png)
+checkout.html
+![](static/assets/images/validation/checkout.png)
 </details>
-<details><summary>booknow.html</summary>
+<details><summary>contactus app</summary>
 
-![](/static/assets/validation/html/booknow.png)
+![](static/assets/images/validation/contactus.png)
 </details>
 
-<details><summary>change-booking.html</summary>
+<details><summary>hire app</summary>
 
-![](/static/assets/validation/html/change-booking.png)
+![](static/assets/images/validation/hire.png)
 </details>
-<details><summary>contact.html</summary>
+<details><summary>home app</summary>
 
-![](/static/assets/validation/html/contact.png)
+![](static/assets/images/validation/home.png)
 </details>
 <details><summary>create-post.html</summary>
 
