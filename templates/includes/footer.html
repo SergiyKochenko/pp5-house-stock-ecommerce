@@ -1,42 +1,11 @@
+{% load static %}
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<style>
-    .lower-footer {
-        display: flex;
-        justify-content: center;
-        background-color: #75e6ff;
-        padding: 2rem;
-    }
 
-    .footer-info-box {
-        background-color: white;
-        color: #0c2d6c;
-        width: 260px;
-        padding: 0.5rem;
-        border: 2px solid #0c2d6c;
-    }
+<!-- Core CSS -->
+{% block corecss %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+{% endblock %}
 
-    .footer-info-box i {
-        padding: 4px;
-    }
-
-    .news {
-        display: inline-table;
-    }
-
-    .footer-disclaimer {
-        font-weight: bold;
-        background-image: linear-gradient(#081D46, #0c2d6c);
-        margin-bottom: 2rem;
-        padding: 1rem;
-    }
-
-    @media screen and (max-width: 991px) {
-        .footer-disclaimer {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
-</style>
 <!-- <div class="containers my-5"> -->
 <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
 
