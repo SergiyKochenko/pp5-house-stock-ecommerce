@@ -1105,8 +1105,10 @@ The footer of Home Store & More + Techno Tech Co. Ltd's website is designed to p
 The Basket page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a comprehensive and user-friendly overview of their cart selections and the associated costs, ensuring a seamless and efficient checkout process:
 
 <details>
+<summary>Screenshots</summary>
 
-![Basket page](/static/assets/features/basket.png)
+![Basket page](static/assets/images/features/basket.png)
+![Basket page](static/assets/images/features/basket-mobile.png)
 
 </details>
 
@@ -1133,8 +1135,10 @@ allowing for a final review before submitting the order.
 The Checkout page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when completing their purchase, ensuring a seamless and satisfying shopping experience.
 
 <details>
+<summary>Screenshots</summary>
 
-![Checkout page](/static/assets/features/checkout.png)
+![Checkout page](static/assets/images/features/checkout.png)
+![Checkout page](static/assets/images/features/checkout-mobile.png)
 
 </details>
 
@@ -1154,8 +1158,10 @@ The Checkout page of Home Store & More + Techno Tech Co. Ltd's website is design
 The Sign Up page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when creating their accounts, ensuring a seamless and enjoyable shopping experience:
 
 <details>
+<summary>Screenshots</summary>
 
-![Sign up page](/static/assets/features/signup.png)
+![Sign up page](static/assets/images/features/signup.png)
+![Sign up page](static/assets/images/features/signup-mobile.png)
 
 </details>
 
@@ -1178,8 +1184,10 @@ The Sign Up page of Home Store & More + Techno Tech Co. Ltd's website is designe
 The Login page of Home Store & More + Techno Tech Co. Ltd's website is designed to provide customers with a secure, efficient, and user-friendly experience when accessing their accounts, ensuring a seamless and enjoyable shopping experience.
 
 <details>
+<summary>Screenshots</summary>
 
 ![Sign in page](/static/assets/features/login.png)
+![Sign in page](/static/assets/features/login-mobile.png)
 
 </details>
 
