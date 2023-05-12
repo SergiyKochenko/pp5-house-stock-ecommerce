@@ -1802,14 +1802,38 @@ profile.html
 
 clienttestimonial_confirm_delete.html
 ![](static/assets/images/validation/clienttestimonial_confirm_delete.png)
+testimonial_form.html
+![](static/assets/images/validation/testimonial_form.png)
+testimonials.html
+![](static/assets/images/validation/testimonials.png)
 </details>
-<details><summary>pricing.html</summary>
+<details><summary>footer.html</summary>
 
-![](/static/assets/validation/html/pricing.png)
+![](static/assets/images/validation/footer.png)
 </details>
-<details><summary>usersblog.html</summary>
+<details><summary>main-nav.html</summary>
 
-![](/static/assets/validation/html/usersblog.png)
+![](static/assets/images/validation/main-nav.png)
+</details>
+<details><summary>mobile-top-header.html</summary>
+
+![](static/assets/images/validation/mobile-top-header.png)
+</details>
+<details><summary>403.html</summary>
+
+![](static/assets/images/validation/403.png)
+</details>
+<details><summary>404.html</summary>
+
+![](static/assets/images/validation/404.png)
+</details>
+<details><summary>500.html</summary>
+
+![](static/assets/images/validation/500.png)
+</details>
+<details><summary>base.html</summary>
+
+![](static/assets/images/validation/base.png)
 </details>
 <details><summary>login.html</summary>
 

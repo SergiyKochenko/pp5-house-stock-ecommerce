@@ -1,156 +1,145 @@
 {% load static %}
 <!-- Remove the container if you want to extend the Footer to full width. -->
-
 <!-- Core CSS -->
 {% block corecss %}
 <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 {% endblock %}
-
 <!-- <div class="containers my-5"> -->
 <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
-
-    <!-- Disclaimer -->
-
-    <div class="footer-disclaimer">
-        <p>This web site was created for assessment purposes only!</p>
-        <p>Any bookings or purchases made will not be fullfilled.</p>
-    </div>
-    <!-- Grid container -->
-    <div class="container p-4">
-        <!--Grid row-->
-        <div class="row mt-4">
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">About Home Store & More</h5>
-                <p>
-                    Home Store & More shop specializes in selling stocks related to the housing.
-                    This may include stocks of sell home appliances, furniture, clothes.
-                </p>
-
-                <p>
-                    Overall, a Home Store & More can be a valuable resource for investors interested in the housing
-                    industry.
-                </p>
-
-                <div class="mt-4">
-                    <!-- Facebook -->
-                    <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
-                    <!-- Dribbble -->
-                    <a href="https://dribbble.com/" target="_blank" type="button" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/" target="_blank" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
-                    <!-- Google -->
-                    <a href="https://www.youtube.com/" target="_blank" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-youtube"></i></a>
-                    <!-- Youtube -->
-                </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-                <div class="form-outline form-white mb-4">
-                    <form method="GET" action="{% url 'products' %}">
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q"
-                                placeholder="Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <ul class="fa-ul" style="margin-left: 1.65em;">
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Tralle, Co. Kerry V92,
-                            Ireland</span>
-                    </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-envelope"></i></span><span
-                            class="ms-2">sergiykochenko@gmail.com</span>
-                    </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
-                    </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-                <table class="table text-center text-white">
-                    <tbody class="font-weight-normal">
-                        <tr>
-                            <td>Mon - Thu:</td>
-                            <td>8am - 9pm</td>
-                        </tr>
-                        <tr>
-                            <td>Fri - Sat:</td>
-                            <td>8am - 1am</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday:</td>
-                            <td>9am - 10pm</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- Newsletter subscribe -->
-                <div>
-                    <h2>
-                        <a class="newsletter text-center" href="{% url 'newsletter' %}">
-                            <h5 class="text-uppercase text-white techno-button-border techno-button news"><span
-                                    class="fa-solid fa-hand-point-right"></span> Sign up for our newsletter</h5>
-                        </a>
-                    </h2>
-                </div>
-            </div>
-            <!--Grid column-->
-        </div>
-        <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <a class="texts-light" target="_blank"
-            href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/sitemap.xml">SITE
-            MAP</a>
-        <a class="footer-company-name text-white">
-            <a class="texts-light" target="_blank"
-                href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/home-store-privacy-policy.pdf">PRIVACY
-                POLICY</a>
-            Copyright &copy; 2022
-            <script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>.
-        </a>
-        <a class="texts-light" target="_blank"
-            href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/Home-store-terms-and-conditions.pdf">TERMS
-            & CONDITIONS</a>
-    </div>
-    <!-- Developer links and Copyright Info -->
-    <div class="lower-footer py-3">
-        <div class="footer-info-box">
-            <p class="m-0 text-center">&#169; Sergiy Kochenko
-                <script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>
-            </p>
-            <p class="m-0 text-center">
-                <a target="_blank" title="Link to Sergiy Kochenko' Github"
-                    href="https://github.com/SergiyKochenko/pp5-house-stock-ecommerce"><i
-                        class="fab fa-github ms-1"></i></a>
-                <a target="_blank" title="Link to Sergiy Kochenko' linkedin profile"
-                    href="https://www.linkedin.com/in/sergiy-kochenko-a93a30135/"><i
-                        class="fab fa-linkedin ms-1"></i></a>
-            </p>
-        </div>
-    </div>
+	<!-- Disclaimer -->
+	<div class="footer-disclaimer">
+		<p>This web site was created for assessment purposes only!</p>
+		<p>Any bookings or purchases made will not be fullfilled.</p>
+	</div>
+	<!-- Grid container -->
+	<div class="container p-4">
+		<!--Grid row-->
+		<div class="row mt-4">
+			<!--Grid column-->
+			<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+				<h5 class="text-uppercase mb-4">About Home Store & More</h5>
+				<p>
+					Home Store & More shop specializes in selling stocks related to the housing.
+					This may include stocks of sell home appliances, furniture, clothes.
+				</p>
+				<p>
+					Overall, a Home Store & More can be a valuable resource for investors interested in the housing
+					industry.
+				</p>
+				<div class="mt-4">
+					<!-- Facebook -->
+					<a href="#" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+					<!-- Dribbble -->
+					<a href="https://dribbble.com/" target="_blank" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+					<!-- Twitter -->
+					<a href="https://twitter.com/" target="_blank" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+					<!-- Google -->
+					<a href="https://www.youtube.com/" target="_blank" type="button" class="btn text-white btn-floating btn-warning btn-lg"><i class="fab fa-youtube"></i></a>
+					<!-- Youtube -->
+				</div>
+			</div>
+			<!--Grid column-->
+			<!--Grid column-->
+			<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+				<h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+				<div class="form-outline form-white mb-4">
+					<form method="GET" action="{% url 'products' %}">
+						<div class="input-group w-100">
+							<input class="form-control border border-black rounded-0" type="text" name="q"
+								placeholder="Search our site">
+							<div class="input-group-append">
+								<button class="form-control btn btn-black border border-black rounded-0" type="submit">
+								<span class="icon">
+								<i class="fas fa-search"></i>
+								</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<ul class="fa-ul" style="margin-left: 1.65em;">
+					<li class="mb-3">
+						<span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Tralle, Co. Kerry V92,
+						Ireland</span>
+					</li>
+					<li class="mb-3">
+						<span class="fa-li"><i class="fas fa-envelope"></i></span><span
+							class="ms-2">sergiykochenko@gmail.com</span>
+					</li>
+					<li class="mb-3">
+						<span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+					</li>
+					<li class="mb-3">
+						<span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+					</li>
+				</ul>
+			</div>
+			<!--Grid column-->
+			<!--Grid column-->
+			<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+				<h5 class="text-uppercase mb-4">Opening hours</h5>
+				<table class="table text-center text-white">
+					<tbody class="font-weight-normal">
+						<tr>
+							<td>Mon - Thu:</td>
+							<td>8am - 9pm</td>
+						</tr>
+						<tr>
+							<td>Fri - Sat:</td>
+							<td>8am - 1am</td>
+						</tr>
+						<tr>
+							<td>Sunday:</td>
+							<td>9am - 10pm</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- Newsletter subscribe -->
+				<div class="newsletter text-center">
+					<a href="{% url 'newsletter' %}" class="text-uppercase text-white techno-button-border techno-button news">
+					<span class="fa-solid fa-hand-point-right"></span> 
+					Sign up for our newsletter
+					</a>
+				</div>
+			</div>
+			<!--Grid column-->
+		</div>
+		<!--Grid row-->
+	</div>
+	<!-- Grid container -->
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		<a class="texts-light" target="_blank"
+			href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/sitemap.xml">SITE
+		MAP</a>
+		<a class="texts-light" target="_blank"
+			href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/home-store-privacy-policy.pdf">PRIVACY
+		POLICY</a>
+		<a>
+			Copyright &copy; 2022
+			<script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>.
+		</a>
+		<a class="texts-light" target="_blank"
+			href="https://pp5-house-stock-ecommerce.s3.eu-west-1.amazonaws.com/Documents/Home-store-terms-and-conditions.pdf">TERMS
+		& CONDITIONS</a>
+	</div>
+	<!-- Developer links and Copyright Info -->
+	<div class="lower-footer py-3">
+		<div class="footer-info-box">
+			<p class="m-0 text-center">
+				&#169; Sergiy Kochenko
+				<script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>
+			</p>
+			<p class="m-0 text-center">
+				<a target="_blank" title="Link to Sergiy Kochenko' Github"
+					href="https://github.com/SergiyKochenko/pp5-house-stock-ecommerce"><i
+					class="fab fa-github ms-1"></i></a>
+				<a target="_blank" title="Link to Sergiy Kochenko' linkedin profile"
+					href="https://www.linkedin.com/in/sergiy-kochenko-a93a30135/"><i
+					class="fab fa-linkedin ms-1"></i></a>
+			</p>
+		</div>
+	</div>
 </footer>
 <!-- </div> -->
 <!-- End of .container -->

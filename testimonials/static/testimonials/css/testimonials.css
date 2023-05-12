@@ -87,6 +87,45 @@
     border: 1px solid white;
 }
 
+.testimonials-container {
+    margin-top: 180px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.testimonial-text {
+    width: 90%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+
+.left-card {
+    margin-left: 5rem;
+}
+
+.testimonial {
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.testimonial-img {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+}
+
 @media screen and (max-width: 991px) {
     .testimonial-text {
         width: 100%;
