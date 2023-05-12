@@ -1,35 +1,28 @@
 {% extends "base.html" %}
 {% load static %}
-
 <!-- Package Request Success Page -->
-
 {% block extra_title %} - Add Package{% endblock %}
-
 {% block content %}
-
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/packages_request_success.css' %}">
+<link rel="stylesheet" href="{% static 'css/package_request_success.css' %}">
 {% endblock %}
-
 <div class="container auth-container text-white">
-    <div class="row">
-        <div class="col-12 mt-4 margin-top">
-            <hr class="section-header">
-            <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-list-check"></i></h1>
-            <h2 class="mb-4 text-center ">Success!</h2>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 text-center">
-            <h2 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-box-open"></i></h2>
-            <h3>Your Package Request Has Been recieved!</h3>
-            <h4>We will contact you shortly with a quote for your requirements</h4>
-        </div>
-        <div class="col-12 text-center mt-5">
-            <a class="btn techno-button-border techno-button" href="{% url 'packages' %}">Return to Packages</a>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-12 mt-4 margin-top">
+			<hr class="section-header">
+			<h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-list-check"></i></h1>
+			<h2 class="mb-4 text-center ">Success!</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 text-center">
+			<h2 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-box-open"></i></h2>
+			<h3>Your Package Request Has Been recieved!</h3>
+			<h4>We will contact you shortly with a quote for your requirements</h4>
+		</div>
+		<div class="col-12 text-center mt-5">
+			<a class="btn techno-button-border techno-button" href="{% url 'packages' %}">Return to Packages</a>
+		</div>
+	</div>
 </div>
 {% endblock %}

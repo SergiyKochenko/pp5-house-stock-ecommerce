@@ -1714,6 +1714,7 @@ There were errors and warnings in the reports about unclosed elements and tags, 
 
 <details><summary>about app</summary>
 
+about.html
 ![](static/assets/images/validation/about.png)
 ![](static/assets/images/validation/filtering-1.png)
 </details>
@@ -1746,23 +1747,51 @@ checkout.html
 
 <details><summary>hire app</summary>
 
+hire.html
 ![](static/assets/images/validation/hire.png)
 </details>
 <details><summary>home app</summary>
 
+index.html
 ![](static/assets/images/validation/home.png)
 </details>
 <details><summary>newsletter app</summary>
 
-![](/static/assets/validation/html/newsletter.png)
+newsletter.html
+![](static/assets/images/validation/newsletter.png)
 </details>
-<details><summary>delete_post.html</summary>
+<details><summary>packages app</summary>
 
-![](/static/assets/validation/html/delete_post.png)
+custom_packages.html
+![](static/assets/images/validation/custom_packages.png)
+package_request_form.html
+![](static/assets/images/validation/package_request_form.png)
+package_request_success.html
+![](static/assets/images/validation/package_request_success.png)
+packages_confirm_delete.html
+![](static/assets/images/validation/packages_confirm_delete.png)
+packages_form.html
+![](static/assets/images/validation/packages_form.png)
+packages.html
+![](static/assets/images/validation/packages.png)
 </details>
-<details><summary>delete-booking.html</summary>
+<details><summary>products app</summary>
 
-![](static/assets/validation/html/delete-booking.png)
+add_product.html
+![](static/assets/images/validation/add_product.png)
+add_to_wishlist.html
+![](static/assets/images/validation/add_to_wishlist.png)
+edit_product.html
+![](static/assets/images/validation/edit_product.png)
+product_detail.html
+![](static/assets/images/validation/product_detail.png)
+![](static/assets/images/validation/product_detail_filtter.png)
+product.html
+![](static/assets/images/validation/product.png)
+remove_from_wishlist.html
+![](static/assets/images/validation/remove_from_wishlist.png)
+packages.html
+![](static/assets/images/validation/packages.png)
 </details>
 <details><summary>edit_post.html</summary>
 
