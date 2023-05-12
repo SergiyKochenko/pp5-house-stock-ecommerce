@@ -1793,13 +1793,15 @@ remove_from_wishlist.html
 wishlist.html
 ![](static/assets/images/validation/wishlist.png)
 </details>
-<details><summary>edit_post.html</summary>
+<details><summary>profiles app</summary>
 
-![](/static/assets/validation/html/edit_post.png)
+profile.html
+![](static/assets/images/validation/profile.png)
 </details>
-<details><summary>post_detail.html</summary>
+<details><summary>testimonials app</summary>
 
-![](static/assets/validation/html/post_detail.png)
+clienttestimonial_confirm_delete.html
+![](static/assets/images/validation/clienttestimonial_confirm_delete.png)
 </details>
 <details><summary>pricing.html</summary>
 
