@@ -1752,9 +1752,9 @@ checkout.html
 
 ![](static/assets/images/validation/home.png)
 </details>
-<details><summary>create-post.html</summary>
+<details><summary>newsletter app</summary>
 
-![](/static/assets/validation/html/create-post.png)
+![](/static/assets/validation/html/newsletter.png)
 </details>
 <details><summary>delete_post.html</summary>
 
