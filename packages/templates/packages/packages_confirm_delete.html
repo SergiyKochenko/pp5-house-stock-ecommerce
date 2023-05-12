@@ -8,42 +8,32 @@
 <!-- Ensures page has not been accessed directly by URL -->
 {% if "packages" in request.META.HTTP_REFERER %}
 <!-- Package delete page warning logo and text content -->
-<div class="warning-container text-white">
-	<div>
-		&nbsp;
-		<div class="row">
-			<div class="text-center">
-				<img class="warning-logo"
-					src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png"
-					alt="Warning Logo">
-			</div>
-			<!-- Package delete form -->
-			<div class="col-12">
-				<div class="text-center">
-					<h3>***WARNING***</h3>
-					<form method="POST" action="#">
-						{% csrf_token %}
-						<br>
-						<p>You are about to delete this Package!</p>
-						<a href="{{request.META.HTTP_REFERER}}" class="btn techno-button-border techno-button">Go
-						Back</a>
-						<input type="submit" value="Delete" class="btn techno-button-border techno-button">
-					</form>
-				</div>
-			</div>
+<div class="warning-container text-white d-flex align-items-center justify-content-center">
+	<div class="text-white text-center">
+		<img class="warning-logo"
+			src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png"
+			alt="Warning Logo">
+		<!-- Package delete form -->
+		<div class="col-12">
+			<h3>***WARNING***</h3>
+			<form method="POST" action="#">
+				{% csrf_token %}
+				<br>
+				<p>You are about to delete this Package!</p>
+				<a href="{{request.META.HTTP_REFERER}}" class="btn techno-button-border techno-button">Go Back</a>
+				<input type="submit" value="Delete" class="btn techno-button-border techno-button">
+			</form>
 		</div>
 	</div>
 </div>
 <!-- If the page has been accessed via direct URL input show this instead! -->
 {% else %}
 <!-- Unauthorised access warning logo and text content -->
-<div class="warning-container text-white">
-	<div class="text-center">
+<div class="warning-container d-flex align-items-center justify-content-center">
+	<div class="text-center text-white">
 		<img class="warning-logo"
 			src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1682373473/kisspng-vector-graphics-warning-sign-clip-art-illustration-5d2c40d1540a65.6649287915631812653442_ietfhg_di2mse.png"
 			alt="Warning Logo">
-	</div>
-	<div class="text-center">
 		<h3>***WARNING***</h3>
 		<p class="mb-2">Warning!
 			You are unauthorised to view this page!
