@@ -1790,8 +1790,8 @@ product.html
 ![](static/assets/images/validation/product.png)
 remove_from_wishlist.html
 ![](static/assets/images/validation/remove_from_wishlist.png)
-packages.html
-![](static/assets/images/validation/packages.png)
+wishlist.html
+![](static/assets/images/validation/wishlist.png)
 </details>
 <details><summary>edit_post.html</summary>
 
