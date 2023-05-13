@@ -1,72 +1,27 @@
 {% extends "account/base.html" %}
 {% load static %}
 {% load i18n %}
-
 <!-- Register Page -->
-
 {% block head_title %}{% trans "Signup" %}{% endblock %}
-
 {% block content %}
-
-<style>
-    .techno-button {
-        font-size: 14px;
-        padding: 0.5rem;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        color: white;
-        background-color: #0c2d6c;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        border: solid 1px #0c2d6c;
-    }
-
-    .techno-button:hover {
-        background-color: #75e6ff;
-        text-decoration: none;
-        color: #0c2d6c;
-        border: solid 1px #0c2d6c;
-    }
-
-    .techno-button-border {
-    border: 1px solid white;
-}
-
-
-    @media screen and (max-width: 600px) {
-        .auth-container {
-            margin-top: 150px;
-        }
-    }
-
-
-    @media screen and (max-width: 430px) {
-        .auth-container {
-            width: 80%;
-        }
-    }
-</style>
-
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
 <div class="col-12 d-flex justify-content-center text-white">
-    <div class="auth-container text-center">
-        <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-user-plus"></i></h1>
-        <h1>{% trans "Sign Up" %}</h1>
-
-        <p class="text-white">{% blocktrans %}Already have an account? Then please <a class="text-success font-italic"
-                href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-            {% csrf_token %}
-            {{ form|crispy }}
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-            <a class="btn techno-button-border techno-button text-white" href="{% url 'account_login' %}">Back to
-                Login</a>
-            <button class=" btn techno-button-border techno-button" type="submit">{% trans "Sign Up" %} <i
-                    class="fa-solid fa-user-plus"></i></button>
-        </form>
-    </div>
+	<div class="auth-container text-center">
+		<h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-user-plus"></i></h1>
+		<h1>{% trans "Sign Up" %}</h1>
+		<p class="text-white">{% blocktrans %}Already have an account? Then please <a class="text-success font-italic"
+			href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+		<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+			{% csrf_token %}
+			{{ form|crispy }}
+			{% if redirect_field_value %}
+			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+			{% endif %}
+			<a class="btn techno-button-border techno-button text-white" href="{% url 'account_login' %}">Back to
+			Login</a>
+			<button class=" btn techno-button-border techno-button" type="submit">{% trans "Sign Up" %} <i
+				class="fa-solid fa-user-plus"></i></button>
+		</form>
+	</div>
 </div>
 {% endblock %}

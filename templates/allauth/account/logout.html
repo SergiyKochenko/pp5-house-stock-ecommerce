@@ -1,65 +1,24 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
-
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
-
+{% load static %}
 {% block content %}
-<style>
-    .auth-container {
-        margin-top: 170px;
-        min-height: 100vh;
-        width: 60%;
-    }
-
-    .techno-button {
-        font-size: 14px;
-        padding: 0.5rem;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        color: white;
-        background-color: #0c2d6c;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        border: solid 1px #0c2d6c;
-    }
-
-    .techno-button:hover {
-        background-color: #75e6ff;
-        text-decoration: none;
-        color: #0c2d6c;
-        border: solid 1px #0c2d6c;
-    }
-
-    .techno-button-border {
-        border: 1px solid white;
-
-        @media screen and (max-width: 430px) {
-
-            .auth-container {
-                width: 80%;
-            }
-        }
-</style>
+<link rel="stylesheet" href="{% static 'css/logout.css' %}">
 <div class="col-12 d-flex justify-content-center text-white">
-    <div class="auth-container text-center">
-        <h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-from-bracket"></i>
-        </h1>
-
-        <h2>{% trans "Sign Out" %}</h2>
-
-        <p>{% trans 'Are you sure you want to sign out?' %}</p>
-
-        <form method="post" action="{% url 'account_logout' %}">
-            {% csrf_token %}
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-            <a class="btn techno-button techno-button-border" href="{% url 'home' %}">Cancel</a>
-            <button class="btn techno-button techno-button-border" type="submit">{% trans 'Sign Out' %} <i
-                    class="fa-solid fa-right-from-bracket"></i></button>
-        </form>
-    </div>
+	<div class="auth-container text-center">
+		<h1 class="text-center"><span class="sr-only">List Icon</span><i class="fa-solid fa-right-from-bracket"></i>
+		</h1>
+		<h2>{% trans "Sign Out" %}</h2>
+		<p>{% trans 'Are you sure you want to sign out?' %}</p>
+		<form method="post" action="{% url 'account_logout' %}">
+			{% csrf_token %}
+			{% if redirect_field_value %}
+			<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+			{% endif %}
+			<a class="btn techno-button techno-button-border" href="{% url 'home' %}">Cancel</a>
+			<button class="btn techno-button techno-button-border" type="submit">{% trans 'Sign Out' %} <i
+				class="fa-solid fa-right-from-bracket"></i></button>
+		</form>
+	</div>
 </div>
 {% endblock %}

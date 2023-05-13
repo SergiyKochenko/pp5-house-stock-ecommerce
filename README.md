@@ -1837,15 +1837,15 @@ testimonials.html
 </details>
 <details><summary>login.html</summary>
 
-![](/static/assets/validation/html/login.png)
+![](static/assets/images/validation/login.png)
 </details>
 <details><summary>logout.html</summary>
 
-![](/static/assets/validation/html/logout.png)
+![](static/assets/images/validation/logout.png)
 </details>
 <details><summary>signup.html</summary>
 
-![](/static/assets/validation/html/signup.png)
+![](static/assets/images/validation/signup.png)
 </details>
 
 ---
