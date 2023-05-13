@@ -85,8 +85,8 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
 - [Installed Packages](#installed-packages)
-  - [Frameworks](#frameworks)
-  - [Database](#database)
+- [Frameworks](#frameworks)
+- [Database](#database)
   - [Cloud Hosting](#cloud-hosting)
     - [Additional Media Hosting](#additional-media-hosting)
 - [Tools](#tools)
@@ -1205,130 +1205,23 @@ Key features of responsive design include:
 
 Responsive design has become an essential aspect of modern web development, as it ensures that websites and applications are easily accessible and provide a consistent user experience across a wide range of devices.
 
----
+## Database Schema
 
-### Database Schema
+A database schema is a blueprint or structure that defines how data is organized in a database. It includes tables, fields, data types, relationships, and constraints that determine how the data is stored, related, and manipulated. Below is a basic example of a database schema for an e-commerce website like the one:
 
-A database schema is a blueprint or structure that defines how data is organized in a database. It includes tables, fields, data types, relationships, and constraints that determine how the data is stored, related, and manipulated. Below is a basic example of a database schema for an e-commerce website like the one I mentioned earlier:
-
-**Users Table:**
-- user_id (Primary Key, Integer, Auto-increment)
-- first_name (Varchar)
-- last_name (Varchar)
-- email (Varchar, Unique)
-- password_hash (Varchar)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Products Table:**
-- product_id (Primary Key, Integer, Auto-increment)
-- product_name (Varchar)
-- description (Text)
-- price (Decimal)
-- image_url (Varchar)
-- stock (Integer)
-- category_id (Foreign Key, Integer)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Categories Table:**
-- category_id (Primary Key, Integer, Auto-increment)
-- category_name (Varchar)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Orders Table:**
-- order_id (Primary Key, Integer, Auto-increment)
-- user_id (Foreign Key, Integer)
-- order_status (Varchar)
-- total_price (Decimal)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Order_Items Table:**
-- order_item_id (Primary Key, Integer, Auto-increment)
-- order_id (Foreign Key, Integer)
-- product_id (Foreign Key, Integer)
-- quantity (Integer)
-- price (Decimal)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Addresses Table:**
-- address_id (Primary Key, Integer, Auto-increment)
-- user_id (Foreign Key, Integer)
-- street (Varchar)
-- city (Varchar)
-- state (Varchar)
-- zip_code (Varchar)
-- country (Varchar)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Wishlist Table:**
-- wishlist_id (Primary Key, Integer, Auto-increment)
-- user_id (Foreign Key, Integer)
-- product_id (Foreign Key, Integer)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**About_Content Table:**
-- about_id (Primary Key, Integer, Auto-increment)
-- title (Varchar)
-- content (Text)
-- image_url (Varchar, Nullable)
-- display_order (Integer)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Testimonials Table:**
-- testimonial_id (Primary Key, Integer, Auto-increment)
-- user_id (Foreign Key, Integer)
-- content (Text)
-- rating (Integer)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Equipment_Hire Table:**
-- equipment_hire_id (Primary Key, Integer, Auto-increment)
-- user_id (Foreign Key, Integer)
-- package_id (Foreign Key, Integer)
-- hire_start_date (Date)
-- hire_end_date (Date)
-- total_price (Decimal)
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Contact_Submissions Table:**
-- contact_id (Primary Key, Integer, Auto-increment)
-- name (Varchar)
-- email (Varchar)
-- subject (Varchar)
-- message (Text)
-- status (Varchar, default: 'New') [e.g., New, In Progress, Closed]
-- created_at (Timestamp)
-- updated_at (Timestamp)
-
-**Banners Table:**
-- banner_id (Primary Key, Integer, Auto-increment)
-- title (Varchar)
-- description (Text, Nullable)
-- image_url (Varchar)
-- link (Varchar, Nullable)
-- display_order (Integer)
-- created_at (Timestamp)
-- updated_at (Timestamp)
 
 This is a simplified example of a database schema for an e-commerce website. Depending on the specific requirements and features of my website.
 
-<details><summary>Table</summary>
+<details><summary>Database Schema diagram</summary>
 
-![](/static/assets/images/database-table.png)
+![](static/assets/images/database-schema.png)
 </details>
 
----
+<br>
 
 [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Technologies Used
 
@@ -1377,7 +1270,7 @@ Installed Packages:
 - sqlparse                  0.4.4
 - stripe                    5.4.0
 
-### Frameworks
+## Frameworks
 
 - [Django](https://www.djangoproject.com/): is a high-level Python web framework that enables rapid development of secure and maintainable websites.
 <br>It follows the Model-View-Template (MVT) architectural pattern and promotes the DRY (Don't Repeat Yourself) principle,
@@ -1386,7 +1279,8 @@ Installed Packages:
  <br>In this project, Django is used to create the backend, handle user authentication, manage the database, 
  <br>and serve the dynamic content for the PP5 House Stock E-Commerce website.
 
-### Database
+
+## Database
 
 - [PostgreSQL](https://www.postgresql.org/): the database used to store All of the data.
 <br>PostgreSQL is a powerful, open-source, object-relational database system that provides high performance, reliability, and extensibility. 
@@ -1438,8 +1332,12 @@ Installed Packages:
 - [Free formatter HTML](https://www.freeformatter.com/html-formatter.html#before-output): was used to format HTML5 code for the website.
 - [Free cleancss CSS3](https://www.cleancss.com/css-beautify/): was used to format CSS3 code for the website.
 - [Free black vercel](https://black.vercel.app/): was used to format python code for the website.
+- [JSHint](https://jshint.com/): was used to validate Java Script code for the website.
+
 
 [Back to Table of Contents](#table-of-contents)
+
+---
 
 ## Bug Reports
 
