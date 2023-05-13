@@ -1228,9 +1228,7 @@ Installed Packages:
 - [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
 - [Sitemap](https://www.xml-sitemaps.com/): was used to create sitemap for the website.
 - [PolicyMarker](https://policymaker.io/): was used to create PRIVACY POLICY and TERMS & CONDITIONS for the website.
-
-
-
+- [Stripe](https://stripe.com/): was used for payment system for the website.
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1665,69 +1663,100 @@ The Linter reports had messages about exceeding the string length of 79 characte
 
 <br>
 
-Desktop:
 
-<details><summary>About page</summary>
 
-![](/static/assets/lighthouse/about-desktop.png)
+<details><summary>Home page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_1.png)
+![](static/assets/images/lighthouse/Screenshot_2.png)
 </details>
-<details><summary>User's Blog page</summary>
+<details><summary>Products page</summary>
 
-![](/static/assets/lighthouse/usersblog-desktop.png)
+![](static/assets/images/lighthouse/Screenshot_3.png)
+![](static/assets/images/lighthouse/Screenshot_4.png)
 </details>
-<details><summary>Pricing page</summary>
+<details><summary>Product detail page</summary>
 
-![](/static/assets/lighthouse/pricing-desktop.png)
+![](static/assets/images/lighthouse/Screenshot_5.png)
+![](static/assets/images/lighthouse/Screenshot_6.png)
 </details>
-<details><summary>Contact page</summary>
+<details><summary>Shopping basket page</summary>
 
-![](/static/assets/lighthouse/contact-desktop.png)
+![](static/assets/images/lighthouse/Screenshot_7.png)
+![](static/assets/images/lighthouse/Screenshot_8.png)
 </details>
-<details><summary>Book Now page</summary>
+<details><summary>Checkout page</summary>
 
-![](/static/assets/lighthouse/booknow-desktop.png)
+![](static/assets/images/lighthouse/Screenshot_9.png)
+![](static/assets/images/lighthouse/Screenshot_10.png)
 </details>
-<details><summary>My Bookings page</summary>
+<details><summary>Hire page</summary>
 
-![](/static/assets/lighthouse/mybookings-desktop.png)
+![](static/assets/images/lighthouse/Screenshot_11.png)
+![](static/assets/images/lighthouse/Screenshot_12.png)
+</details>
+<details><summary>All packages page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_13.png)
+![](static/assets/images/lighthouse/Screenshot_14.png)
+</details>
+<details><summary>About Us page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_15.png)
+![](static/assets/images/lighthouse/Screenshot_16.png)
+</details>
+<details><summary>All Testimonials page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_17.png)
+![](static/assets/images/lighthouse/Screenshot_18.png)
+</details>
+<details><summary>Contact Us page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_19.png)
+![](static/assets/images/lighthouse/Screenshot_20.png)
+</details>
+<details><summary>Product Management page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_21.png)
+![](static/assets/images/lighthouse/Screenshot_22.png)
+</details>
+<details><summary>Newsletter Signup page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_23.png)
+![](static/assets/images/lighthouse/Screenshot_24.png)
+</details>
+<details><summary>My Wishlist page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_25.png)
+![](static/assets/images/lighthouse/Screenshot_26.png)
+</details>
+<details><summary>Sign In page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_27.png)
+![](static/assets/images/lighthouse/Screenshot_28.png)
+</details>
+<details><summary>Sign out page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_29.png)
+![](static/assets/images/lighthouse/Screenshot_30.png)
+</details>
+<details><summary>Sign Up page</summary>
+
+![](static/assets/images/lighthouse/Screenshot_31.png)
+![](static/assets/images/lighthouse/Screenshot_32.png)
 </details>
 <br>
 
-Mobile:
 
-<details><summary>About page</summary>
-
-![](/static/assets/lighthouse/about-mobile.png)
-</details>
-<details><summary>User's Blog page</summary>
-
-![](/static/assets/lighthouse/usersblog-mobile.png)
-</details>
-<details><summary>Pricing page</summary>
-
-![](/static/assets/lighthouse/pricing-mobile.png)
-</details>
-<details><summary>Contact page</summary>
-
-![](/static/assets/lighthouse/contact-mobile.png)
-</details>
-<details><summary>Book Now page</summary>
-
-![](/static/assets/lighthouse/booknow-mobile.png)
-</details>
-<details><summary>My Bookings page</summary>
-
-![](/static/assets/lighthouse/mybookings-mobile.png)
-</details>
 
 
 [Back to Table of Contents](#table-of-contents)
 
-<br>
+<hr>
 
 ## Deployment
 
-<hr>
+<br>
 
 This project was deployed using
 
