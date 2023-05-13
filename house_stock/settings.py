@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # "allauth.socialaccount.providers.github",
     'home',
     'products',
     'bag',
@@ -109,16 +108,6 @@ TEMPLATES = [
     },
 ]
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     'github': {
-#         'APP': {
-#             'client_id': os.environ.get('GITHUB_CLIENT_ID'),
-#             'secret': os.environ.get('GITHUB_SECRET'),
-#             'key': ''
-#         }
-#     }
-# }
-
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
@@ -176,6 +165,7 @@ else:
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

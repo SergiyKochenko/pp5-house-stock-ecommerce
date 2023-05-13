@@ -20,21 +20,25 @@ class BagContextsTestCase(TestCase):
         )
 
     def test_bag_contents(self):
-        request = self.factory.get('/bag/')
-        request.session = {'bag': {str(self.product1.pk): 2, str(self.product2.pk): 1}}
-        
+        request = self.factory.get("/bag/")
+        request.session = {"bag": {str(self.product1.pk): 2, str(self.product2.pk): 1}}
+
         context = bag_contents(request)
 
-        self.assertEqual(len(context['bag_items']), 2)
-        self.assertEqual(context['total'], 40)
-        self.assertEqual(context['product_count'], 3)
-        
-        delivery = context['total'] * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
-        self.assertEqual(context['delivery'], delivery)
-        self.assertEqual(context['free_delivery_threshold'], settings.FREE_DELIVERY_THRESHOLD)
-        
-        grand_total = delivery + context['total']
-        self.assertEqual(context['grand_total'], grand_total)
+        self.assertEqual(len(context["bag_items"]), 2)
+        self.assertEqual(context["total"], 40)
+        self.assertEqual(context["product_count"], 3)
 
-        free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - context['total']
-        self.assertEqual(context['free_delivery_delta'], free_delivery_delta)
+        delivery = context["total"] * Decimal(
+            settings.STANDARD_DELIVERY_PERCENTAGE / 100
+        )
+        self.assertEqual(context["delivery"], delivery)
+        self.assertEqual(
+            context["free_delivery_threshold"], settings.FREE_DELIVERY_THRESHOLD
+        )
+
+        grand_total = delivery + context["total"]
+        self.assertEqual(context["grand_total"], grand_total)
+
+        free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - context["total"]
+        self.assertEqual(context["free_delivery_delta"], free_delivery_delta)

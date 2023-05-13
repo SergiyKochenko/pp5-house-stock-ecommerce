@@ -1,8 +1,8 @@
 from django.test import TestCase
 from .models import clientTestimonial
 
-class TestClientTestimonialModel(TestCase):
 
+class TestClientTestimonialModel(TestCase):
     def setUp(self):
         self.testimonial = clientTestimonial.objects.create(
             name="Test User",

@@ -1459,39 +1459,17 @@ The site was constantly tested during the process of creating the site in the Gi
 
 ## Automated testing (Unit test)
 
-- I have tested my web site, as experiment with automated testing. Currently I have covered 100% in total.
-- See below the attached screen shots of the unit tests:
+- I have tested my web site, as experiment with automated testing. Currently I have covered 78% in total.
+- See below the attached screen shots of the unit tests coverage:
 
 <details>
-<summary>tests_admin.py</summary>
+<summary>coverage report html</summary>
 
-![Admin test](/static/assets/unit_tests/admin.png)
-
-![Admin coverage](/static/assets/unit_tests/admin_coverage.png)
-
-</details>
-<details>
-<summary>tests_models.py</summary>
-
-![Models test](/static/assets/unit_tests/models.png)
-
-![Models coverage](/static/assets/unit_tests/admin_coverage.png)
-
-</details>
-<details>
-<summary>tests_views.py</summary>
-
-![Views test](/static/assets/unit_tests/views.png)
-
-![Views coverage](/static/assets/unit_tests/views_coverage.png)
-
-</details>
-<details>
-<summary>Total test and coverage</summary>
-
-![Total tests](/static/assets/unit_tests/total_tests.png)
-
-![Total coverage](/static/assets/unit_tests/total_coverage.png)
+![unit test coverage 1 of 5](static/assets/images/unit-test-report/Screenshot_1.png)
+![unit test coverage 2 of 5](static/assets/images/unit-test-report/Screenshot_2.png)
+![unit test coverage 3 of 5](static/assets/images/unit-test-report/Screenshot_3.png)
+![unit test coverage 4 of 5](static/assets/images/unit-test-report/Screenshot_4.png)
+![unit test coverage 5 of 5](static/assets/images/unit-test-report/Screenshot_5.png)
 
 </details>
 
@@ -1936,11 +1914,11 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 With these steps completed, you should be all set with caching, media files, and Stripe integration for your Django project.
 
-[Back to top](#mi-primera-cajita)
+[Back to Table of Contents](#table-of-contents)
 
 ### How to Fork it
 
-1. On GitHub, go to [CarmenCantudo/mi-primera-cajita](https://github.com/CarmenCantudo/mi-primera-cajita).
+1. On GitHub, go to [SergiyKochenko/pp5-house-stock-ecommerce](https://github.com/SergiyKochenko/pp5-house-stock-ecommerce).
 2. In the top right, click "Fork".
 
 ### How to Clone it
@@ -1955,7 +1933,7 @@ With these steps completed, you should be all set with caching, media files, and
 
 ### Making a Local Clone
 
-1. Locate the [Repository](https://github.com/CarmenCantudo/mi-primera-cajita).
+1. Locate the [Repository](SergiyKochenko/pp5-house-stock-ecommerce).
 2. Click "Code".
 3. Click Clone or Download.
 4. Copy the Git URL from the dialogue box.
@@ -1974,12 +1952,7 @@ With these steps completed, you should be all set with caching, media files, and
 
 ### Code
 
-The structure and the code of the project was based on two walkthroughs by the Code Institute:
-
-- Hello Django - I created CRUD functionalities based on the examples of this walkthrough.
-- From I think  therefore I blog -  I borrowed confirmation messages code and also followed the site deployment steps outlined here.
-
-Date picker field and minimum date validator learned from [here](https://gist.github.com/stasyao/99376eb0cf0ad3599f9737c421b5210e#part_4).
+The structure and the code of the project was based on Boutique Ado by the Code Institute.
 
 [Official Django Documentation](https://docs.djangoproject.com/en/4.1/ref/) was researched for code expressions  and code functionalities.
 Django [choices fields](https://docs.djangoproject.com/en/4.1/ref/models/fields/).
@@ -1992,7 +1965,7 @@ The site home page is taken from I think therefore I blog template. I slightly c
 
 ### Media
 
-Images were all open source and free to use from my owen collections, as I am aquarist my self and all the immages from my own aquarium :-)
+Images were all open source and free to use.
 
 ### Contributing
 
@@ -2000,17 +1973,18 @@ This project is a personal portfolio project and is not open for contributions. 
 
 ### Inspiration
 
-This project was inspired by the Hello Django project and the I Think Therefore I Blog project.
+This project was inspired by the Hello Django project and the Boutique Ado project.
 Website template from Aquarium community.
 
 ### Acknowledgment
 
 - The Code Institute's Full Stack Software Development (eCommerce) Diploma program.
 - Kerry Colledge for supporting all our group and for  individual support in all circumstances.
-- Code Institute (especially the Django blog) which helped me to understand how it all comes together.
+- Code Institute (especially the Django blog and Boutique Ado) which helped me to understand how it all comes together.
+- Irene Neville: Code Institute Cohort Facilitator. I'd like to thank Irene for facilitating the Code Institute Cohort during this project.
 - The tutor support team at Code Institute for their support.
 - To my friends who participated in testing my application.
-- Martina Terlevic (my mentor), for helping me.
+- Martina Terlevic (my mentor), for her advices and help.
 - Class mates for helping me.
 
 [Back to Table of Contents](#table-of-contents)
