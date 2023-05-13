@@ -4,7 +4,6 @@
     background-color: #75e6ff;
     padding: 2rem;
 }
-
 .footer-info-box {
     background-color: white;
     color: #0c2d6c;
@@ -12,25 +11,21 @@
     padding: 0.5rem;
     border: 2px solid #0c2d6c;
 }
-
 .footer-info-box i {
     padding: 4px;
 }
-
 .news {
     display: inline-table;
 }
-
 .footer-disclaimer {
     font-weight: bold;
     background-image: linear-gradient(#081D46, #0c2d6c);
     margin-bottom: 2rem;
     padding: 1rem;
 }
-
 @media screen and (max-width: 991px) {
     .footer-disclaimer {
         width: 100%;
         margin-left: 0;
-    }
+   }
 }

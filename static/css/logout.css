@@ -3,7 +3,6 @@
     min-height: 100vh;
     width: 60%;
 }
-
 .techno-button {
     font-size: 14px;
     padding: 0.5rem;
@@ -16,21 +15,18 @@
     outline: none;
     border: solid 1px #0c2d6c;
 }
-
 .techno-button:hover {
     background-color: #75e6ff;
     text-decoration: none;
     color: #0c2d6c;
     border: solid 1px #0c2d6c;
 }
-
 .techno-button-border {
     border: 1px solid white;
-
-    @media screen and (max-width: 430px) {
-
-        .auth-container {
-            width: 80%;
-        }
-    }
+}
+@media screen and (max-width: 430px) {
+    .auth-container {
+        width: 80%;
+        border: 1px solid white;
+   }
 }

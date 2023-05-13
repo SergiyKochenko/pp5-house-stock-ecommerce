@@ -1,7 +1,6 @@
 #home-hero {
     margin-top: 180px;
 }
-
 .home-container {
     width: 80%;
     padding-right: 15px;
@@ -9,7 +8,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-
 #hero-text {
     font-family: 'Puritan';
     letter-spacing: 2px;
@@ -17,7 +15,6 @@
     margin-top: 3rem;
     filter: drop-shadow(2px 4px 6px black);
 }
-
 .service-button {
     width: 130px;
     height: 44px;
@@ -29,14 +26,12 @@
     border-radius: 0;
     border: 1px solid white;
 }
-
 .section-rule {
     width: 60%;
     border-color: white;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-
 video {
     position: absolute;
     display: block;
@@ -46,7 +41,6 @@ video {
     margin-left: 10%;
     object-fit: cover;
 }
-
 .service-button:hover {
     color: #75e6ff;
     border: 2px solid #75e6ff;

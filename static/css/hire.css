@@ -3,7 +3,6 @@
     border-color: #75e6ff;
     margin-bottom: 30px;
 }
-
 .techno-button {
     font-size: 14px;
     padding: 0.5rem;
@@ -16,18 +15,15 @@
     outline: none;
     border: solid 1px #0c2d6c;
 }
-
 .techno-button:hover {
     background-color: #75e6ff;
     text-decoration: none;
     color: #0c2d6c;
     border: solid 1px #0c2d6c;
 }
-
 .techno-button-border {
     border: 1px solid white;
 }
-
 .hire-container {
     margin-top: 180px;
     width: 80%;
@@ -36,7 +32,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-
 .hire-img {
     width: 100%;
     max-width: 350px;
@@ -44,12 +39,10 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
 .hire-text {
     width: 70%;
     margin-left: 15%;
 }
-
 .hire-text a {
     text-decoration: underline;
 }

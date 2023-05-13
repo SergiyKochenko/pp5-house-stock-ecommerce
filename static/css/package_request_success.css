@@ -4,25 +4,21 @@
     max-width: 100%;
     display: none;
 }
-
 .section-rule {
     width: 60%;
     border-color: white;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-
 .section-header {
     width: 100%;
     border-color: white;
     margin-top: 0;
     margin-bottom: 4rem;
 }
-
 .margin-top {
     margin-top: 8.5rem !important;
 }
-
 .techno-button-border {
     border: 1px solid white;
 }
