@@ -378,9 +378,6 @@ Site Administrator Goals for the Home Store & More e-commerce webstore:
 
 By focusing on these goals, the site administrator can effectively manage and maintain the Home Store & More e-commerce webstore, ensuring a positive experience for both users and the website's stakeholders.
 
-
-[Back to Table of Contents](#table-of-contents)
-
 ## Design Structure
 
 Design Structure for the Home Store & More e-commerce webstore:
@@ -395,94 +392,6 @@ Design Structure for the Home Store & More e-commerce webstore:
 8. Footer: The footer section should include links to important pages, such as "Terms & Conditions," "Privacy Policy," and "Return Policy." Also, provide contact information, social media icons, and a newsletter signup form for users who want to stay updated on promotions and news.
 
 By following this design structure, the Home Store & More e-commerce webstore will provide a visually appealing, user-friendly, and seamless browsing and shopping experience for users, ultimately driving conversions and sales.
-
-
-Site Navigation:
-
-<details>
-<summary>Diagram </summary>
-
-![Diagram](/static/assets/images/diagram.png)
-</details>
-
-<br>
-Aquerium House website design templates:
-
-<details>
-<summary>About page </summary>
-
-![About page](/static/assets/images/about-page.png)
-</details>
-<details>
-<summary>Home page </summary>
-
-![Home page](/static/assets/images/home-page.png)
-</details>
-<details>
-<summary>Post detail page </summary>
-
-![Post detail page](/static/assets/images/post-detail-page.png)
-</details>
-<details>
-<summary>Pricing page </summary>
-
-![Picing page](/static/assets/images/pricing-page.png)
-</details>
-<details>
-<summary>Contact page </summary>
-
-![Contact page](/static/assets/images/contact-page.png)
-</details>
-<details>
-<summary>Book Now page </summary>
-
-![Book Now page](/static/assets/images/booknow-page.png)
-</details>
-<details>
-<summary>My Bookings page </summary>
-
-![My Bookings page](/static/assets/images/bookings-page.png)
-</details>
-<details>
-<summary>Edit Bookings page </summary>
-
-![Edit Bookings page](/static/assets/images/edit-bookings-page.png)
-</details>
-<details>
-<summary>Delete Bookings page </summary>
-
-![Delete Bookings page](/static/assets/images/delete-bookings-page.png)
-</details>
-<details>
-<summary>Create Post </summary>
-
-![Create post page](/static/assets/images/create-post.png)
-</details>
-<details>
-<summary>Edit Post </summary>
-
-![Edit post page](/static/assets/images/edit-post.png)
-</details>
-<details>
-<summary>Delete Post </summary>
-
-![Delete post page](/static/assets/images/delete-post.png)
-</details>
-<details>
-<summary>Logout page </summary>
-
-![Logout page](/static/assets/images/logout-page.png)
-</details>
-<details>
-<summary>Login page </summary>
-
-![Login page](/static/assets/images/login-page.png)
-</details>
-<details>
-<summary>Register page </summary>
-
-![Register page](/static/assets/images/signup-page.png)
-</details>
 
 <br/>
 
@@ -868,23 +777,6 @@ f. **Community Involvement:** Showcase any charitable initiatives or community p
 - **Shopping Cart:** View your selected items, manage your order, and proceed to our secure checkout process to complete your purchase.
 
 - **Search:** Utilize our integrated search feature to quickly find products or content on our website, making your shopping experience more efficient and enjoyable.
-
----
-
-Navigation bar for an unauthorized user:
-<details>
-
-![Main navigation](/static/assets/features/navbar.png)
-
-</details>
-
----
-Navigation bar for an authorized user, menu items My Bookings and Logout are available:
-<details>
-
-![Authenticated user's Navigation](/static/assets/features/logged-navbar.png)
-
-</details>
 
 ---
 
@@ -1327,12 +1219,18 @@ Installed Packages:
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
 - [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
-- [Github Projects and Kanban board](https://github.com/users/SergiyKochenko/projects/6) was used to track the progress of the project in general and of every application in the project.
+- [Github Projects and Kanban board](https://github.com/users/SergiyKochenko/projects/14) was used to track the progress of the project in general and of every application in the project.
 - [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
 - [Free formatter HTML](https://www.freeformatter.com/html-formatter.html#before-output): was used to format HTML5 code for the website.
 - [Free cleancss CSS3](https://www.cleancss.com/css-beautify/): was used to format CSS3 code for the website.
 - [Free black vercel](https://black.vercel.app/): was used to format python code for the website.
 - [JSHint](https://jshint.com/): was used to validate Java Script code for the website.
+- [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
+- [Sitemap](https://www.xml-sitemaps.com/): was used to create sitemap for the website.
+- [PolicyMarker](https://policymaker.io/): was used to create PRIVACY POLICY and TERMS & CONDITIONS for the website.
+
+
+
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1760,23 +1658,6 @@ The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Ser
 
 All Python code was manually checked using [CI Python Linter](https://pep8ci.herokuapp.com/).
 The Linter reports had messages about exceeding the string length of 79 characters. Testing did not reveal any errors.
-
-<details><summary>urls.py</summary>
-
-![](/static/assets/validation/pylint/urls.png)
-</details>
-<details><summary>models.py</summary>
-
-![](/static/assets/validation/pylint/models.png)
-</details>
-<details><summary>forms.py</summary>
-
-![](/static/assets/validation/pylint/forms.png)
-</details>
-<details><summary>views.py</summary>
-
-![](/static/assets/validation/pylint/views.png)
-</details>
 
 ---
 
