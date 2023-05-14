@@ -488,49 +488,44 @@ By implementing this color scheme, the Home Store & More e-commerce webstore is 
 ### Functional Structure
 <br>
 
-**Home page (User's Blog):** The home page contains a posts, logo and an image that gives the user an idea of ​​the type of service provided. Under the nav menu in the center is the button to create post, a new user or login for an existing user, only existing users can create a post. Not registered user will redirect to registration page.
-Registration and login are also available from the navigation bar.
+1. **Home Page:**<br>
+This is the main entry point of the website. It usually features a summary of what the website offers, featured products, and links to different parts of the website.
 
-**Create post page:** The create post page is only available to authenticated users.
-The user is asked to fill out a form with the required fields - title, content, image, and an optional field - excerpt.
-After filling out the form, the user is to submit button and than user will be redirected to the page of current user's blog.
+2. **Product Listing/Catalogue:**<br>
+This is where all the products are listed, usually with options to filter and sort the products based on various criteria such as price, category, brand, etc.
 
-**Post detail page:** The post detail page is accessed by clicking on a link thumbnail that represents the post on a website's homepage. Once on the post detail page, users can read the full text of the article and interact with associated media, such as images, likes and comments.
+3. **Product Detail Pages:**<br>
+Each product should have its own detailed page, featuring more information about the product, including images, descriptions, specifications, customer reviews, and pricing.
 
-**Edit post page:** This page is available only to authenticated users and has the same functionality and form as the create post page, where users can update post details.
+4. **Shopping Cart:**<br>
+Here, customers can review the items they've added to their cart, adjust quantities, see the total price, and proceed to checkout.
 
-**Delete post page:** This page is only available to authenticated users and has the same functionality and form as the create, update post page, where the user can update the post details. The user has the ability to delete user's post by selecting the Delete button on the post page. After that, user will be redirected to the delete page where user needs to confirm user's intention. After successfully deleting the post, user will return to the user's blog page and receives a message at the top of the screen.
-Also, if the user changes user's mind, user can return to the page by clicking on the go Back button.
+5. **Checkout Process:**<br>
+This is a series of pages or a single page where customers enter their shipping information, select a payment method, review their order, and finalize the purchase.
 
-**Pricing page:** The Pricing page provides information about all available Aquarium House services. User also can book necessary service straight from the Pricing page by clicking on the services price and the user will be redirected to creat booking form.
+6. **User Account:**<br>
+This section allows users to register, log in, and manage their account details. It often includes order history, saved payment methods, and personal details.
 
-**Registration page:** The user must create an account to make a reservation, or create post.
-To do this, user is asked to fill out a form on the page with the required fields: username and password. There is also an optional email field.
+7. **Customer Service/Help Center:**<br>
+This includes FAQs, contact information, shipping and return policies, and other useful resources for customers.
 
-**Login page:** A username and password are required to log in existing users.
-The user can use the navigation menu login button.
-After a successful login, the user receives a message at the top of the screen and is redirected to the main page.
+8. **About Us:**<br>
+This section provides information about the company, its history, mission, and values.
 
-**Logout page:** Logging out of the account is done through the navbar menu, after which the user is redirected to the logout page where user must confirm his desire to log out of the account. After a successful logout, the user is returned to the main page and receives a message at the top of the screen.
+9. **Search Function:**<br>
+A search bar is typically included at the top of every page, allowing users to search for specific items throughout the website.
 
-**Booknow page:** The Booknow page is only available to authenticated users.
-The user is asked to fill out a form with the required fields - name, service, time and date, and an optional field - phone, email.
-After filling out the form, the user is redirected to the page of current bookings.
+10. **Contact Us:**<br>
+This page provides the contact form method for customers to contact your business.
 
-**My Bookings page:** Only authenticated users have access to the Booking page. The link to this page becomes accessible in the navigation menu once a user is authenticated. Booking page shows to user information about made bookings and contains Change button and Delete button for manage booking.
+11. **Hire:**<br>
+The business offers services for hire, this page detail the types of services, rates, availability, and the process for hiring.
 
-**Change booking page:** This page is available only to authenticated users and has the same functionality and form as the Booknow page, where users can change  booking details.
+12. **Testimonials:**<br>
+This page showcase reviews or testimonials from previous customers to build trust with prospective customers.
 
-**Delete booking page:** This page is only available to authenticated users and has the same functionality and form as the Booknow page, where the user can change the booking details. The user has the ability to delete user's booking by selecting the Delete button on the Booking page. After that, user will be redirected to the delete page where user needs to confirm user's intention. After successfully deleting the booking, user will return to the Booking page and receives a message at the top of the screen.
-Also, if the user changes user's mind, user can return to the page by clicking on the Back to my Bookings button.
-
-**Contact page** The contact page contains a contact information, Google map, phone number and support email, photo shooting service and "Book Now" button.
-The Book Now button is accessible for new user or login for an existing user, only existing users can book. Not registered user will redirect to message page with the message: "To make a reservation, please login, if youhave not created an account yet, then please sign up.
-Registration and login are also available from the navigation bar.
-
-**About page** The page is open for all users, and contains the description of the company.
-
-**Footer** The footer contains logo, navbar, contact information, social media icons, copyright.
+13. **Footer:**<br>
+The website footer is found at the bottom of each page and typically includes links to legal information (like terms of service and privacy policy), social media profiles, contact information, and sometimes a signup form for a newsletter.
 
 ### 404 page
 
