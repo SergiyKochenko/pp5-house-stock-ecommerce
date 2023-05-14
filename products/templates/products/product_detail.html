@@ -171,7 +171,14 @@
 					<div class="card-header">
 						<strong>Review From: </strong> {{ review.user }} |
 						<strong>Date: </strong> {{ review.date|date:'Y-m-d' }} |
-						<strong>Stars: </strong> {{ review.stars }}<i class="fa fa-star"></i>
+						<strong>Stars: </strong> 
+						{% for i in "12345"|make_list %}
+							{% if i|add:0 <= review.stars %}
+								<i class="fa fa-star"></i>
+							{% else %}
+								<i class="fa fa-star-o"></i>
+							{% endif %}
+						{% endfor %}
 					</div>
 					<div class="card-body">
 						{{ review.content|linebreaks }}

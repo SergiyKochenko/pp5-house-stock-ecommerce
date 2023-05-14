@@ -296,7 +296,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 75px;
    }
     body {
         height: calc(100vh - 116px);
@@ -326,6 +326,12 @@ input[name='q']::placeholder {
    }
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+   }
+}
+
+@media (max-width: 391px) {
+    .header-container {
+        padding-top: 1px;
    }
 }
 /* wishlist */

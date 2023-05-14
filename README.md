@@ -1320,7 +1320,7 @@ Menu on mobile devices is positioned incorrectly | - | fixed CSS style   | fixed
 
 <br/>
 
-### Bug reports [bug reports](https://github.com/users/SergiyKochenko/projects/6)
+## Bug reports:
 
 <br/>
 
