@@ -54,6 +54,7 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
     - [Web Marketing Strategy](#web-marketing-strategy)
       - [Facebook Business page](#facebook-business-page)
       - [MailChimp](#mailchimp)
+      - [Hotjar Integration](#hotjar-integration)
   - [UX (User Experience)](#ux-user-experience)
   - [User stories](#user-stories)
   - [Site Administrator goals](#site-administrator-goals)
@@ -390,6 +391,24 @@ To integrate MailChimp with the PP5 E-commerce website, follow these steps:
 For more information about MailChimp and its features, visit the official MailChimp website (https://mailchimp.com/) and their knowledge base (https://mailchimp.com/help/).
 
 **By integrating MailChimp with the PP5 E-commerce website, I can leverage the power of email marketing to build strong relationships with my customers and increase sales.**
+
+<br>
+
+## Hotjar Integration
+
+<br>
+
+This project integrates [Hotjar](https://www.hotjar.com/), a powerful tool that combines analysis and feedback tools to understand how users interact with [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) website.
+
+Hotjar provides heatmaps, session recordings, and surveys to gain a clear picture of our users' needs, desires, and behavior. This comprehensive understanding helps us optimize the user experience and performance of the [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) website.
+
+**Features Utilized** <br>
+- **Heatmaps:** Visual representation of users' clicks, taps, and scrolling behavior.
+- **Visitor Recordings:** Watch actual browsing actions performed by users on the site.
+- **Conversion Funnels:** Identify on which page and at which step most visitors are leaving the site.
+- **Form Analysis: Discover** which fields take too long to fill, which are left blank, and why the visitors abandon the form and page.<br>
+
+**For more detailed information on how to use Hotjar and how it benefits the project, please visit the [Hotjar](https://www.hotjar.com/) website.**
 
 [Back to Table of Contents](#table-of-contents)
 
