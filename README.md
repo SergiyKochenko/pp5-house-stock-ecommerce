@@ -2009,7 +2009,7 @@ With these steps completed, you should be all set with caching, media files, and
 
 ### Making a Local Clone
 
-1. Locate the [Repository](SergiyKochenko/pp5-house-stock-ecommerce).
+1. Locate the [Repository](https://github.com/SergiyKochenko/pp5-house-stock-ecommerce).
 2. Click "Code".
 3. Click Clone or Download.
 4. Copy the Git URL from the dialogue box.
