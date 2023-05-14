@@ -52,6 +52,7 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
   - [Project goals](#project-goals)
   - [Business Plan](#business-plan)
     - [Web Marketing Strategy](#web-marketing-strategy)
+      - [Facebook Business page](#facebook-business-page)
       - [MailChimp](#mailchimp)
   - [UX (User Experience)](#ux-user-experience)
   - [User stories](#user-stories)
@@ -288,6 +289,77 @@ The PP5 E-Commerce website aims to attract and convert visitors into customers b
 7. **Conversion Rate Optimization (CRO)**: Continuously optimize the website's design, user experience, and calls-to-action to improve conversion rates.
 
 By implementing this web marketing strategy, the PP5 House Stock E-Commerce website aims to increase online visibility, drive more traffic, and ultimately boost sales and revenue.
+
+## Facebook Business page
+
+Creating a Facebook Business Page can be an important step in your business's social media marketing strategy. It allows your business to have a public presence on Facebook, providing a space for you to share updates, post about products or services, engage with customers, and reach new audiences.
+
+Here's a step-by-step guide on how to create a Facebook Business Page:
+
+1. Log in to Facebook:
+
+If you don't already have a personal Facebook account, you'll need to create one first. Facebook requires every business page to be linked to a personal account for admin purposes.
+
+2. Create a Page:
+
+Once you're logged in, go to the "Pages" section in the main menu (on the left side of your home page). Click on "Create New Page".
+
+3. Choose a Page Type:
+
+You'll be asked to choose a category for your page. The most common choice is "Business or Brand". Click on "Get Started" under your chosen category.
+
+4. Fill Out Information:
+
+Now, you'll need to provide some information about your business, including:
+
+- Page Name: This will be the name of your Business Page on Facebook. It should match or closely align with the name of your business.
+Category: Type a word or two that describes your business, and Facebook will suggest some options. Choose the one that fits your business best.
+- Description: Write a short description of your business (up to 255 characters). This should be a brief outline of what your business does.
+- Website (optional): If you have a business website, you can include it here.
+
+5. Add a Profile Picture and Cover Photo:
+
+Add a profile picture for your Business Page. This is often your company logo. Then, add a cover photo. This is a larger, banner-style photo that appears at the top of your page. It should relate to your business in some way and be engaging.
+
+6. Add More Details:
+
+After creating your page, fill in additional details in the "About" section, such as:
+
+- Contact information: Include phone numbers, email addresses, your website, etc.
+- Location: If you have a physical store or office, put your address here.
+- Hours: If applicable, fill in the hours of operation.
+- Price range: This can give potential customers an idea of your pricing structure.
+
+Create Your First Post:
+
+Now your page is set up, it's a good time to create your first post. This can be a simple welcome message, an introduction of your business, or anything else that you feel would be appropriate for your new Facebook audience.
+
+8. Invite People to Like Your Page:
+
+Facebook will prompt you to invite people to like your new Business Page. Start with your personal Facebook friends who are likely to be interested in your business, and then expand from there.
+
+Remember, Facebook is often the first place a customer goes to get information about a business, so having all your information up to date and easy to find is very important. Once your page is set up, you can start posting updates, sharing content, and interacting with your customers!
+
+<br>
+
+<details>
+<summary>See screenshots of my  Facebook business page </summary>
+
+![Facebook business page1](static/assets/images/facebook/Screenshot_1.png)
+![Facebook business page2](static/assets/images/facebook/Screenshot_2.png)
+![Facebook business page3](static/assets/images/facebook/Screenshot_3.png)
+![Facebook business page4](static/assets/images/facebook/Screenshot_4.png)
+![Facebook business page5](static/assets/images/facebook/Screenshot_5.png)
+![Facebook business page6](static/assets/images/facebook/Screenshot_6.png)
+![Facebook business page7](static/assets/images/facebook/Screenshot_7.png)
+![Facebook business page8](static/assets/images/facebook/Screenshot_8.png)
+![Facebook business page9](static/assets/images/facebook/Screenshot_9.png)
+![Facebook business page10](static/assets/images/facebook/Screenshot_10.png)
+</details>
+
+Link to [Facebook business page:](https://www.facebook.com/profile.php?id=100092638811901) that was created for the website.
+
+<br>
 
 ## MailChimp
 
