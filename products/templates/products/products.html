@@ -1,17 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-<!-- Core CSS -->
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/products.css' %}">
-{% endblock %}
-{% block page_header %}
-<div class="container header-container">
-	<div class="row">
-		<div class="col"></div>
-	</div>
-</div>
-{% endblock %}
-
 <!-- Hotjar Tracking Code for https://pp5-house-stock-ecommerce.herokuapp.com/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -23,7 +11,17 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
+<!-- Core CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+{% endblock %}
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
 <!-- All Products Page -->
 {% block extra_title %} - Products {% endblock %}
 {% block content %}
