@@ -1295,7 +1295,16 @@ Installed Packages:
 - [Lucid](https://lucid.app/): was used to create database schema diagram for the website.
 - [Sitemap](https://www.xml-sitemaps.com/): was used to create sitemap for the website.
 - [PolicyMarker](https://policymaker.io/): was used to create PRIVACY POLICY and TERMS & CONDITIONS for the website.
-- [Stripe](https://stripe.com/): was used for payment system for the website.
+- [Stripe](https://stripe.com/): was used for payment system for the website.<br>
+**and powerful other tools:**
+- [gdpr.eu](https://gdpr.eu/)
+- [gdpr.eu/what-is-gdpr](https://gdpr.eu/what-is-gdpr/)
+- [gdpr.eu/privacy-notice](https://gdpr.eu/privacy-notice/)
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
+- [Facebook Pixel](https://developers.facebook.com/docs/meta-pixel)
+- [Hotjar](https://www.hotjar.com/)
+- [Javascript libraries for Cookie Consent](https://www.cssscript.com/tag/gdpr/)
+
 
 
 [Back to Table of Contents](#table-of-contents)
