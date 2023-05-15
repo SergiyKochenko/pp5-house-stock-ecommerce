@@ -20,8 +20,6 @@ def add_to_bag(request, item_id):
     while True:
         try:
             quantity = int(request.POST.get('quantity'))
-            messages.warning(request, "Sorry, \
-                    Invalid input")
             break
         except ValueError:
             messages.warning(request, "Invalid input")
