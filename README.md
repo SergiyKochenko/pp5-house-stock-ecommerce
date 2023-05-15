@@ -1219,7 +1219,81 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 - CSS3
 
 ---
-Installed Packages:
+
+## **Installed Packages and comands was in use:**
+
+===================**pp5**====================
+- pip3 install Django==3.2
+- pip3 install dj_database_url==0.5.0 psycopg2
+- pip3 install boto3
+- pip3 install django-storages
+- django-admin startproject house_stock .
+- python3 manage.py startapp name_of_app
+- touch .gitignore
+- python3 manage.py runserver
+- python3 manage.py migrate
+- python3 manage.py createsuperuser
+- git status
+- git remote -v
+- git add .
+- git commit -m "initial commit"
+- git push
+- pip3 install django-allauth==0.41.0
+- python3 manage.py migrate
+- pip3 freeze > requirements.txt
+- mkdir templates
+- mkdir templates/allauth
+- cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
+- python3 manage.py startapp products
+- pip3 install pillow
+- python3 manage.py makemigrations --dry-run
+- python3 manage.py migrate --plan
+- python3 manage.py migrate
+- pip3 freeze > requirements.txt
+- python3 manage.py makemigrations
+- python3 manage.py showmigrations
+- python3 manage.py loaddata categories
+- python3 manage.py loaddata products
+- pip3 install django-crispy-forms==1.14.0
+- pip3 install stripe
+- pip3 install django-countries==7.2.1
+- pip install cloudinary
+- pip install django-cloudinary-storage
+- pip install mailchimp-marketing
+- pip3 install gunicorn
+- npm install -g heroku
+- heroku login -i
+- heroku apps
+- heroku logs --tail -a your_app_name
+- pip install name-of-package==versionnumber
+- pip uninstall name-of-package
+- pip list
+- python3 manage.py test
+- python3 -m pip install coverage
+- coverage report -m
+- coverage report
+- coverage run manage.py test
+- coverage report && coverage html
+- python3 -m http.server
+
+## **shell:**
+
+- python3 manage.py shell
+- In [1]: from products.models import Product
+- In [2]: kdbb = ['kitchen_dining', 'bed_bath']
+- In [3]: clothes = Product.objects.exclude(category__name__in=kdbb)
+- In [4]: clothes.count()
+- In [5]: for item in clothes:
+-    ...:     item.has_sizes = True
+-    ...:     item.save()
+-    ...:
+- In [6]: Product.objects.filter(has_sizes=True)
+- In [7]: Product.objects.filter(has_sizes=True).count()
+- In [8]: exit()
+
+---
+
+### **Installed Packages:**
 
 **Package**          &         **Version**
 ------------------------- --------
