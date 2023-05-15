@@ -157,8 +157,9 @@
 								</div>
 								{% else %}
 								<div class="col-12 mb-4">
-									<p><a href="{% url 'account_login' %}">Login</a> or <a
-										href="{% url 'account_signup' %}">Sign Up</a> to add product to wishlist. 
+									<p><a href="{% url 'account_login' %}">Login</a> or 
+										<a href="{% url 'account_signup' %}">Sign Up</a> 
+										to add product to wishlist. 
 										<i class="p-2 fa-solid fa-heart-circle-plus fa-xl"></i>
 									</p>
 								</div>
@@ -213,12 +214,12 @@
 	    });
 	});
 </script>
-<script type="text/javascript">
+<script>
 	$('.btt-link').click(function(e) {
 		window.scrollTo(0,0)
 	})
 </script>
-<script type="text/javascript">
+<script>
 	$('#sort-selector').change(function() {
 	    var selector = $(this);
 	    var currentUrl = new URL(window.location);
