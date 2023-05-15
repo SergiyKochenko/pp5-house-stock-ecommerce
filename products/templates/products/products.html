@@ -98,7 +98,6 @@
 							{% if product.image %}
 							<img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
 								alt="{{ product.name }}" src="{{ product.image.url }}">
-							</a>
 							{% else %}
 							<a href="{% url 'product_detail' product.id %} {% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}">
 							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
