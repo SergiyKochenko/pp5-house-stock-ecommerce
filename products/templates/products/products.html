@@ -98,12 +98,12 @@
 							{% if product.image %}
 							<img class="{% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}"
 								alt="{{ product.name }}" src="{{ product.image.url }}">
-							</a>
 							{% else %}
-							<p href="{% url 'product_detail' product.id %} {% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}">
+							<a href="{% url 'product_detail' product.id %} {% if product.in_stock %} card-img-top {% else %} card-img-top  card-img-top-no-stock {% endif %}">
 							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
 							{% endif %}
-							</p>
+							</a>
+							</a>
 							{% if product.in_stock %}
 							<div style="background-color: #6ef4ce; min-height: 70px;" class="product-card-names">
 								<div class=" col-12 text-left">
