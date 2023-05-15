@@ -93,9 +93,7 @@ The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecomme
     - [Additional Media Hosting](#additional-media-hosting)
 - [Tools](#tools)
 - [Bug Reports](#bug-reports)
-  - [Bugs](#bugs)
   - [Fixed Bugs](#fixed-bugs)
-  - [Bug reports bug reports](#bug-reports-bug-reports)
   - [Unresolved Bugs](#unresolved-bugs)
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
@@ -1105,6 +1103,8 @@ The Checkout page of Home Store & More + Techno Tech Co. Ltd's website is design
 
 ![Checkout page](static/assets/images/features/checkout.png)
 ![Checkout page](static/assets/images/features/checkout-mobile.png)
+![checkout-processing page](static/assets/images/features/checkout-processing-pament.png)
+![checkout-processing](static/assets/images/features/checkout-processing-pament-mobile.png)
 
 </details>
 
@@ -1405,30 +1405,72 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 ---
 
 ## Bug Reports:
+<br>
+
+**ID 1 - Title: Incorrect Menu Position on Mobile Devices**
+
+**Description:**
+
+The navigation menu on the application is not properly positioned when viewed on mobile devices. This issue significantly affects the user experience as it inhibits smooth navigation through the application.
+
+**Steps to Reproduce:**
+
+- Open the application on a mobile device.
+- Access the navigation menu.
+
+**Expected Result:**
+
+The navigation menu should be appropriately positioned, ensuring clear visibility and easy navigation.
+
+**Actual Result:**
+
+The navigation menu is incorrectly positioned, which impedes user navigation and interaction with the application on mobile devices.
+
+**Environment/Platform:**
+
+- **Device:** Mobile Devices (all types)
+- **Operating System:** All Mobile Operating Systems
+- **Browser**: All Mobile Browsers
+- **Application Version:** All Mobile Versions
+
+Additional Information:
+
+<details>
+<summary>Screenshot</summary>
+
+![Bug id 1](static/assets/images/bugs/id-1.png)
+
+</details>
+
+<br>
+
+**Severity/Priority:**
+
+- **Severity:** High (significantly impacts user experience)
+**Priority:** High (needs immediate attention)
+
+**Assigned To:**
+
+[Student of Full Stack Software Development (E-commerce Applications)<br>
+at Code Institute]
+
+**Reported By:**
+
+[S. Kochenko]
+
+**Date Reported:**
+
+1 May 2023
+<hr>
 
 
+## Fixed Bugs
 
-### Bugs
-
-#### Fixed Bugs
-
-|  Bug  | Attached images  |  Solution  |Status   |
-|--|--|--|--|
-|  
-Menu on mobile devices is positioned incorrectly | - | fixed CSS style   | fixed |
-|Pricing form does not appear on the Pricing page  | - | fixed by passing form object to the pricing.html template , placing form tags in in the proper template pricing.html | fixed |
-| In the Gitpod Environment the site works with full CSS style,  but on Heroku the site  and the admin page (/admin) comes up without CSS styling  | - | Set DEBUG variable to False and remove the DISABLE_COLLECTSTATIC variable | fixed |
-| Function get_min_date isn't defined  | - | fixed by removing function from views.py file and placing function in the forms.py so the form can access that function | fixed  |
-| When an invalid phone number is entered on the Booknow page, the form clears the fields and returns to its original state with no messages to the user. The Change Booking page also returns the form to its original state with pre-filled fields | - | Added regex validation for numeric input and displaying a message to the user | fixed  |
-| Pricing elements on the Pricing page are not displayed correctly on mobile devices | - | added media queries rules for small screen devices  | fixed  |
+The bug with **ID 1** mentioned above was fixed.
 
 <br/>
 
-## Bug reports:
-
-<br/>
-
-#### Unresolved Bugs
+## Unresolved Bugs
 
 One bug known unresolved remaining
 See bug report: [bug reports](https://github.com/users/SergiyKochenko/projects/6)
@@ -1436,10 +1478,6 @@ See bug report: [bug reports](https://github.com/users/SergiyKochenko/projects/6
 <summary>Create post page with the same title</summary>
 
 ![Create post page](/static/assets/bugs/create-post.png)
-
-![Create post page](/static/assets/bugs/create-post2.png)
-
-![Create post page](/static/assets/bugs/create-post1.png)
 
 </details>
 <br>
