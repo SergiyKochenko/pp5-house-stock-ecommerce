@@ -1695,111 +1695,74 @@ There were errors and warnings in the reports about unclosed elements and tags, 
 
 <details><summary>about app</summary>
 
-about.html
-![](static/assets/images/validation/about.png)
-![](static/assets/images/validation/filtering-1.png)
+
+![](static/assets/images/validation/html/Screenshot_1.png)
+
 </details>
 <details><summary>bag app</summary>
 
-bag-total.html
-![](static/assets/images/validation/bag-total.png)
-bag.html
-![](static/assets/images/validation/bag.png)
-checkout-buttons.html
-![](static/assets/images/validation/checkout-buttons.png)
-product-imag.html
-![](static/assets/images/validation/product-image.png)
-product-info.html
-![](static/assets/images/validation/product-info.png)
-quantity-form.html
-![](static/assets/images/validation/quantity-form.png)
+
+![](static/assets/images/validation/html/Screenshot_2.png)
+
 </details>
 <details><summary>checkout app</summary>
 
-checkout_success.html
-![](static/assets/images/validation/checkout_success.png)
-checkout.html
-![](static/assets/images/validation/checkout.png)
+
+![](static/assets/images/validation/html/Screenshot_3.png)
+
 </details>
 <details><summary>contactus app</summary>
 
-![](static/assets/images/validation/contactus.png)
+![](static/assets/images/validation/html/Screenshot_4.png)
 </details>
 
 <details><summary>hire app</summary>
 
-hire.html
-![](static/assets/images/validation/hire.png)
+
+![](static/assets/images/validation/html/Screenshot_5.png)
 </details>
 <details><summary>home app</summary>
 
-index.html
-![](static/assets/images/validation/home.png)
+
+![](static/assets/images/validation/html/Screenshot_6.png)
 </details>
 <details><summary>newsletter app</summary>
 
-newsletter.html
-![](static/assets/images/validation/newsletter.png)
+
+![](static/assets/images/validation/html/Screenshot_7.png)
 </details>
 <details><summary>packages app</summary>
 
-custom_packages.html
-![](static/assets/images/validation/custom_packages.png)
-package_request_form.html
-![](static/assets/images/validation/package_request_form.png)
-package_request_success.html
-![](static/assets/images/validation/package_request_success.png)
-packages_confirm_delete.html
-![](static/assets/images/validation/packages_confirm_delete.png)
-packages_form.html
-![](static/assets/images/validation/packages_form.png)
-packages.html
-![](static/assets/images/validation/packages.png)
+
+![](static/assets/images/validation/html/Screenshot_8.png)
+
 </details>
 <details><summary>products app</summary>
 
-add_product.html
-![](static/assets/images/validation/add_product.png)
-add_to_wishlist.html
-![](static/assets/images/validation/add_to_wishlist.png)
-edit_product.html
-![](static/assets/images/validation/edit_product.png)
-product_detail.html
-![](static/assets/images/validation/product_detail.png)
-![](static/assets/images/validation/product_detail_filtter.png)
-product.html
-![](static/assets/images/validation/product.png)
-remove_from_wishlist.html
-![](static/assets/images/validation/remove_from_wishlist.png)
-wishlist.html
-![](static/assets/images/validation/wishlist.png)
+
+![](static/assets/images/validation/html/Screenshot_9.png)
+
 </details>
 <details><summary>profiles app</summary>
 
-profile.html
-![](static/assets/images/validation/profile.png)
+
+![](static/assets/images/validation/html/Screenshot_12.png)
 </details>
 <details><summary>testimonials app</summary>
 
-clienttestimonial_confirm_delete.html
-![](static/assets/images/validation/clienttestimonial_confirm_delete.png)
-testimonial_form.html
-![](static/assets/images/validation/testimonial_form.png)
-testimonials.html
-![](static/assets/images/validation/testimonials.png)
-</details>
-<details><summary>footer.html</summary>
 
-![](static/assets/images/validation/footer.png)
-</details>
-<details><summary>main-nav.html</summary>
+![](static/assets/images/validation/html/Screenshot_13.png)
 
-![](static/assets/images/validation/main-nav.png)
 </details>
-<details><summary>mobile-top-header.html</summary>
+<details><summary>wishlist</summary>
 
-![](static/assets/images/validation/mobile-top-header.png)
+![](static/assets/images/validation/html/Screenshot_10.png)
 </details>
+<details><summary>product detail</summary>
+
+![](static/assets/images/validation/html/Screenshot_11.png)
+</details>
+
 <details><summary>403.html</summary>
 
 ![](static/assets/images/validation/403.png)
@@ -1812,21 +1775,18 @@ testimonials.html
 
 ![](static/assets/images/validation/500.png)
 </details>
-<details><summary>base.html</summary>
 
-![](static/assets/images/validation/base.png)
-</details>
 <details><summary>login.html</summary>
 
-![](static/assets/images/validation/login.png)
+![](static/assets/images/validation/html/Screenshot_14.png)
 </details>
 <details><summary>logout.html</summary>
 
-![](static/assets/images/validation/logout.png)
+![](static/assets/images/validation/html/Screenshot_15.png)
 </details>
 <details><summary>signup.html</summary>
 
-![](static/assets/images/validation/signup.png)
+![](static/assets/images/validation/html/Screenshot_16.png)
 </details>
 
 ---
