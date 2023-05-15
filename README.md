@@ -1404,7 +1404,9 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 
 ---
 
-## Bug Reports
+## Bug Reports:
+
+
 
 ### Bugs
 
