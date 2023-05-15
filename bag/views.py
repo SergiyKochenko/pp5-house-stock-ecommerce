@@ -64,7 +64,22 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get("quantity"))
+    while True:
+        try:
+            quantity = int(request.POST.get('quantity'))
+            while True:
+                if quantity < 0:
+                    messages.warning(request, "You can't choose less than 1")
+                    return redirect(reverse("view_bag"))
+                if quantity > 99:
+                    messages.warning(request, "You can't choose more than 99")
+                    return redirect(reverse("view_bag"))
+                else:
+                    break
+            break
+        except ValueError:
+            messages.warning(request, "Invalid input")
+            return redirect(reverse("view_bag"))
     size = None
     if "product_size" in request.POST:
         size = request.POST["product_size"]
