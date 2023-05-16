@@ -2123,6 +2123,8 @@ With these steps completed, you should be all set with caching, media files, and
 
 The structure and the code of the project was based on Boutique Ado by the Code Institute.
 
+Also, I have followed one of the repositories and tried to re-produce in some pages and tried to follow the code: [Sensical.ie](https://github.com/davidcalikes/sensical.ie)
+
 [Official Django Documentation](https://docs.djangoproject.com/en/4.1/ref/) was researched for code expressions  and code functionalities.
 Django [choices fields](https://docs.djangoproject.com/en/4.1/ref/models/fields/).
 
@@ -2130,7 +2132,7 @@ Stack Overflow was used intensively for research into code functionalities and p
 
 ### Content
 
-The site home page is taken from I think therefore I blog template. I slightly changed the look of the home page and tried to keep the rest of the pages in the same style.
+The site home page is taken from Boutique Ado template. I slightly changed the look of the home page and tried to keep the rest of the pages in the same style.
 
 ### Media
 
