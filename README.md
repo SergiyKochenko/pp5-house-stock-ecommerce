@@ -1415,8 +1415,8 @@ The navigation menu on the application is not properly positioned when viewed on
 
 **Steps to Reproduce:**
 
-- Open the application on a mobile device.
-- Access the navigation menu.
+1. Open the application on a mobile device.
+2. Access the navigation menu.
 
 **Expected Result:**
 
@@ -1433,21 +1433,12 @@ The navigation menu is incorrectly positioned, which impedes user navigation and
 - **Browser**: All Mobile Browsers
 - **Application Version:** All Mobile Versions
 
-Additional Information:
-
-<details>
-<summary>Screenshot</summary>
-
-![Bug id 1](static/assets/images/bugs/id-1.png)
-
-</details>
-
 <br>
 
 **Severity/Priority:**
 
 - **Severity:** High (significantly impacts user experience)
-**Priority:** High (needs immediate attention)
+- **Priority:** High (needs immediate attention)
 
 **Assigned To:**
 
@@ -1461,8 +1452,78 @@ at Code Institute]
 **Date Reported:**
 
 1 May 2023
+
+**Screenshots and/or Log Files:**
+
+<details>
+<summary>Screenshot</summary>
+
+![Bug id 1](static/assets/images/bugs/id-1.png)
+
+</details>
 <hr>
 
+**ID 2 - Title: Wishlist Button State Not Persisting After Page Refresh**
+
+**Description:**
+
+When a user adds an item to their wishlist, the corresponding button becomes active as expected, indicating that the item has been added to the wishlist. However, after refreshing the page, the button unexpectedly reverts back to its inactive state. This issue may confuse users and lead to the perception that their actions are not being saved properly.
+
+**Steps to Reproduce:**
+
+1. Navigate to the all products page.
+2. Click on the "Add to Wishlist" button.
+3. Observe that the button changes to an active state the color of the button changed.
+4. Refresh the page.
+5. Observe that the "Add to Wishlist" button has reverted back to its inactive state, despite the product supposedly being in the wishlist.
+
+**Expected Result:**
+
+After refreshing the page, the "Add to Wishlist" button for items that have been added to the wishlist should remain in an active state, indicating that the item is already in the user's wishlist.
+
+**Actual Result:**
+The "Add to Wishlist" button reverts to its inactive state after a page refresh, even if the item has been added to the user's wishlist.
+
+**Additional Information:**
+
+This issue was tested and reproduced in the following browsers: Google Chrome Version 92.0.4515.131, Mozilla Firefox Version 89.0.2, and Safari Version 14.1.1.
+
+**Suggested Priority:**
+
+Medium. This is a functionality issue that may negatively affect user experience, but does not prevent the use of the site or crucial user actions.
+
+**Potential Impact:**
+
+The issue could lead to user confusion or frustration, potentially reducing user engagement or conversion rates as they may believe their wishlist items are not being saved properly.
+
+**Note**
+
+On the Product Detail page, the button remains active as it must be.
+
+**Assigned To:**
+
+[Student of Full Stack Software Development (E-commerce Applications)<br>
+at Code Institute]
+
+**Reported By:**
+
+[S. Kochenko]
+
+**Date Reported:**
+
+16 May 2023
+
+**Screenshots and/or Log Files:**
+
+<details>
+<summary>Screenshots</summary>
+
+![Bug id 2](static/assets/images/bugs/id-2.png)
+![Bug id 2.2](static/assets/images/bugs/id-2-2.png)
+![Bug id 2.3](static/assets/images/bugs/id-2-3.png)
+
+</details>
+<hr>
 
 ## Fixed Bugs
 
@@ -1472,14 +1533,8 @@ The bug with **ID 1** mentioned above was fixed.
 
 ## Unresolved Bugs
 
-One bug known unresolved remaining
-See bug report: [bug reports](https://github.com/users/SergiyKochenko/projects/6)
-<details>
-<summary>Create post page with the same title</summary>
+The bug with **ID 2** mentioned above.
 
-![Create post page](/static/assets/bugs/create-post.png)
-
-</details>
 <br>
 
 [Back to Table of Contents](#table-of-contents)
