@@ -2211,6 +2211,7 @@ Website template from Aquarium community.
 - The tutor support team at Code Institute for their support.
 - To my friends who participated in testing my application.
 - Martina Terlevic (my mentor), for her advices and help.
+- Thanks to David Calikes for his good example that I have followed.
 - Class mates for helping me.
 
 [Back to Table of Contents](#table-of-contents)
