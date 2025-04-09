@@ -19,6 +19,7 @@ if os.path.exists("env.py"):
 from pathlib import Path
 
 import cloudinary
+from botocore.exceptions import ClientError
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -222,30 +223,93 @@ cloudinary.config(
 )
 
 
-if 'USE_AWS' in os.environ:
+# if 'USE_AWS' in os.environ:
 
-    # Cache control
+#     # Cache control
+#     AWS_S3_OBJECT_PARAMETERS = {
+#         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+#         'CacheControl': 'max-age=94608000',
+#     }
+
+#     # Bucket Config
+#     AWS_STORAGE_BUCKET_NAME = 'pp5-house-stock-ecommerce'
+#     AWS_S3_REGION_NAME = 'us-east-1'
+#     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+#     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+#     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+#     # Static and media files
+#     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+#     STATICFILES_LOCATION = 'static'
+#     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+#     MEDIAFILES_LOCATION = 'media'
+
+#     # Override static and media URLs in production
+#     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+#     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+if 'USE_AWS' in os.environ:
+    # -----------------------------------------------------------------------------
+    # AWS S3 Configuration for Static and Media Files
+    # -----------------------------------------------------------------------------
+    # Cache control settings
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
 
-    # Bucket Config
+    # Bucket Configuration
     AWS_STORAGE_BUCKET_NAME = 'pp5-house-stock-ecommerce'
     AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # Static and media files
+    # Static and Media Files Settings using Custom Storages
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
-    # Override static and media URLs in production
+    # URLs for static and media files
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+    # -----------------------------------------------------------------------------
+    # Function to Check if the S3 Bucket Is Accessible (Functioning)
+    # -----------------------------------------------------------------------------
+    def check_bucket_status(bucket_name, region_name):
+        """
+        Check if the provided S3 bucket is accessible.
+
+        :param bucket_name: The name of the S3 bucket.
+        :param region_name: The AWS region where the bucket is hosted.
+        """
+        s3_client = boto3.client(
+            's3',
+            region_name=region_name,
+            aws_access_key_id=AWS_ACCESS_KEY_ID,
+            aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+        )
+        try:
+            # The head_bucket call will succeed if the bucket is accessible.
+            s3_client.head_bucket(Bucket=bucket_name)
+            print(f"Bucket '{bucket_name}' is accessible and functioning.")
+        except ClientError as error:
+            error_code = error.response['Error']['Code']
+            if error_code == '403':
+                print(f"Bucket '{bucket_name}' exists but access is forbidden (HTTP 403).")
+            elif error_code == '404':
+                print(f"Bucket '{bucket_name}' does not exist (HTTP 404).")
+            else:
+                print(f"An error occurred when accessing bucket '{bucket_name}': {error}")
+
+    # -----------------------------------------------------------------------------
+    # Check the Bucket Status
+    # -----------------------------------------------------------------------------
+    check_bucket_status(AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME)
+else:
+    print("AWS is not enabled; 'USE_AWS' environment variable not set.")
 
 # delivery threshold
 FREE_DELIVERY_THRESHOLD = 99
