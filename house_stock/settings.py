@@ -37,7 +37,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 
 
-ALLOWED_HOSTS = ['pp5-house-stock-ecommerce.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
+ALLOWED_HOSTS = ['pp5-house-stock-ecommerce.herokuapp.com','home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
 
 
 # Application definition
@@ -158,12 +158,12 @@ else:
 
 # =========================================================
 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'db.sqlite3',
-     }
-}
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.sqlite3',
+#          'NAME': BASE_DIR / 'db.sqlite3',
+#      }
+# }
 
 # ========================================================
 
