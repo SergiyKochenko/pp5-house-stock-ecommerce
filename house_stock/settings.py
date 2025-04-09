@@ -31,9 +31,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['pp5-house-stock-ecommerce.herokuapp.com', 'localhost', '*']
+
+
+ALLOWED_HOSTS = ['pp5-house-stock-ecommerce.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
 
 
 # Application definition
@@ -76,6 +80,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'house_stock.urls'
@@ -153,12 +158,12 @@ else:
 
 # =========================================================
 
-# DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.sqlite3',
-#          'NAME': BASE_DIR / 'db.sqlite3',
-#      }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+     }
+}
 
 # ========================================================
 
