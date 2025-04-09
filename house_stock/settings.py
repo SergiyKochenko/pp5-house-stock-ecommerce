@@ -144,17 +144,16 @@ WSGI_APPLICATION = 'house_stock.wsgi.application'
 # ===================================================
 
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'My-Web-Shop',
+        "USER": 'agency_l47q_user',
+        "PASSWORD": os.environ.get('DB_PASSWORD', ''),
+        "HOST": 'dpg-cvfj0s1opnds73batjl0-a.ohio-postgres.render.com',
+        "PORT": '5432',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+}
 
 
 # =========================================================
