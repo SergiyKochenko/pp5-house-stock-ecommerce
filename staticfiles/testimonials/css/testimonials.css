@@ -1,0 +1,120 @@
+.testimonials-container {
+    margin-top: 180px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.message-rule {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-color: white;
+}
+.testimonial-text {
+    width: 90%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+.left-card {
+    margin-left: 5rem;
+}
+.testimonial {
+    width: 70%;
+    margin-left: 15%;
+}
+.testimonial-logo-rule {
+    width: 60%;
+    border-color: white;
+    margin-bottom: 30px;
+}
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+.testimonial-img {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+}
+.warning-logo {
+    width: 10%;
+}
+.warning-container {
+    margin-top: 160px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.techno-button {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #0c2d6c;
+}
+.techno-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #0c2d6c;
+}
+.techno-button-border {
+    border: 1px solid white;
+}
+.testimonials-container {
+    margin-top: 180px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.testimonial-text {
+    width: 90%;
+    border: solid 1px white;
+    padding: 2rem;
+    min-height: 350px;
+}
+.left-card {
+    margin-left: 5rem;
+}
+.testimonial {
+    width: 70%;
+    margin-left: 15%;
+}
+.media-width {
+    width: 90%;
+    margin-left: 5%;
+}
+.testimonial-img {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+}
+@media screen and (max-width: 991px) {
+    .testimonial-text {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+   }
+}
+@media screen and (max-width: 430px) {
+    .testimonials-container {
+        width: 100%;
+   }
+}

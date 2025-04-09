@@ -1,0 +1,31 @@
+.techno-button {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: white;
+    background-color: #0c2d6c;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #0c2d6c;
+}
+.techno-button:hover {
+    background-color: #75e6ff;
+    text-decoration: none;
+    color: #0c2d6c;
+    border: solid 1px #0c2d6c;
+}
+.techno-button-border {
+    border: 1px solid white;
+}
+@media screen and (max-width: 600px) {
+    .auth-container {
+        margin-top: 150px;
+   }
+}
+@media screen and (max-width: 430px) {
+    .auth-container {
+        width: 80%;
+   }
+}
