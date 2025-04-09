@@ -210,6 +210,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# Add Whitenoise for serving static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Ensure this is included if using AWS S3 for static files
 if 'USE_AWS' in os.environ:
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
