@@ -1,44 +1,64 @@
+
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		{% block meta %}
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description"
-			content="Home is a stock ecommerce website that offers a wide range of products to suit various needs.
+<head>
+    <!-- Required meta tags -->
+    {% block meta %}
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport" />
+    <meta content="Home is a stock ecommerce website that offers a wide range of products to suit various needs.
 			From clothing to electronics, home decor to accessories,
 			we have everything you need to make your life easier and more enjoyable. 
 			Our expertly curated selection of high-quality products is sure to impress, 
 			and our competitive pricing ensures that you always get the best value for your money. 
 			Whether you're looking for something specific or just browsing, 
-			we're confident that you'll find exactly what you need at Home Store.">
-		<meta name="keywords"
-			content="Home Store, stock ecommerce, clothing, electronics, home decor, accessories, 
-			high-quality products, competitive pricing, value for money.">
-		<meta name="google-site-verification" content="nocH2lY7rF2-Ui7LSq8fzjmX_dkhwno6PARDXD8p4lA">
-		{% endblock %}
-		{% block extra_meta %}
-		{% endblock %}
-		<!-- Core CSS -->
-		{% block corecss %}
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-		<link rel="stylesheet" href="{% static 'css/base.css' %}">
-		{% endblock %}
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
-		{% block extra_css %}
-		{% endblock %}
-		{% block corejs %}
-		<script src="https://kit.fontawesome.com/876265c343.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<!-- Hotjar Tracking Code for https://pp5-house-stock-ecommerce.herokuapp.com/ -->
-		<script>
+			we're confident that you'll find exactly what you need at Home Store."
+          name="description" />
+    <meta content="Home Store, stock ecommerce, clothing, electronics, home decor, accessories, 
+			high-quality products, competitive pricing, value for money."
+          name="keywords" />
+    <meta content="nocH2lY7rF2-Ui7LSq8fzjmX_dkhwno6PARDXD8p4lA"
+          name="google-site-verification" />
+    {% endblock %}
+    {% block extra_meta %}
+    {% endblock %}
+    <!-- Core CSS -->
+    {% block corecss %}
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+          rel="stylesheet" />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+    {% endblock %}
+    <!-- Favicon -->
+    <link href="{% static 'favicon.ico' %}"
+          rel="shortcut icon"
+          type="image/png" />
+    {% block extra_css %}
+    {% endblock %}
+    {% block corejs %}
+    <script crossorigin="anonymous"
+            src="https://kit.fontawesome.com/876265c343.js">
+    </script>
+    <script crossorigin="anonymous"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script crossorigin="anonymous"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+    </script>
+    <script crossorigin="anonymous"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <!-- Hotjar Tracking Code for https://pp5-house-stock-ecommerce.herokuapp.com/ -->
+    <script>
 			(function(h,o,t,j,a,r){
 				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
 				h._hjSettings={hjid:3491227,hjsv:6};
@@ -48,157 +68,207 @@
 				a.appendChild(r);
 			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
-		<!-- Stripe -->
-		<script src="https://js.stripe.com/v3/"></script>
-		{% endblock %}
-		{% block extra_js %}
-		{% endblock %}
-		<title>Home Store & more{% block extra_title %}{% endblock %}</title>
-	</head>
-	<body>
-		<header class="container-fluid fixed-top">
-			<div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-				<div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-					<a href="{% url 'home' %}" title="Home Store & More">
-						<img id="nav-logo" src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1683794208/logo-2_mvk74n.png" alt="Home Store" width="165"  height="45">
-					</a>
-				</div>
-				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-					<form method="GET" action="{% url 'products' %}">
-						<div class="input-group w-100">
-							<input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-							<div class="input-group-append">
-								<button class="form-control btn btn-black border border-black rounded-0" type="submit">
-								<span class="icon">
-								<i class="fas fa-search"></i>
-								</span>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-					<ul class="list-inline list-unstyled text-center text-lg-right my-0">
-						<li class="list-inline-item">
-							<a class="text-black">Hi {{ user.username }}</a>
-						</li>
-						<li class="list-inline-item dropdown">
-							<a class="text-black nav-link" href="#" data-toggle="dropdown" 
-								role="button" aria-haspopup="true" aria-expanded="false">
-								<div class="text-center">
-									<div><i class="fas fa-user fa-lg"></i></div>
-									<p class="my-0">My Account</p>
-								</div>
-							</a>
-							<div class="dropdown-menu border-0" aria-labelledby="user-options">
-								{% if request.user.is_authenticated %}
-								{% if request.user.is_superuser %}
-								<a href="{% url 'add_product' %}" class="dropdown-item">
-								<span class="fa-solid fa-dolly"></span> Product Management</a>
-								{% endif %}
-								<a href="{% url 'profile' %}" class="dropdown-item"><span class="fas fa-user fa-lg"></span> My Profile</a>
-								<a class="dropdown-item" href="{% url 'wishlist' %}"><span class="fa-solid fa-heart icon fa-beat-fade"
-									style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;"></span> Wishlist</a>									
-								<a href="{% url 'account_logout' %}" class="dropdown-item">
-								<span class="fa-sharp fa-solid fa-right-from-bracket"></span> Logout</a>
-								{% else %}
-								<a href="{% url 'account_signup' %}" class="dropdown-item">
-								<span class="fa-sharp fa-regular fa-user"></span> Register</a>
-								<a href="{% url 'account_login' %}" class="dropdown-item">
-								<span class="fa-solid fa-right-to-bracket"></span> Login</a>
-								{% endif %}
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" 
-								href="{% url 'view_bag' %}">
-								<div class="text-center">
-									<div>
-										<i class="fas fa-shopping-basket icon"></i>
-										{% if product_count %}
-										<span class="item-counter">{{ product_count }}</span>
-										{% endif %}
-									</div>
-									<p class="my-0">
-										{% if grand_total %}
-										${{ grand_total|floatformat:2 }}
-										{% else %}
-										$0.00
-										{% endif %}
-									</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row bg-white">
-				<nav  class="navbar navb navbar-expand-lg navbar-light w-100">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" 
-						aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-					{% include 'includes/mobile-top-header.html' %}
-					{% include 'includes/main-nav.html' %}
-				</nav>
-			</div>
-			<div id="delivery-banner" class="row secondary-bg text-center bg-banner text-black non-display">
-				<div class="col-12">
-					<div id="delivery-slider" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item text-center secondary-bg active">
-								<h4 class="banner-font"><i
-									class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon"></i> 
-									Free world-wide delivery on orders over ${{ free_delivery_threshold }}!
-								</h4>
-							</div>
-							{% if free_delivery_delta == 0 %}
-							<div class="carousel-item text-center secondary-bg">
-								<h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
-									Congratulations... You qualify for free delivery!!!
-								</h4>
-							</div>
-							{% else %}
-							<div class="carousel-item text-center secondary-bg">
-								<h4 class="banner-font"><i class="fa-solid fa-flip-horizontal fa-truck banner-icon"></i>
-									Spend just <strong>${{ free_delivery_delta }} more to qualify for free
-									delivery!</strong>
-								</h4>
-							</div>
-							{% endif %}
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		{% if messages %}
-		<div class="message-container">
-			{% for message in messages %}
-			{% with message.level as level %}
-			{% if level == 40 %}
-			{% include 'includes/toasts/toast_error.html' %}
-			{% elif level == 30 %}
-			{% include 'includes/toasts/toast_warning.html' %}
-			{% elif level == 25 %}
-			{% include 'includes/toasts/toast_success.html' %}
-			{% else %}
-			{% include 'includes/toasts/toast_info.html' %}
-			{% endif %}
-			{% endwith %}
-			{% endfor %}
-		</div>
-		{% endif %}
-		{% block page_header %}
-		{% endblock %}
-		{% block content %}
-		{% endblock %}
-		<hr class="bottom-rule">
-		<!-- Footer-->
-		{% include 'includes/footer.html'%}
-		{% block postloadjs %}
-		<script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+    {% block extra_js %}
+    {% endblock %}
+    <title>Home Store & more{% block extra_title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="container-fluid fixed-top">
+        <div class="row bg-white pt-lg-2 d-none d-lg-flex" id="topnav">
+            <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" title="Home Store & More">
+                    <img alt="Home Store"
+                         height="45"
+                         id="nav-logo"
+                         src="https://res.cloudinary.com/dvbhrs1gf/image/upload/v1683794208/logo-2_mvk74n.png"
+                         width="165" />
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <form action="{% url 'products' %}" method="GET">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0"
+                               name="q"
+                               placeholder="Search our site"
+                               type="text" />
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0"
+                                    type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item">
+                        <a class="text-black">Hi {{ user.username }}</a>
+                    </li>
+                    <li class="list-inline-item dropdown">
+                        <a aria-expanded="false"
+                           aria-haspopup="true"
+                           class="text-black nav-link"
+                           data-toggle="dropdown"
+                           href="#"
+                           role="button">
+                            <div class="text-center">
+                                <div>
+                                    <i class="fas fa-user fa-lg"></i>
+                                </div>
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div aria-labelledby="user-options"
+                             class="dropdown-menu border-0">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a class="dropdown-item"
+                               href="{% url 'add_product' %}">
+                                <span class="fa-solid fa-dolly"></span> Product Management
+                            </a>
+                            {% endif %}
+                            <a class="dropdown-item" href="{% url 'profile' %}">
+                                <span class="fas fa-user fa-lg"></span> My Profile
+                            </a>
+                            <a class="dropdown-item"
+                               href="{% url 'wishlist' %}">
+                                <span class="fa-solid fa-heart icon fa-beat-fade"
+                                      style="--fa-beat-fade-opacity: 0.75; --fa-beat-fade-scale: 1.075;">
+                                </span> Wishlist
+                            </a>
+                            <a class="dropdown-item"
+                               href="{% url 'account_logout' %}">
+                                <span class="fa-sharp fa-solid fa-right-from-bracket">
+                                </span> Logout
+                            </a>
+                            {% else %}
+                            <a class="dropdown-item"
+                               href="{% url 'account_signup' %}">
+                                <span class="fa-sharp fa-regular fa-user">
+                                </span> Register
+                            </a>
+                            <a class="dropdown-item"
+                               href="{% url 'account_login' %}">
+                                <span class="fa-solid fa-right-to-bracket">
+                                </span> Login
+                            </a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                           href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div>
+                                    <i class="fas fa-shopping-basket icon"></i>
+                                    {% if product_count %}
+                                    <span class="item-counter">
+                                        {{ product_count }}
+                                    </span>
+                                    {% endif %}
+                                </div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar navb navbar-expand-lg navbar-light w-100">
+                <button aria-controls="main-nav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        class="navbar-toggler"
+                        data-target="#main-nav"
+                        data-toggle="collapse"
+                        type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+        <div class="row secondary-bg text-center bg-banner text-black non-display"
+             id="delivery-banner">
+            <div class="col-12">
+                <div class="carousel slide"
+                     data-ride="carousel"
+                     id="delivery-slider">
+                    <div class="carousel-inner">
+                        <div class="carousel-item text-center secondary-bg active">
+                            <h4 class="banner-font">
+                                <i class="fa-solid fa-sm- fa-flip-horizontal fa-truck banner-icon">
+                                </i>
+                                Free world-wide delivery on orders over ${{ free_delivery_threshold }}!
+                            </h4>
+                        </div>
+                        {% if free_delivery_delta == 0 %}
+                        <div class="carousel-item text-center secondary-bg">
+                            <h4 class="banner-font">
+                                <i class="fa-solid fa-flip-horizontal fa-truck banner-icon">
+                                </i>
+                                Congratulations... You qualify for free delivery!!!
+                            </h4>
+                        </div>
+                        {% else %}
+                        <div class="carousel-item text-center secondary-bg">
+                            <h4 class="banner-font">
+                                <i class="fa-solid fa-flip-horizontal fa-truck banner-icon">
+                                </i>
+                                Spend just
+                                <strong>
+                                    ${{ free_delivery_delta }} more to qualify for free
+                                    delivery!
+                                </strong>
+                            </h4>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% block page_header %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <hr class="bottom-rule" />
+    <!-- Footer-->
+    {% include 'includes/footer.html'%}
+    {% block postloadjs %}
+    <script>
 			$('.toast').toast('show');
 		</script>
-		{% endblock %}
-	</body>
+    {% endblock %}
+</body>
 </html>
