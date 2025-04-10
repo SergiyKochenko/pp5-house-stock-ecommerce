@@ -255,23 +255,28 @@ if os.environ.get('USE_AWS') == 'True':
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
-    # Bucket configuration with correct region (eu-west-1)
     AWS_STORAGE_BUCKET_NAME = 'pp5-house-stock-ecommerce'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 
-    # Custom storage settings: Ensure you have a custom_storages.py defining these classes.
+    # Custom storage settings – use your custom classes for media
     STATICFILES_LOCATION = 'static'
     MEDIAFILES_LOCATION = 'media'
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    # Removed redundant STATICFILES_STORAGE assignment to WhiteNoise:
+    # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+    # Uncomment the next line if you want to serve static files from S3:
     # STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+    # (Optional) Ensure files are publicly accessible.
+    AWS_DEFAULT_ACL = 'public-read'
+    AWS_S3_FILE_OVERWRITE = False
+    AWS_QUERYSTRING_AUTH = False
 
     # Function to check if the S3 bucket is accessible
     def check_bucket_status(bucket_name, region_name):
