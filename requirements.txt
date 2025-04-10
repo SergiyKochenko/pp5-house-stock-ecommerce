@@ -9,7 +9,7 @@ dj-database-url==0.5.0
 Django==5.2
 django-allauth==65.7.0
 django-cloudinary-storage==0.3.0
-django-countries==7.2.1
+django-countries==7.6.1
 django-crispy-forms>=2.3
 django-storages==1.14.6
 gunicorn==23.0.0
