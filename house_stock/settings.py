@@ -37,13 +37,7 @@ DEBUG = False
 if os.environ.get('DEVELOPMENT') == 'True':
     DEBUG = True
 
-ALLOWED_HOSTS = [
-    'home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com',
-    'localhost',
-    '127.0.0.1:8000',
-    '*'
-]
-
+ALLOWED_HOSTS = ['home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
 
 # Application definition
 
@@ -80,7 +74,6 @@ INSTALLED_APPS = [
     'cloudinary',
 ]
 
-# Optional Jazzmin Configuration for customizing the admin interface.
 JAZZMIN_SETTINGS = { 
     "site_title": "House Stock Admin",
     "site_header": "House Stock Administration",
@@ -128,10 +121,9 @@ JAZZMIN_UI_TWEAKS = {
     "actions_sticky_top": True
 }
 
-# IMPORTANT: Place SecurityMiddleware first, followed by WhiteNoise.
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -256,7 +248,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -295,11 +286,6 @@ if 'USE_AWS' in os.environ:
     # URLs for static and media files
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
-    # NEW SETTINGS: Ensure media files are publicly accessible
-    AWS_DEFAULT_ACL = 'public-read'
-    AWS_S3_FILE_OVERWRITE = False
-    AWS_QUERYSTRING_AUTH = False
 
     # Function to check if the S3 bucket is accessible
     def check_bucket_status(bucket_name, region_name):
