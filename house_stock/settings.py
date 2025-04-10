@@ -325,3 +325,8 @@ else:
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# Override the default CountrySelectWidget with our custom version:
+from profiles.widgets import CustomCountrySelectWidget
+import django_countries.widgets
+django_countries.widgets.CountrySelectWidget = CustomCountrySelectWidget
+
