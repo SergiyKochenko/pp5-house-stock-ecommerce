@@ -32,11 +32,13 @@ class CustomCountrySelectWidget(CountrySelectWidget):
     # Override __iter__ to force iterable to list.
     def __iter__(self):
         return iter(list(self._choices))
-    
 
-
-
-
+    def valid_value(self, value):
+        # Ensure choices are a list before iterating
+        for k, v in list(self.choices):
+            if value == k:
+                return True
+        return False
 
 # This widget can be used in forms to provide a country selection dropdown.
 
