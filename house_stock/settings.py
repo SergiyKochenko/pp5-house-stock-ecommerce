@@ -303,6 +303,8 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
+# Add the following CSRF trusted origins for Heroku deployments:
+CSRF_TRUSTED_ORIGINS = ["https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com"]
 
 # Override the default CountrySelectWidget with our custom version:
 from profiles.widgets import CustomCountrySelectWidget
