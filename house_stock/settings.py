@@ -37,7 +37,12 @@ DEBUG = False
 if os.environ.get('DEVELOPMENT') == 'True':
     DEBUG = True
 
-ALLOWED_HOSTS = ['home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
+ALLOWED_HOSTS = [
+    'home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com',
+    'localhost',
+    '127.0.0.1:8000',
+    '*'
+]
 
 
 # Application definition
@@ -90,7 +95,6 @@ JAZZMIN_SETTINGS = {
     ],
 }
 
-
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
     "footer_small_text": False,
@@ -124,9 +128,10 @@ JAZZMIN_UI_TWEAKS = {
     "actions_sticky_top": True
 }
 
+# IMPORTANT: Place SecurityMiddleware first, followed by WhiteNoise.
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
