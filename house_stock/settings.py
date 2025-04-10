@@ -19,12 +19,11 @@ if os.path.exists("env.py"):
 
 from pathlib import Path
 
-import cloudinary
+import cloudinary  # Retained if you need it elsewhere; not used for media
 from botocore.exceptions import ClientError
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -37,7 +36,12 @@ DEBUG = False
 if os.environ.get('DEVELOPMENT') == 'True':
     DEBUG = True
 
-ALLOWED_HOSTS = ['home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
+ALLOWED_HOSTS = [
+    'home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com',
+    'localhost',
+    '127.0.0.1:8000',
+    '*'
+]
 
 # Application definition
 
@@ -70,7 +74,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'storages',
-    'cloudinary_storage',
+    'cloudinary_storage',  # Still installed, in case you need it elsewhere
     'cloudinary',
 ]
 
@@ -121,9 +125,10 @@ JAZZMIN_UI_TWEAKS = {
     "actions_sticky_top": True
 }
 
+# IMPORTANT: SecurityMiddleware MUST come before WhiteNoise.
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -185,7 +190,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'house_stock.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -208,7 +212,6 @@ DATABASES = {
 #      }
 # }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -227,63 +230,46 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-# Cloudinary configuration
-cloudinary.config(
-    cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
-    api_key=os.environ.get('CLOUDINARY_API_KEY'),
-    api_secret=os.environ.get('CLOUDINARY_API_SECRET'),
-)
-
-
-if 'USE_AWS' in os.environ:
-    # -------------------------------------------------------------------------
-    # AWS S3 Configuration for Static and Media Files
-    # -------------------------------------------------------------------------
+# AWS S3 Storage Configuration
+if os.environ.get('USE_AWS') == 'True':
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
 
-    # Bucket Configuration with correct region (eu-west-1)
+    # Bucket configuration with correct region (eu-west-1)
     AWS_STORAGE_BUCKET_NAME = 'pp5-house-stock-ecommerce'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-west-1.amazonaws.com'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 
-    # Custom Storage Settings
+    # Custom storage settings: Ensure you have a custom_storages.py defining these classes.
     STATICFILES_LOCATION = 'static'
     MEDIAFILES_LOCATION = 'media'
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    
-    # URLs for static and media files
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
@@ -310,21 +296,17 @@ if 'USE_AWS' in os.environ:
             else:
                 print(f"An error occurred when accessing bucket '{bucket_name}': {error}")
 
-    # Check the Bucket Status
+    # Check the bucket status at startup.
     check_bucket_status(AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME)
 else:
-    # Use Cloudinary for media storage if AWS is not used
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    # Use WhiteNoise for static files in non-AWS environment
+    # Fallback: Use local storage (or WhiteNoise for static files) if not using AWS.
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
     STATIC_URL = '/static/'
     MEDIA_URL = '/media/'
 
-
 # Delivery threshold settings
 FREE_DELIVERY_THRESHOLD = 99
 STANDARD_DELIVERY_PERCENTAGE = 10
-
 
 # Stripe settings
 STRIPE_CURRENCY = 'usd'
@@ -332,14 +314,12 @@ STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
-
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com'
 
-if 'DEVELOPMENT' in os.environ:
+if os.environ.get('DEVELOPMENT'):
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com.com'
 else:
@@ -352,7 +332,9 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 # Add the following CSRF trusted origins for Heroku deployments:
-CSRF_TRUSTED_ORIGINS = ["https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com"
+]
 
 # Override the default CountrySelectWidget with our custom version:
 from profiles.widgets import CustomCountrySelectWidget
