@@ -33,14 +33,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
-
-# DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 if os.environ.get('DEVELOPMENT') == 'True':
     DEBUG = True
-
-
 
 ALLOWED_HOSTS = ['home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localhost', '127.0.0.1:8000', '*']
 
@@ -146,10 +141,6 @@ WSGI_APPLICATION = 'house_stock.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-# ===================================================
-
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -161,9 +152,7 @@ DATABASES = {
     }
 }
 
-
-# =========================================================
-
+# Uncomment below to use sqlite3 in development:
 # DATABASES = {
 #      'default': {
 #          'ENGINE': 'django.db.backends.sqlite3',
@@ -171,12 +160,9 @@ DATABASES = {
 #      }
 # }
 
-# ========================================================
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -219,7 +205,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# cloudinary
+# Cloudinary configuration
 cloudinary.config(
     cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
     api_key=os.environ.get('CLOUDINARY_API_KEY'),
@@ -228,41 +214,35 @@ cloudinary.config(
 
 
 if 'USE_AWS' in os.environ:
-    # -----------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # AWS S3 Configuration for Static and Media Files
-    # -----------------------------------------------------------------------------
-    # Cache control settings
+    # -------------------------------------------------------------------------
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
 
-    # Bucket Configuration
+    # Bucket Configuration with correct region (eu-west-1)
     AWS_STORAGE_BUCKET_NAME = 'pp5-house-stock-ecommerce'
-    AWS_S3_REGION_NAME = 'us-east-1'
+    AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-west-1.amazonaws.com'
 
-    # Static and Media Files Settings using Custom Storages
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    # Custom Storage Settings
     STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
-
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    
     # URLs for static and media files
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-    # -----------------------------------------------------------------------------
-    # Function to Check if the S3 Bucket Is Accessible (Functioning)
-    # -----------------------------------------------------------------------------
+    # Function to check if the S3 bucket is accessible
     def check_bucket_status(bucket_name, region_name):
         """
         Check if the provided S3 bucket is accessible.
-
-        :param bucket_name: The name of the S3 bucket.
-        :param region_name: The AWS region where the bucket is hosted.
         """
         s3_client = boto3.client(
             's3',
@@ -271,7 +251,6 @@ if 'USE_AWS' in os.environ:
             aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
         )
         try:
-            # The head_bucket call will succeed if the bucket is accessible.
             s3_client.head_bucket(Bucket=bucket_name)
             print(f"Bucket '{bucket_name}' is accessible and functioning.")
         except ClientError as error:
@@ -283,32 +262,33 @@ if 'USE_AWS' in os.environ:
             else:
                 print(f"An error occurred when accessing bucket '{bucket_name}': {error}")
 
-    # -----------------------------------------------------------------------------
     # Check the Bucket Status
-    # -----------------------------------------------------------------------------
     check_bucket_status(AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME)
 else:
-    # Use Cloudinary for media storage
+    # Use Cloudinary for media storage if AWS is not used
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    # Use WhiteNoise for static files in non-AWS environment
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
 
-# delivery threshold
+
+# Delivery threshold settings
 FREE_DELIVERY_THRESHOLD = 99
 STANDARD_DELIVERY_PERCENTAGE = 10
 
-# Stripe
+
+# Stripe settings
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+
+
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
 DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com'
 
 if 'DEVELOPMENT' in os.environ:
@@ -323,10 +303,8 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Override the default CountrySelectWidget with our custom version:
 from profiles.widgets import CustomCountrySelectWidget
 import django_countries.widgets
 django_countries.widgets.CountrySelectWidget = CustomCountrySelectWidget
-
