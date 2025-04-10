@@ -295,6 +295,11 @@ if 'USE_AWS' in os.environ:
     # URLs for static and media files
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    
+    # NEW SETTINGS: Ensure media files are publicly accessible
+    AWS_DEFAULT_ACL = 'public-read'
+    AWS_S3_FILE_OVERWRITE = False
+    AWS_QUERYSTRING_AUTH = False
 
     # Function to check if the S3 bucket is accessible
     def check_bucket_status(bucket_name, region_name):
