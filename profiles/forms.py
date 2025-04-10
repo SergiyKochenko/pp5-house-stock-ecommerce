@@ -1,11 +1,14 @@
 from django import forms
 from .models import UserProfile
-
+from .widgets import CustomCountrySelectWidget  # Added custom widget import
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         exclude = ('user',)
+        widgets = {
+            'default_country': CustomCountrySelectWidget(),  # Use custom widget
+        }
 
     def __init__(self, *args, **kwargs):
         """
