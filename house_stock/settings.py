@@ -43,6 +43,8 @@ ALLOWED_HOSTS = ['home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com', 'localh
 # Application definition
 
 INSTALLED_APPS = [
+    # Jazzmin must be added before 'django.contrib.admin'
+    'jazzmin',  # Added Jazzmin for a modern admin interface
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -65,13 +67,62 @@ INSTALLED_APPS = [
     'hire',
     'packages',
 
-    # Other
+    # Other apps
     'crispy_forms',
     'crispy_bootstrap4',
     'storages',
     'cloudinary_storage',
     'cloudinary',
 ]
+
+# Optional Jazzmin Configuration for customizing the admin interface.
+JAZZMIN_SETTINGS = { 
+    "site_title": "House Stock Admin",
+    "site_header": "House Stock Administration",
+    "site_brand": "House Stock",
+    "site_url": "https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/",
+    "welcome_sign": "Welcome to the House Stock Admin Dashboard",
+    "search_model": "auth.User",
+    "copyright": "House Stock Ltd",
+    "show_ui_builder": True,
+    "topmenu_links": [
+         {"name": "Back to Website", "url": "https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/", "new_window": True},
+    ],
+}
+
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": True,
+    "brand_small_text": False,
+    "brand_colour": "navbar-success",
+    "accent": "accent-success",
+    "navbar": "navbar-cyan navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": True,
+    "layout_boxed": False,
+    "footer_fixed": True,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-success",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": True,
+    "sidebar_nav_flat_style": True,
+    "theme": "solar",
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    },
+    "actions_sticky_top": True
+}
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
