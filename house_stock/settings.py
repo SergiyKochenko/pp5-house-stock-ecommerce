@@ -326,16 +326,15 @@ DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com'
 
 if os.environ.get('DEVELOPMENT'):
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com.com'
+    DEFAULT_FROM_EMAIL = 'sergiykochenko@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
-    # Provide fallback values if the environment variables are not set
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'sergiykochenko@gmail.com')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS', 'defaultpassword')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER', 'sergiykochenko@gmail.com')
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 # Add the following CSRF trusted origins for Heroku deployments:
 CSRF_TRUSTED_ORIGINS = [
