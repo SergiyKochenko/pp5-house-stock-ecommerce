@@ -1,6 +1,6 @@
 from django import forms
 from .models import Order
-
+from profiles.widgets import CustomCountrySelectWidget  # Add this import
 
 class OrderForm(forms.ModelForm):
     class Meta:
@@ -16,6 +16,9 @@ class OrderForm(forms.ModelForm):
             "country",
             "county",
         )
+        widgets = {
+            'country': CustomCountrySelectWidget(),  # Use custom widget for country
+        }
 
     def __init__(self, *args, **kwargs):
         """
