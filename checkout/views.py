@@ -15,6 +15,9 @@ from django.contrib.auth.decorators import login_required
 
 import stripe
 import json
+import logging  # NEW import
+
+logger = logging.getLogger(__name__)  # NEW logger
 
 
 @login_required
@@ -183,6 +186,23 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
+    
+    # Send order confirmation email and log message
+    from django.core.mail import send_mail
+    from django.conf import settings
+    subject = f"Order Confirmation: {order.order_number}"
+    message = (
+        f"Dear {order.full_name},\n\n"
+        f"Thank you for your order. Your order number is {order.order_number}.\n"
+        "We will update you when your order is shipped.\n\n"
+        "Best regards,\n"
+        "House Stock Team"
+    )
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [order.email])
+    
+    # Log the email details so they show on the terminal/Heroku logs.
+    logger.info("Confirmation email sent to customer: Subject: %s, Message: %s", subject, message)
+
     messages.success(
         request,
         f"Order successfully processed! \
