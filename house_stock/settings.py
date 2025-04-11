@@ -309,6 +309,14 @@ else:
     STATIC_URL = '/static/'
     MEDIA_URL = '/media/'
 
+# NEW: Use database-backed storage for product images if enabled.
+if os.environ.get('DATABASE_URL') == 'True':
+    DEFAULT_FILE_STORAGE = 'db_file_storage.storage.DatabaseFileStorage'
+    # Use your default database for storing files.
+    DB_FILE_STORAGE_DATABASE = 'default'
+    # Optionally, print or log to confirm:
+    print("Using database-backed file storage for uploaded images.")
+
 # Delivery threshold settings
 FREE_DELIVERY_THRESHOLD = 99
 STANDARD_DELIVERY_PERCENTAGE = 10
