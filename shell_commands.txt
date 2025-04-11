@@ -1,0 +1,19 @@
+from products.models import Product
+
+
+# to terminal to load stock: 'python manage.py loaddata categories', 'python manage.py loaddata products'
+# to terminal to manage the shell: 'python manage.py shell'
+
+# Add All products
+kdbb = ['kitchen_dining', 'bed_bath']
+clothes = Product.objects.exclude(category__name__in=kdbb)
+clothes.update(has_sizes=True)
+
+Product.objects.filter(has_sizes=True)
+Product.objects.filter(has_sizes=True).count()
+exit()
+
+
+# Mark all products as in stock
+Product.objects.update(in_stock=True)
+print("All products marked as in stock.")
