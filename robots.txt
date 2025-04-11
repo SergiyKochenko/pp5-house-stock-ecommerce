@@ -4,4 +4,4 @@ Disallow: /checkout/
 Disallow: /profiles/
 Disallow: /admin/
 Disallow: /bag/
-Sitemap: https://pp5-house-stock-ecommerce.herokuapp.com/sitemap.xml
+Sitemap: https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/sitemap.xml
