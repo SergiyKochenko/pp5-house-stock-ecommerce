@@ -31,7 +31,7 @@ Please use the link below to view the deployed project. If you wish to make a mo
 
 - Card Number: 4242424242424242
 - Exp Date: Any (future) date using the format MM/YY
-- CVN = any 3 digit number
+- CVN = any 3 digits number
 - Postcode = any 5 numerals
 
 Any payments made using an actual payment card will fail and the card will not be charged. No orders made will be fulfilled.
