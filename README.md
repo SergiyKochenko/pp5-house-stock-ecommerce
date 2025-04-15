@@ -1,17 +1,17 @@
 # Portfolio Project 5 - Home Store & More eCommerce Webstore
 
-This repository contains the source code for the Home Store & More eCommerce webstore, a full stack web application developed as a portfolio project for The Code Institute's Full Stack Software Development (eCommerce) Diploma program. The website can be viewed at <https://pp5-house-stock-ecommerce.herokuapp.com/>.
+This repository contains the source code for the Home Store & More eCommerce webstore, a full stack web application developed as a portfolio project for The Code Institute's Full Stack Software Development (eCommerce) Diploma program. The website can be viewed at <https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/>.
 
 # Overview
 
-Welcome to [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/)
+Welcome to [Home Store & More](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/)
 This Website is an e-Commerce Webstore that was designed and developed as an Portfolio Project for The Code Institute's Full Stack Software Development (eCommerce) Diploma programme.
 
 Home Store & More is a demo e-commerce platform showcasing a wide range of affordable, full-stock home products and solutions catering to a diverse and growing target audience. The project demonstrates the developer's proficiency in creating a comprehensive e-commerce solution, with an appealing design, intuitive navigation, and responsive layout.
 
 Please note that this project is for assessment purposes only and does not accept real credit or debit card payments. Any purchases or bookings made on the website will not be fulfilled.
 
-The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or booking made will not be fullfilled. The [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) is a full stack, E-commerce, web application offering affordable, full ctock home products and solutions to a growing and diverse target audience.
+The project is for assessment purposes only and will not accept any genuine credit or debit card payments and any purchases or booking made will not be fullfilled. The [Home Store & More](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/) is a full stack, E-commerce, web application offering affordable, full ctock home products and solutions to a growing and diverse target audience.
 
 - User Interface and Design: The website features a visually appealing and modern design, making it easy for users to browse and navigate the site. The layout is responsive, ensuring that the website looks great on various devices, including desktops, laptops, tablets, and smartphones.
 
@@ -36,7 +36,7 @@ Please use the link below to view the deployed project. If you wish to make a mo
 
 Any payments made using an actual payment card will fail and the card will not be charged. No orders made will be fulfilled.
 
-Live project: [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) app.
+Live project: [Home Store & More](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/) app.
 
 The [GitHub repository](https://github.com/SergiyKochenko/pp5-house-stock-ecommerce)
 
@@ -139,7 +139,7 @@ The primary goals of the Home Store & More e-commerce webstore project are:
 
 1. Executive Summary
 Project Name: PP5 Home Store & More  E-commerce Website
-[Website:](https://pp5-house-stock-ecommerce.herokuapp.com/) PP5 Home Store & More the E-commerce Website is designed to provide customers with an easy and convenient way to purchase household items and supplies online. My website offers a wide range of products at competitive prices, with an emphasis on customer satisfaction and user experience.
+[Website:](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/) PP5 Home Store & More the E-commerce Website is designed to provide customers with an easy and convenient way to purchase household items and supplies online. My website offers a wide range of products at competitive prices, with an emphasis on customer satisfaction and user experience.
 
 2. Objectives
 Establish a user-friendly online platform for customers to purchase household items and supplies.
@@ -396,9 +396,9 @@ For more information about MailChimp and its features, visit the official MailCh
 
 <br>
 
-This project integrates [Hotjar](https://www.hotjar.com/), a powerful tool that combines analysis and feedback tools to understand how users interact with [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) website.
+This project integrates [Hotjar](https://www.hotjar.com/), a powerful tool that combines analysis and feedback tools to understand how users interact with [Home Store & More](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/) website.
 
-Hotjar provides heatmaps, session recordings, and surveys to gain a clear picture of our users' needs, desires, and behavior. This comprehensive understanding helps us optimize the user experience and performance of the [Home Store & More](https://pp5-house-stock-ecommerce.herokuapp.com/) website.
+Hotjar provides heatmaps, session recordings, and surveys to gain a clear picture of our users' needs, desires, and behavior. This comprehensive understanding helps us optimize the user experience and performance of the [Home Store & More](https://home-stock-ecommerce-demo-037fe5d891b9.herokuapp.com/) website.
 
 **Features Utilized** <br>
 - **Heatmaps:** Visual representation of users' clicks, taps, and scrolling behavior.
@@ -1295,32 +1295,38 @@ This is a simplified example of a database schema for an e-commerce website. Dep
 
 ### **Installed Packages:**
 
-**Package**          &         **Version**
-------------------------- --------
-- asgiref                   3.6.0
-- boto3                     1.26.129
-- botocore                  1.29.129
-- cloudinary                1.32.0
-- coverage                  7.2.5
-- dj-database-url           0.5.0
-- Django                    3.2
-- django-allauth            0.41.0
-- django-cloudinary-storage 0.3.0
-- django-countries          7.2.1
-- django-crispy-forms       1.14.0
-- django-storages           1.13.2
-- gunicorn                  20.1.0
-- jmespath                  1.0.1
-- oauthlib                  3.2.2
-- Pillow                    9.5.0
-- pip                       23.1.2
-- psycopg2                  2.9.6
-- python3-openid            3.2.0
-- pytz                      2023.3
-- requests-oauthlib         1.3.1
-- s3transfer                0.6.1
-- sqlparse                  0.4.4
-- stripe                    5.4.0
+asgiref==3.8.1
+boto3==1.37.30
+botocore==1.37.30
+certifi==2025.1.31
+charset-normalizer==3.4.1
+cloudinary==1.43.0
+crispy-bootstrap4==2024.10
+dj-database-url==0.5.0
+Django==5.2
+django-allauth==65.7.0
+django-cloudinary-storage==0.3.0
+django-countries==7.6.1
+django-crispy-forms>=2.3
+django-jazzmin==3.0.1
+django-storages==1.14.6
+gunicorn==23.0.0
+idna==3.10
+jmespath==1.0.1
+packaging==24.2
+pillow==11.1.0
+psycopg2==2.9.10
+python-dateutil==2.9.0.post0
+pytz==2025.2
+requests==2.32.3
+s3transfer==0.11.4
+six==1.17.0
+sqlparse==0.5.3
+stripe==12.0.0
+typing_extensions==4.13.1
+tzdata==2025.2
+urllib3==2.3.0
+whitenoise==6.9.0
 
 ## Frameworks
 
